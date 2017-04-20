@@ -12337,7 +12337,7 @@ DWORD CTWorldSvrModule::OnDM_TNMTEVENTENTRYADD_REQ(LPPACKETBUF pBUF)
 
 DWORD CTWorldSvrModule::OnMW_TERMINATE_ACK(LPPACKETBUF pBUF)
 {
-	// FIXME: This is a possible backdoor. Keep an eye out for this!
+	// #FIXME: This is a possible backdoor. Keep an eye out for this!
 	DWORD dwKey;
 
 	pBUF->m_packet
@@ -12357,7 +12357,7 @@ DWORD CTWorldSvrModule::OnMW_TERMINATE_ACK(LPPACKETBUF pBUF)
 
 DWORD CTWorldSvrModule::OnDM_CLEARDATA_REQ(LPPACKETBUF pBUF)
 {
-	// FIXME: This is a possible backdoor. Keep an eye out for this!
+	// #FIXME: This is a possible backdoor. Keep an eye out for this!
 	DWORD dwKey;
 
 	pBUF->m_packet

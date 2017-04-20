@@ -4,10 +4,7 @@
 	Version="8.00"
 	Name="TMD5SP"
 	ProjectGUID="{36E6ED8D-70FD-4442-B384-1809EC489939}"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
+	RootNamespace="TMD5SP"
 	Keyword="ExtStoredProcProj"
 	>
 	<Platforms>

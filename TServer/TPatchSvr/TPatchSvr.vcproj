@@ -4,9 +4,7 @@
 	Version="8.00"
 	Name="TPatchSvr"
 	ProjectGUID="{96AD22E7-DE88-4902-9A10-12C356FEDAC8}"
-	SccProjectName="&quot;$/TServer&quot;, FAAAAAAA"
-	SccLocalPath=".."
-	SccProvider="MSSCCI:Microsoft Visual SourceSafe"
+	RootNamespace="TPatchSvr"
 	Keyword="AtlProj"
 	>
 	<Platforms>

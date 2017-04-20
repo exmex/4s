@@ -4,10 +4,7 @@
 	Version="8.00"
 	Name="TAuthSP"
 	ProjectGUID="{B4D30179-5C27-465C-8814-1FDAF0A61122}"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
+	RootNamespace="TAuthSP"
 	Keyword="ExtStoredProcProj"
 	>
 	<Platforms>

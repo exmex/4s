@@ -4,10 +4,7 @@
 	Version="8.00"
 	Name="TRelaySvr"
 	ProjectGUID="{FFA27E87-2307-44EA-BFB1-B6F5CE73D566}"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
+	RootNamespace="TRelaySvr"
 	Keyword="AtlProj"
 	>
 	<Platforms>
