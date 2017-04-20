@@ -1629,7 +1629,7 @@ void CStoryDlg::CheckRunningExe(CString strDestEXE)
 
 void CStoryDlg::ShowSettingFrame()
 {
-	static bInit = TRUE;
+	static bool bInit = TRUE;
 
 	// 게임설정 대화상자 모달리스로 띄우기
 	CPlaySetting*	pPlaySetting = CPlaySetting::GetInstance();

@@ -472,7 +472,8 @@ void CPlaySetting::TransparentDialog(CBitmap* _pCBitmap, COLORREF  _color)
 	crRgn.CreateRectRgn(0, 0, 0, 0);
 		
 	int iX = 0;
-	for (int iY = 0; iY < Bitmap.bmHeight; iY++)
+	int iY = 0;
+	for (iY = 0; iY < Bitmap.bmHeight; iY++)
 	{
 		do
 		{			

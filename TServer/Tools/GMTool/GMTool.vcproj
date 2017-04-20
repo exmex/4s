@@ -1,127 +1,188 @@
 <?xml version="1.0" encoding="ks_c_5601-1987"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8.00"
 	Name="GMTool"
 	ProjectGUID="{EE7E70A0-BA3E-4976-98C9-051BE40F27E0}"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
-	Keyword="MFCProj">
+	RootNamespace="GMTool"
+	Keyword="MFCProj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\TProtocol;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG;PACKET_CRYPT;"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				LinkIncremental="2"
-				GenerateDebugInformation="TRUE"
-				SubSystem="2"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="FALSE"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\..\..\TProtocol;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;PACKET_CRYPT;"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				LinkIncremental="1"
-				GenerateDebugInformation="TRUE"
-				SubSystem="2"
-				OptimizeReferences="2"
-				EnableCOMDATFolding="2"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				LinkIncremental="1"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -130,154 +191,218 @@
 		<Filter
 			Name="소스 파일"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\AnnounceDlg.cpp">
+				RelativePath=".\AnnounceDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\CharMsgDlg.cpp">
+				RelativePath=".\CharMsgDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ChatBanDlg.cpp">
+				RelativePath=".\ChatBanDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GMTool.cpp">
+				RelativePath=".\GMTool.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GMToolDlg.cpp">
+				RelativePath=".\GMToolDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GMToolDoc.cpp">
+				RelativePath=".\GMToolDoc.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Handler.cpp">
+				RelativePath=".\Handler.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HSession.cpp">
+				RelativePath=".\HSession.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\IPChangeDlg.cpp">
+				RelativePath=".\IPChangeDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\MonsterSpawn.cpp">
+				RelativePath=".\MonsterSpawn.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.cpp">
+				RelativePath=".\Packet.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\PosListDlg.cpp">
+				RelativePath=".\PosListDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\RetDlg.cpp">
+				RelativePath=".\RetDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SavePosDlg.cpp">
+				RelativePath=".\SavePosDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Sender.cpp">
+				RelativePath=".\Sender.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp">
+				RelativePath=".\stdafx.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\UserKickOutDlg.cpp">
+				RelativePath=".\UserKickOutDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\UserMoveDlg.cpp">
+				RelativePath=".\UserMoveDlg.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="헤더 파일"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\AnnounceDlg.h">
+				RelativePath=".\AnnounceDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\CharMsgDlg.h">
+				RelativePath=".\CharMsgDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ChatBanDlg.h">
+				RelativePath=".\ChatBanDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GMTool.h">
+				RelativePath=".\GMTool.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GMToolDlg.h">
+				RelativePath=".\GMToolDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GMToolDoc.h">
+				RelativePath=".\GMToolDoc.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HSession.h">
+				RelativePath=".\HSession.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IPChangeDlg.h">
+				RelativePath=".\IPChangeDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\MonsterSpawn.h">
+				RelativePath=".\MonsterSpawn.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.h">
+				RelativePath=".\Packet.h"
+				>
 			</File>
 			<File
-				RelativePath=".\PosListDlg.h">
+				RelativePath=".\PosListDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Resource.h">
+				RelativePath=".\Resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\RetDlg.h">
+				RelativePath=".\RetDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SavePosDlg.h">
+				RelativePath=".\SavePosDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath=".\UserKickOutDlg.h">
+				RelativePath=".\UserKickOutDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\UserMoveDlg.h">
+				RelativePath=".\UserMoveDlg.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="리소스 파일"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 			<File
-				RelativePath=".\res\GMTool.ico">
+				RelativePath=".\res\GMTool.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\GMTool.rc">
+				RelativePath=".\GMTool.rc"
+				>
 			</File>
 			<File
-				RelativePath=".\res\GMTool.rc2">
+				RelativePath=".\res\GMTool.rc2"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\res\GMTool.manifest">
+			RelativePath=".\res\GMTool.manifest"
+			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
 		</File>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath=".\ReadMe.txt"
+			>
 		</File>
 	</Files>
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="GMTool.rc"/>
+			Value="GMTool.rc"
+		/>
 	</Globals>
 </VisualStudioProject>

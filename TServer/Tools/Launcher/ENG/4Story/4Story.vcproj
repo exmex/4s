@@ -1,131 +1,191 @@
 <?xml version="1.0" encoding="ks_c_5601-1987"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8.00"
 	Name="4Story"
 	ProjectGUID="{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}"
 	RootNamespace="4Story"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
-	Keyword="MFCProj">
+	Keyword="MFCProj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\..\..\TClient\TEngine\TachyonControl\;..\..\..\..\..\TClient\TEngine\TComp\;..\..\..\..\..\TClient\TEngine\TCML\;&quot;..\..\..\..\..\TClient\TEngine\Engine Lib\&quot;;..\..\..\..\..\TProtocol;..\..\..\zlib114;..\..\..\..\..\XTrap\client"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="0"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1042"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="d3d9.lib d3dx9.lib EngineLibd.lib winmm.lib Ws2_32.lib version.lib psapi.lib XTrap4Launcher_mt.lib shlwapi.lib zlibstat.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\..\..\..\TClient\TEngine\lib\;..\..\..\zlib114;..\..\..\..\..\XTrap\client"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				SubSystem="2"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="FALSE"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG"
-				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories="..\..\..\..\..\TClient\TEngine\TachyonControl\;..\..\..\..\..\TClient\TEngine\TComp\;..\..\..\..\..\TClient\TEngine\TCML\;&quot;..\..\..\..\..\TClient\TEngine\Engine Lib\&quot;;..\..\..\..\..\TProtocol;..\..\..\zlib114;..\..\..\..\..\XTrap\client"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib shlwapi.lib Ws2_32.lib zlibstat.lib XTrap4Launcher_mt.lib d3d9.lib d3dx9.lib  EngineLib.lib psapi.lib version.lib"
-				LinkIncremental="1"
-				AdditionalLibraryDirectories="..\..\..\..\..\TClient\TEngine\lib\;..\..\..\zlib114;..\..\..\..\..\XTrap\client"
-				GenerateDebugInformation="TRUE"
-				SubSystem="2"
-				OptimizeReferences="2"
-				EnableCOMDATFolding="2"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				AdditionalDependencies="winmm.lib shlwapi.lib Ws2_32.lib zlibstat.lib XTrap4Launcher_mt.lib d3d9.lib d3dx9.lib EngineLib.lib psapi.lib version.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\..\..\..\..\TClient\TEngine\lib\;..\..\..\zlib114;..\..\..\..\..\XTrap\client"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -134,238 +194,330 @@
 		<Filter
 			Name="소스 파일"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\4Story.cpp">
+				RelativePath=".\4Story.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\4StoryDlg.cpp">
+				RelativePath=".\4StoryDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\BitmapPickerCombo.cpp">
+				RelativePath=".\BitmapPickerCombo.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\BitmapSlider.cpp">
+				RelativePath=".\BitmapSlider.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GameSetting.cpp">
+				RelativePath=".\GameSetting.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HoverButton.cpp">
+				RelativePath=".\HoverButton.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HSession.cpp">
+				RelativePath=".\HSession.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.cpp">
+				RelativePath=".\Packet.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\PlaySetting.cpp">
+				RelativePath=".\PlaySetting.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp">
+				RelativePath=".\stdafx.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\webbrowser2.cpp">
+				RelativePath=".\webbrowser2.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\xSkinButton.cpp">
+				RelativePath=".\xSkinButton.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="헤더 파일"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\4Story.h">
+				RelativePath=".\4Story.h"
+				>
 			</File>
 			<File
-				RelativePath=".\4StoryDlg.h">
+				RelativePath=".\4StoryDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\BitmapPickerCombo.h">
+				RelativePath=".\BitmapPickerCombo.h"
+				>
 			</File>
 			<File
-				RelativePath=".\BitmapSlider.h">
+				RelativePath=".\BitmapSlider.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GameSetting.h">
+				RelativePath=".\GameSetting.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HoverButton.h">
+				RelativePath=".\HoverButton.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HSession.h">
+				RelativePath=".\HSession.h"
+				>
 			</File>
 			<File
-				RelativePath=".\memdc.h">
+				RelativePath=".\memdc.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.h">
+				RelativePath=".\Packet.h"
+				>
 			</File>
 			<File
-				RelativePath=".\PlaySetting.h">
+				RelativePath=".\PlaySetting.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Resource.h">
+				RelativePath=".\Resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath=".\webbrowser2.h">
+				RelativePath=".\webbrowser2.h"
+				>
 			</File>
 			<File
-				RelativePath=".\xSkinButton.h">
+				RelativePath=".\xSkinButton.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="리소스 파일"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 			<File
-				RelativePath=".\4Story.rc">
+				RelativePath=".\4Story.rc"
+				>
 			</File>
 			<File
-				RelativePath=".\res\4Story.rc2">
+				RelativePath=".\res\4Story.rc2"
+				>
 			</File>
 			<File
-				RelativePath=".\res\bitmap2.bmp">
+				RelativePath=".\res\bitmap2.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\bitmap4.bmp">
+				RelativePath=".\res\bitmap4.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\bmp00001.bmp">
+				RelativePath=".\res\bmp00001.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Btn_Close_down.bmp">
+				RelativePath=".\res\Btn_Close_down.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Btn_Close_Hover.bmp">
+				RelativePath=".\res\Btn_Close_Hover.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Btn_Close_normal.bmp">
+				RelativePath=".\res\Btn_Close_normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Check_Down.bmp">
+				RelativePath=".\res\Check_Down.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Check_Down2.bmp">
+				RelativePath=".\res\Check_Down2.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Check_Normal.bmp">
+				RelativePath=".\res\Check_Normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Check_Normal2.bmp">
+				RelativePath=".\res\Check_Normal2.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\end_button hover.bmp">
+				RelativePath=".\res\end_button hover.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\end_button normal.bmp">
+				RelativePath=".\res\end_button normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\end_button push.bmp">
+				RelativePath=".\res\end_button push.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\homepage_button hover.bmp">
+				RelativePath=".\res\homepage_button hover.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\homepage_button normal.bmp">
+				RelativePath=".\res\homepage_button normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\homepage_button push.bmp">
+				RelativePath=".\res\homepage_button push.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\icon1.ico">
+				RelativePath=".\res\icon1.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Icon_Check_Normal.bmp">
+				RelativePath=".\res\Icon_Check_Normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\option_button disable.bmp">
+				RelativePath=".\res\option_button disable.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\option_button hover.bmp">
+				RelativePath=".\res\option_button hover.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\option_button normal.bmp">
+				RelativePath=".\res\option_button normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\option_button push.bmp">
+				RelativePath=".\res\option_button push.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Radio_down.bmp">
+				RelativePath=".\res\Radio_down.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Radio_normal.bmp">
+				RelativePath=".\res\Radio_normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\resolution.bmp">
+				RelativePath=".\res\resolution.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\sliderBar.bmp">
+				RelativePath=".\res\sliderBar.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\sliderBG.bmp">
+				RelativePath=".\res\sliderBG.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\sliderBG2.bmp">
+				RelativePath=".\res\sliderBG2.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\start_game_button disable.bmp">
+				RelativePath=".\res\start_game_button disable.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\start_game_button hover.bmp">
+				RelativePath=".\res\start_game_button hover.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\start_game_button normal.bmp">
+				RelativePath=".\res\start_game_button normal.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\start_game_button push.bmp">
+				RelativePath=".\res\start_game_button push.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Tab_Game.bmp">
+				RelativePath=".\res\Tab_Game.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Tab_Sys.bmp">
+				RelativePath=".\res\Tab_Sys.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Tabbtn_game.bmp">
+				RelativePath=".\res\Tabbtn_game.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Tabbtn_Sys.bmp">
+				RelativePath=".\res\Tabbtn_Sys.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\TClient.ico">
+				RelativePath=".\res\TClient.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\updater_base.bmp">
+				RelativePath=".\res\updater_base.bmp"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\res\4Story.manifest">
+			RelativePath=".\res\4Story.manifest"
+			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
 		</File>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath=".\ReadMe.txt"
+			>
 		</File>
 	</Files>
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="4Story.rc"/>
+			Value="4Story.rc"
+		/>
 	</Globals>
 </VisualStudioProject>
