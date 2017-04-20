@@ -1,0 +1,18 @@
+// TPatchSvr.idl : TPatchSvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TPatchSvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(3721A4C9-24ED-4880-BF0A-D602E9351772),
+	version(1.0),
+	helpstring("TPatchSvr 1.0 형식 라이브러리")
+]
+library TPatchSvrLib
+{
+	importlib("stdole2.tlb");
+};

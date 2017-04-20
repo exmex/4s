@@ -1,0 +1,747 @@
+#pragma once
+
+#define TBUILD_NUMBER					(0x00000130)		// RELEASE MODE
+
+///////////////////////////////////////////////////////////////////////////
+// TClient Development Flag
+///////////////////////////////////////////////////////////////////////////
+
+//#define MODIFY_CNP_NAME
+
+//#define ADD_SNOW // ´« ÀÌº¥Æ®
+//#define ADD_TEXTOOL // ¸ÁÅäÅØ½ºÃÄ ÁÂÇ¥¼³Á¤ In-game Åø
+#define ADD_MISSION
+#define EVENT_LOTTERT
+#define ADD_WEB_CASHSHOP
+#define ADD_CAUTION15
+#define ADD_TOURNAMENT
+#define ADD_RPS
+//#define MODIFY_TT
+#define MODIFY_GUILD
+
+///////////////////////////////////////////////////////////////////////////
+// TClient macro
+///////////////////////////////////////////////////////////////////////////
+#define TTOURNAMENT_CHEER_ITEM_ID			0
+
+#define TSTART_D_CAM_POSITION				D3DXVECTOR3( 2867.042480f, 66.653175f, 5030.846191f)
+#define TSTART_D_CAM_TARGET					D3DXVECTOR3( 2865.921631f, 67.071465f, 5030.940430f)
+
+#define TSTART_C_CAM_POSITION				D3DXVECTOR3( 5367.124512f, 95.627701f, 4657.712402f)
+#define TSTART_C_CAM_TARGET					D3DXVECTOR3( 5366.884277f, 96.010452f, 4658.824219f)
+
+#define TSTART_D_CHAR_DIR					((WORD) 450)
+#define TSTART_C_CHAR_DIR					((WORD) 865)
+
+#define TSTART_CAM_PITCH					((FLOAT) 200.0f)
+#define TSTART_CAM_YAW						((FLOAT) 225.0f)
+#define TSTART_CAM_DIST						((FLOAT) 7.5f)
+
+#define TSTART_D_PORTAL_ID					((WORD) 15001)
+#define TSTART_C_PORTAL_ID					((WORD) 15002)
+
+#define TSIEGE_D_PORTAL_ID					((WORD) 1002)
+#define TSIEGE_C_PORTAL_ID					((WORD) 1102)
+
+#define TSCENE_OUTLINE_COLOR				((DWORD) 0x90C0C0B0)
+#define TSCENE_TEXT_COLOR					((DWORD) 0xF0101010)
+
+#define TTUTORIAL_EXIT_QUEST_ID				((DWORD) 7256)
+#define TTUTORIAL_CAM_PITCH					((WORD) 1782)
+#define TTUTORIAL_CAM_DIR					((WORD) 1664)
+#define TTUTORIAL_CHAR_DIR					((WORD) 1690)
+
+#define TTOURNAMENT_LOUNGE_ID				((WORD) 500)
+#define TTOURNAMENT_STADIUM_1				((WORD) 501)
+#define TTOURNAMENT_STADIUM_32				((WORD) 532)
+
+#define TTOURNAMENT_TEAM_NONE				((BYTE) -1)
+#define TOURNAMENT_ARENA_COUNT				4
+
+#define TMAX_CHARLEVEL						90
+#define MANTLE_FINAL_SIZE					256
+
+#define TITEM_INDEX_WRAP_SKIN				1488
+#define TITEM_INDEX_GRADE_SKIN				1500
+#define TITEM_INDEX_MAGIC_SKIN				1525
+#define TITEM_INDEX_RARE_SKIN				1526
+
+#define ADJACENCY_COUNT						16
+
+#define COLOR_CASTLE_HESED					D3DCOLOR_ARGB( 255, 50, 100, 200 )
+#define COLOR_CASTLE_ARDRI					D3DCOLOR_ARGB( 255, 100, 50, 200 )
+#define COLOR_CASTLE_TYCON					D3DCOLOR_ARGB( 255, 231, 199, 0 )
+#define COLOR_CASTLE_GEHBRA					D3DCOLOR_ARGB( 255, 200, 100, 100 )
+#define COLOR_CASTLE_NONE					D3DCOLOR_ARGB( 255, 210, 210, 210 )
+
+#define COLOR_TACTICS						D3DCOLOR_ARGB( 255, 100, 100, 100 )
+
+#define TSTATCOLOR_WHITE					D3DCOLOR_ARGB(255, 210, 210, 210)
+#define TSTATCOLOR_BLUE						D3DCOLOR_ARGB(255, 128, 204, 253)
+
+#define TLIMITATION_TIME					(600000)
+
+#define TNATION_GERMANY										(0xF001)
+#define TNATION_ENGLISH										(0xF002)
+#define TNATION_JAPAN										(0xF003)
+#define TNATION_POLAND										(0xF004)
+#define TNATION_FRANCE										(0xF005)
+#define TNATION_TAIWAN										(0xF006)
+#define TNATION_CZECH										(0xF007)
+#define TNATION_ITALY										(0xF008)
+#define TNATION_SPAIN										(0xF009)
+#define TNATION_UNITEDKINGDOM								(0xF00A)
+#define TNATION_GREECE										(0xF00B)
+#define TNATION_RUSSIA										(0xF00C)
+#define TNATION_ROMANIA										(0xF00D)
+#define TNATION_UNITEDSTATE									(0xF00E)
+#define TNATION_HUNGARY										(0xF00F)
+#define TNATION_TURKEY										(0xF010)
+#define TNATION_PORTUGAL									(0xF011)
+#define TNATION_KOREA										(0x0000)
+
+#define GL_DISABLEUI_FRAME_QUEST_IN_FIRST					(0xA001)
+#define GL_MOUSEWHEEL_IN_FIRST								(0xA002)
+#define GL_QUEST_ADD_IN_FIRST								(0xA003)
+#define GL_QUEST_ACCEPT_IN_FIRST							(0xA004)
+#define GL_QUEST_GIVEUP_IN_FIRST							(0xA005)
+#define GL_QUEST_COMPLETE_IN_FIRST							(0xA006)
+
+#define CASHSHOPDLGMODE_NORMAL								0
+#define CASHSHOPDLGMODE_PERIOD_EXTENSION					1
+
+#define CASHSHOPITEM_KIND_NONE								0
+#define CASHSHOPITEM_KIND_NEW								1
+#define CASHSHOPITEM_KIND_BEST								2
+
+#define NOTIFYMAIL_TICK					1300
+
+#define CASHCABINET_ID					7629
+#define CASHCABINET_MAX_ITEM_ON_PR		30		// PR: Period Rental
+
+#define TDEF_SKILL_NPC					((WORD) 22047)
+#define TID_HIDING_SKILL				221
+
+#define GM_START_4STORY					(0x00000000)
+#define TREGISTRY_KEY					_T("Keys")
+
+#define TBASE_SCREEN_X					1024
+#define TBASE_SCREEN_Y					768
+
+#define TCMDTARGET_OBJ					ID_RSCS_TARGET
+#define TCMDTARGET_CLK					ID_CLK_DEFAULT
+#define TCMDTARGET_CL					ID_CL_DEFAULT
+#define TCMDTARGET_CMDMESH				ID_MESH_DEFAULT
+#define TCMDTARGET_MESH					ID_MESH_DEFAULT
+#define TCMDTARGET_ACT					ID_ACT_DEFAULT
+#define TCMDTARGET_ANI					ID_ANI_DEFAULT
+
+#define TCMDTARGET_SIZE_X				((FLOAT) 1.0f)
+#define TCMDTARGET_SIZE_Y				((FLOAT) 1.0f)
+#define TCMDTARGET_SIZE_Z				((FLOAT) 1.0f)
+
+#define TCMDDIR_OBJ						ID_RSCS_ARROW
+#define TCMDDIR_CLK						ID_CLK_DEFAULT
+#define TCMDDIR_CL						ID_CL_DEFAULT
+#define TCMDDIR_MESH					ID_MESH_DEFAULT
+#define TCMDDIR_ACT						ID_ACT_DEFAULT
+#define TCMDDIR_ANI						ID_ANI_DEFAULT
+
+#define TCMDDIR_SIZE_X					((FLOAT) 1.0f)
+#define TCMDDIR_SIZE_Y					((FLOAT) 1.0f)
+#define TCMDDIR_SIZE_Z					((FLOAT) 1.0f)
+#define TCMDDIR_SCALE					((FLOAT) 0.2f)
+
+#define TRSCSOBJ_RANGE					((FLOAT) 100000.0f)
+#define TCMDDIR_POS_Z					((FLOAT) -5.0f)
+#define TCMDDIR_POS_Y					((FLOAT) 3.8f)
+#define TCMDDIR_POS_X					((FLOAT) 0.0f)
+
+#define TCLIENT_ZERO					((FLOAT) 0.0000001f)
+#define THEIGHT_ZERO					((FLOAT) 0.01f)
+#define TCOLL_EPSILON					((FLOAT) 0.1f)
+
+#define TNETCAM_ZOOMSPEED				((FLOAT) 0.001f)
+#define TNETCAM_ROTSPEED				((BYTE) 1)
+#define TNETCAM_PITCH					((WORD) 46)
+
+#define TNETCAM_POS_X					((FLOAT) -19.19f)
+#define TNETCAM_POS_Y					((FLOAT) 3.18f)
+#define TNETCAM_POS_Z					((FLOAT) -31.57f)
+
+#define TNETCAM_ROT_Y					((FLOAT) 37.41f)
+#define TNETCAM_ROT_X					((FLOAT) 25.13f)
+
+#define TNETCAM_DEFNEAR					((FLOAT) 5.0f)
+#define TNETCAM_DEFFAR					((FLOAT) 500.0f)
+
+#define TNETCAM_NEAR					((FLOAT) 0.01f)
+#define TNETCAM_FAR						((FLOAT) 120.0f)
+#define TNETCAM_FOV						((FLOAT) 46.5f)
+#define TNETCAM_CULL					((FLOAT) 4.7f)
+
+#define TDROPDAMAGE_HEIGHT				((FLOAT) 20.0f)
+#define TTALKLINE_HEIGHT				((FLOAT) 16.0f)
+#define TMARKER_HEIGHT					((FLOAT) 1.1f)
+#define TTEXT_HEIGHT					((FLOAT) 5.0f)
+#define TCAM_SIZE						((FLOAT) 1.4f)
+#define TRSCSMOVE_BOUND					((FLOAT) 2.0f)
+#define TRSCSPICK_RANGE					((FLOAT) 3.0f)
+#define TWATER_ESCAPE					((FLOAT) 0.2f)
+#define TCAM_MARGINE					((FLOAT) 0.2f)
+
+#define TUNITLERP_LENGTH				((FLOAT) 64.0f)
+#define TPOS_SCALE						((FLOAT) 0.078f)
+#define TLIGHT_SCALE					((FLOAT) 0.64f)
+#define TREVIVAL_DIST					((FLOAT) 16.0f)
+#define TGHOSTCAM_DIST					((FLOAT) 32.0f)
+#define TGHOST_DIST						((FLOAT) 24.0f)
+#define TALPHA_DIST						((FLOAT) 3.0f)
+#define POPUP_DIST						((FLOAT) 3.0f)
+#define TSWITCH_DIST					((FLOAT) 4.0f)
+#define TARGETUI_DIST					((FLOAT) 5.0f)
+#define TARGET_DIST						((FLOAT) 48.0f)
+#define TPICK_DIST						((FLOAT) 30.0f)
+#define TSTANDHIDE_SIGHT_DIST			((FLOAT) 8.0f)
+#define TCAMFIX_DIST					((FLOAT) 5.0f)
+#define FIX_DIST						((FLOAT) 0.5f)
+#define TTRANS_HEIGHT					((FLOAT) 2.0f)
+#define TTRANS_BOUND					((FLOAT) 0.8f)
+#define TSKILL_HEIGHT					((FLOAT) 6.0f)
+#define TPATH_HEIGHT					((FLOAT) 0.3f)
+#define TPATH_RADIUS					((FLOAT) 1.2f)
+#define TPATH_LONG						((FLOAT) 5.0f)
+#define TENVSND_RANGE					((FLOAT) 5.0f)
+#define GODBALL_DIST					((FLOAT) 2.0f)
+#define GODTOWER_DIST					((FLOAT) 3.0f)
+
+#define TPARASHUTE_SPEED				((FLOAT) 1.5f)
+#define TMINFALL_SPEED					((FLOAT) 5.7f)
+
+#define TSELECT_WEIGHT_ALLI				((FLOAT) 1.0f)
+#define TSELECT_WEIGHT_NPC				((FLOAT) 2.0f)
+
+#define TCAMOUT_SPEED					((FLOAT) 0.05f)
+#define TPUSH_SPEED						((FLOAT) 6.0f)
+#define TPUSH_BUST						((FLOAT) 7.0f)
+
+#define TMAX_VITAL						((BYTE) 100)
+#define MAX_DRAGSLOT					((BYTE) 20)
+#define MAX_INVEN						((BYTE) 7)
+#define MAX_SUBINVEN					((BYTE) 5)
+
+#define QTREEBTN_COUNT					((BYTE) 5)
+#define MAX_PARTY						((BYTE) 6)
+#define MAX_SLOT						((BYTE) 6)
+#define MAX_CON							((BYTE) 9)
+
+#define TPATHFLAG_NULL					((DWORD) 0x00000000)
+#define TSELECT_COLOR					((BYTE) 0x80)
+#define TNETMAP_ID						((WORD) 0xFFFF)
+
+#define TGRADE_COLOR_0					(0)
+#define TGRADE_COLOR_1					D3DCOLOR_ARGB(255, 0,61,40)
+#define TGRADE_COLOR_2					D3DCOLOR_ARGB(255, 61,0,0)
+#define TGRADE_COLOR_3					D3DCOLOR_ARGB(255, 6,0, 61)
+#define TGRADE_COLOR_4					D3DCOLOR_ARGB(255, 60,61,0)
+
+#define TFLASHCOLOR_WHITE				D3DCOLOR_ARGB(0, 255,255,255)
+#define TFLASHCOLOR_BLACK				D3DCOLOR_ARGB(0, 0,0,0)
+
+#define TCOLOR_TXT_NORMAL				D3DCOLOR_ARGB(255, 200,200,200)
+#define TCOLOR_TXT_WARN					D3DCOLOR_ARGB(255, 242,108, 78)
+
+#define TCOLOR_LIGHT					D3DCOLOR_ARGB(255, 170,221, 85)
+#define TCOLOR_MIDDLE					D3DCOLOR_ARGB(255, 255,232, 76)
+#define TCOLOR_HEAVY					D3DCOLOR_ARGB(255, 242,108, 78)
+
+#define TCOLOR_SENDER_ME				D3DCOLOR_ARGB(255, 219,214,202)
+#define TCOLOR_SENDER					D3DCOLOR_ARGB(255, 244,195,156)
+
+#define TCOLOR_MSG_CHATLIST				(0xFFEEEEEE)
+#define TCOLOR_SERVER_HEADER			(0xFF63A4FC)
+
+#define TCOLOR_LEVELUP					D3DCOLOR_ARGB(255, 128,255,128)
+#define TCOLOR_ERROR					D3DCOLOR_ARGB(255, 249,173,129)
+#define TCOLOR_INFO						D3DCOLOR_ARGB(255, 209,189,135)
+#define TCOLOR_EXP						D3DCOLOR_ARGB(255, 255,177, 42)
+#define TCOLOR_MONEY					D3DCOLOR_ARGB(255, 209,189,135)
+#define TCOLOR_DEAD						D3DCOLOR_ARGB(255, 171,160,153)
+#define TCOLOR_ATTACK					D3DCOLOR_ARGB(255, 255,255,128)
+#define TCOLOR_DEFEND					D3DCOLOR_ARGB(255, 242,108, 78)
+#define TCOLOR_MPATTACK					D3DCOLOR_ARGB(255, 108, 78,242)
+#define TCOLOR_SKILL_ATTACK				D3DCOLOR_ARGB(255, 255,232, 76)
+#define TCOLOR_SKILL_DEFEND				D3DCOLOR_ARGB(255, 252, 84, 41)
+
+#define TCOLOR_LIGHTQUEST				TCOLOR_LIGHT
+#define TCOLOR_MIDDLEQUEST				TCOLOR_MIDDLE
+#define TCOLOR_HAVYQUEST				TCOLOR_HEAVY
+#define TCOLOR_QUESTCLASS				(0xFFFDFDFD)
+
+#define TCOLOR_QTERM_TITLE				(0xFFFFFF9C)
+#define TCOLOR_QTERM_TEXT				(0xFFBAB3AA)
+
+#define TCOLOR_QUEST_BLUE				D3DCOLOR_ARGB(255, 108, 204, 253)
+
+#define TCOLOR_GUILD_TITLE				(0xFFBAB3AA)
+#define TCOLOR_GUILD_STRESS				(0xFFFAD202)
+
+#define TCOLOR_ALLIANCE_NORMAL			D3DCOLOR_ARGB(255, 219,214,202)
+#define TCOLOR_ALLIANCE_PARTY			D3DCOLOR_ARGB(255,  68,169,255)
+#define TCOLOR_ALLIANCE_PET				D3DCOLOR_ARGB(255,  87,195,223)
+#define TCOLOR_ALLIANCE_NPC				D3DCOLOR_ARGB(255,  68,169,255)
+#define TCOLOR_ALLIANCE_FORCE			D3DCOLOR_ARGB(255, 208,206, 20)
+#define TCOLOR_ALLIANCE_OTHERPARTY		D3DCOLOR_ARGB(255, 168,207,234)
+#define TCOLOR_ENEMY_LIGHT				TCOLOR_LIGHT
+#define TCOLOR_ENEMY_MIDDLE				TCOLOR_MIDDLE
+#define TCOLOR_ENEMY_HEAVY				TCOLOR_HEAVY
+#define TCOLOR_ENEMY_NOREWARD			D3DCOLOR_ARGB(255, 171,160,153)
+#define TCOLOR_NEUTRALITY				D3DCOLOR_ARGB(255,  68,169,255)
+
+#define TCOLOR_SQUAD_NORMAL				D3DCOLOR_ARGB(255, 200,200,200)
+#define TCOLOR_SQUAD_COMMANDER			D3DCOLOR_ARGB(255, 255,150,150)
+
+#define TCOLOR_CHAT_WHISPER				D3DCOLOR_ARGB( 255, 244, 195, 156);
+#define TCOLOR_CHAT_NEAR				D3DCOLOR_ARGB( 255, 219, 214, 202);
+#define TCOLOR_CHAT_MAP					D3DCOLOR_ARGB( 255, 246, 142,  85);
+#define TCOLOR_CHAT_WORLD				D3DCOLOR_ARGB( 255,  16, 240,  32);
+#define TCOLOR_CHAT_PARTY				D3DCOLOR_ARGB( 255,  87, 195, 223);
+#define TCOLOR_CHAT_GUILD				D3DCOLOR_ARGB( 255, 170, 221,  85);
+#define TCOLOR_CHAT_TACTICS				D3DCOLOR_ARGB( 255, 0, 160,  0);
+#define TCOLOR_CHAT_FORCE				D3DCOLOR_ARGB( 255, 208, 206,  20);
+#define TCOLOR_CHAT_OPERATOR			D3DCOLOR_ARGB( 255, 150, 240, 170);
+#define TCOLOR_CHAT_COMMANDER			D3DCOLOR_ARGB( 255, 240, 170, 240);
+
+#define TCOLOR_TXT_YELLOW				D3DCOLOR_ARGB( 255, 230, 230, 153);
+
+#define TCOLOR_GUILDCMD_CMD				TCOLOR_LIGHT
+#define TCOLOR_GUILDCMD_DESC			TCOLOR_TXT_NORMAL
+
+#define TCOLOR_TOURNAMENT_RED			D3DCOLOR_ARGB(255, 254, 208, 0)
+#define TCOLOR_TOURNAMENT_BLUE			D3DCOLOR_ARGB(255, 128, 204, 253)
+
+#define TLOADING_TEXT_CLR				(0xFFFFFFFF)
+#define TLOADING_IMAGE_COUNT			((BYTE) 1)
+#define TLOADING_GAUGE_X				(0)
+#define TLOADING_GAUGE_Y				(745)
+
+#define TBGM_VOLUME						(5000)
+#define TBGM_TIMER						(5000)
+#define TBGM_RATE						(3)
+
+#define TRUNE_LENGTH					(8)
+#define TLUNA_LENGTH					(3)
+#define TCRON_LENGTH					(3)
+
+#define TLEVEL_LENGTH                   (3)
+
+#define TLOWLEVEL_COUNT					(50)
+#define TMEDLEVEL_COUNT					(25)
+
+
+#define TDYNAMICHELP_TICK				(10000)
+#define TEXCEPTSKILL_TICK				(1000)
+
+#define TCMDDIR_SCALE_TICK				(300)
+#define TDETAIL_INFO_TICK				(500)
+#define TDETAIL_NAME_TICK				(500)
+#define QUESTUI_FADE_TICK				(200)
+#define TBOX_CHARGE_TICK				(2500)
+#define TBREATH_TICK					(30000)
+#define TMCHECK_TICK					(500)
+#define TBREATH_TIMER					(1000)
+#define TBREATH_FACTOR					(3)
+#define TBREATH_DAMAGE					(5)
+#define TSTR_MAX						(1024)
+#define ALPHA_MAX						(255)
+#define ALPHA_MIN						(0)
+#define TSCREENHEIGHT_OFFSET			(100)
+
+#define TLEVELUP_SFX					(801)
+#define THPITEM_SFX						(407)
+#define TMPITEM_SFX						(408)
+
+#define TNUMPANNEL_HEIGHT				((FLOAT) 128.0f)
+#define TNUMPANNEL_WIDTH				((FLOAT) 256.0f)
+#define TNPCICON_SIZE					((FLOAT) 16.0f)
+#define TMOUNTTEXT_SCALE				((FLOAT) 0.7f)
+
+#define TNUMBER_SPEED_X					((FLOAT) 60.0f)
+#define TNUMBER_SPEED_Y					((FLOAT) 65.0f)
+#define TNUMBER_SCALE					((FLOAT) 0.35f)
+
+#define TNUMBER_CRITICAL_SCALE			((FLOAT) 1.3f)
+#define TNUMBER_SPEED_RATE				((FLOAT) 1.4f)
+
+#define THITR_SCALE						((FLOAT) 2.0f)
+#define THIT_SCALE						((FLOAT) 1.2f)
+#define TSKY_SCALE						((FLOAT) 0.9f)
+
+#define TNUMBERPOS_COUNT				(5)
+#define TMINUS_SIGN_INDEX				(10)
+#define TTICK_INTERVAL					(200)
+#define TNUMBER_HEIGHT					(64)
+#define TNUMBER_TICK					(1000)
+#define TFLASH_TICK						(500)
+#define TGHOST_TICK						(2000)
+#define TDOT_TICK						(1000)
+
+#define TSLIDE_DIST						((FLOAT) 2.0f)
+#define TSLIDE_TICK						(220)
+
+#define TATKQUAKE_DIST					((FLOAT) 0.15f)
+#define TDEFQUAKE_DIST					((FLOAT) 0.1f)
+#define TQUAKE_TICK						(150)
+
+#define MAKE_TDAMAGE( dwDamage, bType)	DWORD(((DWORD(bType) << 24) & 0xFF000000) | (DWORD(dwDamage) & 0x00FFFFFF))
+#define GET_TDAMAGE_TYPE(dwDamage)		BYTE((DWORD(dwDamage) & 0xFF000000) >> 24)
+#define GET_TDAMAGE(dwDamage)			DWORD(DWORD(dwDamage) & 0x00FFFFFF)
+
+#define TCRITICAL_NUMBER				(0xFFFFFFFF)
+#define TMISS_NUMBER					(0xFFFFFFFE)
+#define TBLOCK_NUMBER					(0xFFFFFFFD)
+#define TDAMAGE_TICK					(300)
+
+#define TMAXSHADOW_TICK					(200)
+#define TMAXALPHA_TICK					(800)
+#define TMAXPASS_TICK					(1000)
+#define TMAXSKY_TICK					(1000)
+
+#define TCHAT_DWORD_SIZE				(8)
+#define TCHAT_CHAR_MAX					(512)
+#define TCHAT_TIMER						(15000)
+#define TTALK_TIMER						(10000)
+#define TNOTIFYCHAT_TIME				(20000)
+
+#define TRELOGIN_DELAY					((DWORD) 3000)
+#define TSCRCAPTURE_DELAY				((DWORD) 500)
+#define CLICK_DELAY						(180)
+#define SYNC_TICK						(8000)
+#define TPOS_TICK						(200)
+#define PATH_TICK						(500)
+#define SYNC_DIST						(8.0f)
+
+#define TRUNE_DIVIDER					(1000000)
+#define TLUNA_DIVIDER					(1000)
+
+#define TPOPUPMAX_COUNT					(20)
+#define TRSCSHOTKEY_COUNT				(7)
+#define TSKILLSLOT_COUNT				(14)
+#define TSHOP_COUNT						(5)
+#define TINVENSLOT_COUNT				(20)
+
+#define TINFOTEXT_MARGINE				(8)
+#define TCHAT_MARGINE					(10)
+#define TCHAT_SIZE						(50)
+#define TMSG_MARGINE					(3)
+
+#define FRONT_DIR_RANGE					(225)
+#define FOLLOW_RANGE					(100)
+#define DIR_RANGE						(50)
+
+#define TSHOTPIVOT_COUNT				(2)
+
+#define TREPLACE_COUNT					(7)
+#define TCLEAR_COUNT					(5)
+#define TWEAPON_COUNT					(3)
+
+#define DEF_INDEXCNT					(36000)
+#define DEF_LODBOUND					(58)
+#define DEF_DIFFUSECNT					(10)
+#define DEF_MAXLEVEL					(1)
+#define DEF_MAXLENGTH					(4)
+
+#define TCAM_LENGTH						((FLOAT) 110.0f)
+#define TSWVP_DEF_LODBOUND				(24)
+
+#define TTOURNAMENT_STADIUM_LODBOUND	(87)
+#define TTOURNAMENT_STADIUM_MAXLENGTH	(2)
+
+#define TMINIMAPMARK_DIST				((FLOAT) 0.40f)
+#define TMINIMAPTEX_SIZE				(192)
+#define TMINIMAPOBJTEX_SIZE				(16)
+#define TMONINVEN_ID					(10)
+#define TMAINTAIN_COUNT					(6)
+
+#define TWORLDMAP_SQUAD_CHIEF			(1)
+#define TWORLDMAP_SQUAD_UNIT			(2)
+#define TWORLDMAP_HOST_CHAR				(0)
+#define TWORLDMAP_SIZE					(980)
+
+#define TOBJSHADOW_BIAS					((FLOAT) 0.0000002f)
+#define TOBJSELECT_BIAS					((FLOAT) 0.0000001f)
+
+#define TSLASH_STEP						(30)
+#define TSLASH_INTER					(5)
+
+#define TMAXRANGE_RATIO					((FLOAT) 0.9f)
+#define TDEF_SPEED						((FLOAT) 0.9f)
+#define TMON_SPEED						((FLOAT) 0.99f)
+
+#define TOBJSHADOW_SCALE				((FLOAT) 1.8f)
+#define TOBJSELECT_SCALE				((FLOAT) 2.8f)
+
+#define TPITCH_MAX						(1575)
+#define TPITCH_MIN						(300)
+
+#define OM_TSUBACTENDING				(0x10000002)
+#define OM_TSUBACTENDED					(0x10000003)
+
+#define TOBJCELL_LENGTH					((FLOAT) 8.0f)
+#define TOBJCELL_WIDTH					(128)
+#define TOBJCELL_COUNT					(16384)
+
+#define TDRAWCELL_COUNT					(361)
+#define TDRAWCELL_WIDTH					(19)
+
+#define TWATERSTEP_SND					(10009)
+#define TDEFSTEP_SND					(10000)
+
+#define TMIN_RANGEOPTION				((FLOAT) 0.7f)
+#define TMAX_RANGEOPTION				((FLOAT) 1.0f)
+
+#define TARGET_BOUND					((FLOAT) 18.0f)
+#define TROAM_BOUND						((FLOAT) 0.3f)
+
+#define TLOWCULL_BOUND					((FLOAT) 1.0f)
+#define TMIDCULL_BOUND					((FLOAT) 2.0f)
+#define THICULL_BOUND					((FLOAT) 4.0f)
+
+#define TSELCULL_FACTOR					((FLOAT) 0.47f)
+#define TLOWCULL_FACTOR					((FLOAT) 0.18f)
+#define TMIDCULL_FACTOR					((FLOAT) 0.29f)
+#define THICULL_FACTOR					((FLOAT) 0.41f)
+#define TNOCULL_FACTOR					((FLOAT) 0.59f)
+
+#define TARGETKIND_NONE					((BYTE) 0)
+#define TARGETKIND_TARGET				((BYTE) 1)
+#define TARGETKIND_BOUND				((BYTE) 2)
+#define TQLEVEL_BOUND					((BYTE) 3)
+#define TLEVEL_BOUND					((BYTE) 10)
+
+#define TRECALL_STAND_BOUND				((FLOAT) 3.0f)
+#define TRECALL_WALK_BOUND				((FLOAT) 5.0f)
+#define TRECALL_MAX						((BYTE) 5)
+
+#define TCMDALARM_SCALE					((FLOAT) 0.5f)
+#define TCMDALARM_TICK					500
+
+#define TCMDARROW_VELOCITY				((FLOAT) 0.04f)
+#define TCMDARROW_HEIGHT				((FLOAT) 0.5f)
+#define TCMDARROW_GRAVITY				((FLOAT) 576.0f)
+
+#define TFATIGUETEXT_COLOR				((DWORD) 0xFF51CEAE)
+#define TTEXTSHADOW_COLOR				((DWORD) 0xFF000000)
+#define TBREATHTEXT_COLOR				((DWORD) 0xFF5561DA)
+#define TCHARGETEXT_COLOR				((DWORD) 0xFFE94D2E)
+#define TNAMETEXT_COLOR					((DWORD) 0xFFDFD2CB)
+#define THPTEXT_COLOR					((DWORD) 0xFFAADD55)
+#define TTITLEMSG_COLOR					D3DCOLOR_ARGB(255,255,232, 76)
+#define TMPTEXT_COLOR					D3DCOLOR_ARGB(255, 68,169,255)
+#define TTIMETEXT_COLOR					D3DCOLOR_ARGB(255,219,214,202)
+#define TMONEYTEXT_COLOR				D3DCOLOR_ARGB(255,219,214,202)
+#define TNORMAL_COLOR					D3DCOLOR_ARGB(255,219,214,202)
+
+#define TSQUADARROW_COLOR				((DWORD) 0xFF10C010)
+#define TCMDARROW_COLOR					((DWORD) 0xFFC0A010)
+#define TCMDARROW_WIDTH					((FLOAT) 1.5f)
+#define TCMDARROW_BOUND					((FLOAT) 0.5f)
+
+#define TMINIMAP_SCALE_FACTOR			((FLOAT) 1.2f)
+#define TMINIMAP_SCALE_COUNT			((FLOAT) 5.0f)
+#define TMINIMAP_INIT_SCALE				((FLOAT) 7.0f)
+#define TWORLDMAP_MINSCALE				((FLOAT) 1.0f)
+
+#define TMONSKILL_DEFAULT				((BYTE) 0)
+#define TMONSKILL_LEVEL					((BYTE) 1)
+
+#define TSKILL_DEFAULT_TYPE				((BYTE) 0)
+
+#define TMAINCHARMENU_COUNT				((BYTE) 9)
+#define TSQUADMENU_COUNT				((BYTE) 3)
+#define TFARPARTYMENU_COUNT				((BYTE) 5)
+#define TMAINTAINMENU_COUNT				((BYTE) 2)
+
+#define TNETFOG_MAPID_D_H				((WORD) 0)
+#define TNETFOG_MAPID_D_B				((WORD) 0)
+#define TNETFOG_MAPID_D_N				((WORD) 0)
+#define TNETFOG_MAPID_C_H				((WORD) 0)
+#define TNETFOG_MAPID_C_B				((WORD) 0)
+#define TNETFOG_MAPID_C_N				((WORD) 0)
+#define TNETFOG_MAPID_B_H				((WORD) 0)
+#define TNETFOG_MAPID_B_B				((WORD) 0)
+#define TNETFOG_MAPID_B_N				((WORD) 0)
+
+#define TNETFOG_UNITX_D_H				((BYTE) 2)
+#define TNETFOG_UNITY_D_H				((BYTE) 4)
+#define TNETFOG_UNITX_D_B				((BYTE) 2)
+#define TNETFOG_UNITY_D_B				((BYTE) 4)
+#define TNETFOG_UNITX_D_N				((BYTE) 2)
+#define TNETFOG_UNITY_D_N				((BYTE) 4)
+#define TNETFOG_UNITX_C_H				((BYTE) 2)
+#define TNETFOG_UNITY_C_H				((BYTE) 4)
+#define TNETFOG_UNITX_C_B				((BYTE) 2)
+#define TNETFOG_UNITY_C_B				((BYTE) 4)
+#define TNETFOG_UNITX_C_N				((BYTE) 2)
+#define TNETFOG_UNITY_C_N				((BYTE) 4)
+#define TNETFOG_UNITX_B_H				((BYTE) 2)
+#define TNETFOG_UNITY_B_H				((BYTE) 4)
+#define TNETFOG_UNITX_B_B				((BYTE) 2)
+#define TNETFOG_UNITY_B_B				((BYTE) 4)
+#define TNETFOG_UNITX_B_N				((BYTE) 2)
+#define TNETFOG_UNITY_B_N				((BYTE) 4)
+
+#define TCHECK_WEAPON( x, y)			(((y) ? (x) & (1 << ((y) - 1)) : 0) ? TRUE : FALSE)
+#define TCHECK_CLASS( x, y)				((x) & (1 << (y)) ? TRUE : FALSE)
+
+#define T_INVALID						(-1)
+
+#define TCHAT_FLAG_WHISPER				((DWORD)(1))
+#define TCHAT_FLAG_NEAR					((DWORD)(1 << 1))
+#define TCHAT_FLAG_MAP					((DWORD)(1 << 2))
+#define TCHAT_FLAG_WORLD				((DWORD)(1 << 3))
+#define TCHAT_FLAG_PARTY				((DWORD)(1 << 4))
+#define TCHAT_FLAG_GUILD				((DWORD)(1 << 5))
+#define TCHAT_FLAG_TACTICS				((DWORD)(1 << 8))
+#define TCHAT_FLAG_GUILD_TACTICS		( TCHAT_FLAG_GUILD | TCHAT_FLAG_TACTICS )
+#define TCHAT_FLAG_INFO					((DWORD)(1 << 6))
+#define TCHAT_FLAG_FORCE				((DWORD)(1 << 7))
+#define TCHAT_FLAG_SHOW					((DWORD)(1 << 9))
+#define TCHAT_FLAG_ALL_CHAT				((DWORD)(TCHAT_FLAG_WHISPER|TCHAT_FLAG_NEAR|TCHAT_FLAG_MAP|TCHAT_FLAG_PARTY|TCHAT_FLAG_GUILD_TACTICS|TCHAT_FLAG_FORCE))
+#define TCHAT_FLAG_ALL_CHAT_WITH_INFO	((DWORD)(TCHAT_FLAG_ALL_CHAT | TCHAT_FLAG_INFO))
+#define TCHAT_FLAG_COUNT				8
+
+#define TCHAT_DETAIL_INFO_MARGINE		8
+#define TDRAG_START_OFFSET2				64
+#define TGUILD_ESTABLISH_LEVEL			20
+#define TMAIL_ITEM_MAX					3
+
+#define TITEM_UP_DELAY					8000
+#define TSOULMATE_REG_DELAY				5000
+#define TDURATIONREP_PERIOD				2000
+#define TGAMBLE_PERIOD					2000
+#define TREFINE_PERIOD					5000
+#define TCRAFT_PERIOD					5000
+
+#define TPORTAL_IMAGEID					1
+
+#define TPARTYITEMLOTTERY_INIT_X		20
+#define TPARTYITEMLOTTERY_INIT_Y		50
+#define TPARTYITEMLOTTERY_SPACE_X		5
+#define TPARTYITEMLOTTERY_SPACE_Y		5
+#define TPARTYITEMLOTTERY_COUNT_Y		3
+
+#define TLEVEL_CHANGE_MIN_DELAY			1000
+#define TCHANGE_CHANNEL_DELAY			8000
+#define TSELECT_CHARACTER_DELAY			8000
+#define TSELECT_EXITGAME_DELAY			8000
+#define TKICKOUTMAP_DELAY				8000
+#define TNOTIFY_PERIOD					1000
+
+#define TREG_CUSTOMUI					_T("CustomUI")
+#define TREG_CUSTOM_UI_RESET_IDENTITY	((DWORD)(0x0004))
+#define TREG_CUSTOMUI_RESET				_T("Reset")
+#define TREG_CUSTOMUI_MY_GAUGE			_T("MyGauge")
+#define TREG_CUSTOMUI_RECALL_GAUGE		_T("RecallGauge")
+#define TREG_CUSTOMUI_TARGET_GAUGE		_T("TargetGauge")
+#define TREG_CUSTOMUI_PARTY_GAUGE		_T("PartyGauge")
+#define TREG_CUSTOMUI_HOTKEY			_T("HotKeyDef")
+#define TREG_CUSTOMUI_HOTKEY_SUB1		_T("HotKeySub1")
+#define TREG_CUSTOMUI_RECALLAI			_T("RecallAi")
+#define TREG_CUSTOMUI_NOTIFY			_T("Notify")
+#define TREG_CUSTOMUI_QUEST				_T("Quest")
+#define TREG_CUSTOMUI_DEFINVEN			_T("DefInven")
+#define TREG_CUSTOMUI_SUBINVEN			_T("SubInven%d")
+#define TREG_CUSTOMUI_POS_X				_T("X")
+#define TREG_CUSTOMUI_POS_Y				_T("Y")
+#define TREG_CUSTOMUI_BASIS				_T("BASIS")
+
+#define TLOADMSG_POS_X					(10)
+#define TLOADMSG_POS_Y					(620)
+#define TLOADMSG_BASE_WIDTH				(1024)
+#define TLOADMSG_BASE_HEIGHT			(768)
+
+#define TMAX_CABINET_CNT				(3)
+#define TMAX_SMS_CHARACTER				(80)
+
+#define TMAXGUILDMARK_MAKETICK			((DWORD) 10)
+#define TMAXGUILDMARK_BASETICK			((DWORD) 2)
+#define TGUILDMARK_TEXEXTCNT			((DWORD) 3)
+#define TGUILDMARK_TEXSIZE				((FLOAT) 32.0f)
+
+#define TGMARK(mark, back)				((DWORD)(((((mark)+1)&0xFF)<<16) | (((back)+1)&0xFF)))
+#define TGMCOLOR(mark, back1, back2)	((DWORD)((((mark)&0xFF)<<16) | (((back1)&0xFF)<<8) | ((back2)&0xFF)))
+
+#define TGMARK_MARK(l)					((BYTE)(((l) >> 16) & 0xFF) - 1)		
+#define TGMARK_BACK(l)					((BYTE)((l) & 0xFF) - 1)
+
+#define TGMCOLOR_MARK(val)				((BYTE)(((val)>>16)&0xFF))
+#define TGMCOLOR_BACK1(val)				((BYTE)(((val)>>8)&0xFF))
+#define TGMCOLOR_BACK2(val)				((BYTE)((val)&0xFF))
+
+#define MIN_EXP_DONATIONRATE			(0.01f)
+#define MAX_EXP_DONATIONRATE			(0.1f)
+
+#define MIN_MONEY_DONATION				(1000)
+#define MAX_MONEY_DONATION				(1000000)
+
+#define TMAXGUILD_MARK_COLOR			(38)
+
+#define	TMAX_GUILDMSG_TITLE				(50)
+#define TMAX_FRIENDGROUP_NAME			(20)
+
+#define MAX_LOADING_PCROOM_TEXT			(6)
+
+#define TWATERGRID_SIZE					(8)
+#define TGRID_SIZE						(1)
+
+#define TMAGICLEVEL_UNIT				(10)
+#define TMAGICLEVEL_MAX					(9)
+
+#define TRUNAWAYPOINT_COUNT				(10)
+#define TRUNAWAYTIME_MIN				(1000)
+#define TRUNAWAYTIME_MAX				(3000)
+
+#define TATTRLEVELNAME_MAX				(13)
+#define TATTRLEVELNAME_UNIT				(10)
+#define TATTRLEVEL_SEPERATE				(34)
+#define TATTRLEVEL_LOWUNIT				(3)
+#define TATTRLEVEL_HIGHUNIT				(2)
+
+#define TMAX_HEIGHT_OFFSET				(3.0f)
+#define TMAX_RAND_POS					(10)
+
+#define TSTART_EVENT_NPCID_D			(20001)
+#define TSTART_EVENT_NPCID_C			(20058)
+#define TFIRST_CONNET_EVENT_TRY			(10)
+#define TFIRST_CONNET_EVENT_KEY			(2)
+
+#define TUNIT_BOUND						(32)
+
+#define TFLY_MAX						((FLOAT) 11.0f)
+#define TFLY_MIN						((FLOAT) 3.5f)
+
+#define TREWARDITEMCOUNT				2
+
+#define TBASISPOINT_LEFT_TOP			0
+#define TBASISPOINT_CENTER_TOP			1
+#define TBASISPOINT_RIGHT_TOP			2
+
+#define TBASISPOINT_LEFT_MIDDLE			3
+#define TBASISPOINT_CENTER_MIDDLE		4
+#define TBASISPOINT_RIGHT_MIDDLE		5
+
+#define TBASISPOINT_LEFT_BOTTOM			6
+#define TBASISPOINT_CENTER_BOTTOM		7
+#define TBASISPOINT_RIGHT_BOTTOM		8
+#define TBASISPOINT_COUNT				9
+
+#define TAUCTION_SLOT_COUNT				9
+#define TAUCTION_MAXPAGE_COUNT			5
+
+#define FAMERANKCOUNT					9
+#define TFAMERANK_DEF_SIZE				248
+
+#define TIMAGELIST_FACE_NULL			168
+#define TIMAGELIST_COUNTRY_NULL			3
+#define TIMAGELIST_CLASS_NULL			6

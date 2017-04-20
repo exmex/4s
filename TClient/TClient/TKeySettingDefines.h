@@ -1,0 +1,212 @@
+#pragma once
+
+typedef enum TKEY_SET
+{
+	TKEY_NONE = 0,
+	TKEY_FORWARD,
+	TKEY_BACK,
+	TKEY_LEFT,
+	TKEY_RIGHT,
+	TKEY_LSIDE,
+	TKEY_RSIDE,
+	TKEY_JUMP,
+	TKEY_AUTORUN,
+	TKEY_RUN,
+	TKEY_ROT,			
+	TKEY_CAM_LEFT,
+	TKEY_CAM_RIGHT,
+	TKEY_CAM_UP,
+	TKEY_CAM_DOWN,
+	TKEY_CAM_ROT,		
+	TKEY_ZOOM_IN,
+	TKEY_ZOOM_OUT,
+	TKEY_PICK_NEXT,
+	TKEY_PICK_NEXT_DEAD,
+	TKEY_SKILL_1,
+	TKEY_SKILL_2,
+	TKEY_SKILL_3,
+	TKEY_SKILL_4,
+	TKEY_SKILL_5,
+	TKEY_SKILL_6,
+	TKEY_SKILL_7,
+	TKEY_SKILL_8,
+	TKEY_SKILL_9,
+	TKEY_SKILL_10,
+	TKEY_SKILL_11,
+	TKEY_SKILL_12,
+	TKEY_SKILL2_1,
+	TKEY_SKILL2_2,
+	TKEY_SKILL2_3,
+	TKEY_SKILL2_4,
+	TKEY_SKILL2_5,
+	TKEY_SKILL2_6,
+	TKEY_SKILL2_7,
+	TKEY_SKILL2_8,
+	TKEY_SKILL2_9,
+	TKEY_SKILL2_10,
+	TKEY_SKILL2_11,
+	TKEY_SKILL2_12,
+	TKEY_CHAT,
+	TKEY_WHISPER_REPLY,
+	TKEY_CLOSE_UI,
+	TKEY_WORLDMAP,
+	TKEY_INVEN,
+	TKEY_CHAR_INFO,
+	TKEY_SKILL_INFO,
+	TKEY_QUEST_INFO,
+	TKEY_TOGGLE_GUILD_UI,
+	TKEY_MODE,
+	TKEY_RECALL_BACK,
+	TKEY_RECALL_STAY,
+	TKEY_RECALL_SKILL_1,
+	TKEY_RECALL_SKILL_2,
+	TKEY_RECALL_SKILL_3,
+	TKEY_RECALL_SKILL_4,
+	TKEY_RECALL_ACTIVE,
+	TKEY_RECALL_PASSIVE,
+	TKEY_RECALL_MANUAL,
+	TKEY_TRSCS_ME,
+	TKEY_TRSCS_F1,
+	TKEY_TRSCS_F2,
+	TKEY_TRSCS_F3,
+	TKEY_TRSCS_F4,
+	TKEY_TRSCS_F5,
+	TKEY_TRSCS_F6,
+	TKEY_TRSCS_F7,
+	TKEY_HOTKEY_F1,
+	TKEY_HOTKEY_F2,
+	TKEY_HOTKEY_F3,
+	TKEY_HOTKEY_F4,
+	TKEY_HOTKEY_F5,
+	TKEY_HOTKEY_F6,
+	TKEY_HOTKEY_F7,
+	TKEY_HOTKEY_F8,
+	TKEY_HOTKEY_F9,
+	TKEY_HOTKEY_F10,
+	TKEY_HOTKEY_PREV,
+	TKEY_HOTKEY_NEXT,
+	TKEY_HOTKEY_ACTION,
+	TKEY_GET_ALL,
+	TKEY_SHOW_UI,
+	TKEY_HUD,
+	TKEY_FOLLOW,
+	TKEY_CHAR_ROT180,
+	TKEY_CAM_ROT180,
+	TKEY_PET_INFO,
+	TKEY_HELP,
+	TKEY_FAMERANK,
+	TKEY_CAUTION15,
+	TKEY_COUNT
+} *LPTKEY_SET;
+
+typedef enum TKEYSET_RESULT
+{
+	TKEY_RESULT_NOCHANGE = TKEY_COUNT,
+	TKEY_RESULT_NOCUSTOM,
+} *LPTKEY_SET_ERR;
+
+typedef enum TKEYMOD_TYPE
+{
+	TKEYMOD_NONE	= 0,
+	TKEYMOD_CTRL	= 1,
+	TKEYMOD_ALT		= 1<<1,
+	TKEYMOD_SHIFT	= 1<<2,
+	TKEYMOD_COUNT
+} *LPTKEYMOD_TYPE;
+
+typedef enum TKEY_STATE
+{
+	TKEY_STATE_NONE = 0,
+	TKEY_STATE_PRESSED = 1,
+	TKEY_STATE_PRESS = 2,
+	TKEY_STATE_RELEASED = 3,
+} *LPTKEY_STATE;
+
+struct TKeySetInfo
+{
+	BOOL		m_bCustomize;
+	DWORD		m_dwDefKey;
+	DWORD		m_dwDescStrID;
+	CString		m_strRegField;
+};
+
+class CTKeySetting
+{
+private:
+	static DWORD m_dwVersion;
+	static TKeySetInfo m_vDefInfo[TKEY_COUNT];
+
+private:
+	MAPDWORD	m_mapVKeyToSid;
+	MAPDWORD	m_mapWKeyToVKey;
+	DWORD		m_vKeySet[TKEY_COUNT];
+
+public:
+	const CString& VKeyToStr(WORD wVKey, WORD wModKey=TKEYMOD_NONE) const;
+	
+	const TKeySetInfo& GetDefaultInfo(TKEY_SET eKey) const;
+	const BOOL NeedCustomize(TKEY_SET eKey) const;
+	const CString& GetKeyDesc(TKEY_SET eKey) const;
+
+	void SetToDefault();
+	DWORD SetKey(TKEY_SET eKey, WORD wVKey, WORD wModKey);
+	DWORD SetKey(TKEY_SET eKey, DWORD dwKey);
+
+	DWORD GetCurKey(TKEY_SET eKey) const;
+	WORD GetCurVKey(TKEY_SET eKey) const;
+    WORD GetCurModKey(TKEY_SET eKey) const;
+	
+	TKEY_SET GetCurKeySet(WORD wVKey, WORD wModKey) const;
+	TKEY_SET GetCurKeySet(DWORD dwKey) const;
+
+	void SetCurKeySet(WORD wVKey, WORD wModKey, TKEY_SET eKey);
+	void SetCurKeySet(DWORD dwKey, TKEY_SET eKey);
+
+	void LoadRegistry(const CString& strKey);
+	void SaveRegistry(const CString& strKey);
+
+private:
+	CTKeySetting();
+	~CTKeySetting();
+
+public:
+	static CTKeySetting* GetInstance();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+// TInstallSvr.idl : TInstallSvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TInstallSvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(922A7F41-73C4-4335-85F3-19E95A610E97),
+	version(1.0),
+	helpstring("TInstallSvr 1.0 형식 라이브러리")
+]
+library TInstallSvrLib
+{
+	importlib("stdole2.tlb");
+};

@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'TRelaySvr'
+		'TRelaySvr.EXE'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

@@ -1,0 +1,443 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TTranslator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TTranslator.ico"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_FOLDER         ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About TTranslator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TTranslator Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TTRANSLATOR_DIALOG DIALOGEX 0, 0, 281, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TTranslator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Language (From)",IDC_STATIC,7,10,58,8
+    COMBOBOX        IDC_COMBO_LANGUAGE_FROM,65,8,209,292,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language (To)",IDC_STATIC,7,24,58,8
+    COMBOBOX        IDC_COMBO_LANGUAGE_TO,65,22,209,292,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Text File Folder",IDC_STATIC,7,41,58,8
+    EDITTEXT        IDC_EDIT_TEXT_FOLDER,65,39,195,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_TEXT_FOLDER,260,39,14,13,BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_FLAT
+    LTEXT           "Source Folder",IDC_STATIC,7,54,58,8
+    EDITTEXT        IDC_EDIT_SOURCE,65,52,195,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_SOURCE,260,52,14,13,BS_ICON | BS_FLAT
+    LTEXT           "Target Folder",IDC_STATIC,7,68,58,8
+    EDITTEXT        IDC_EDIT_TARGET,65,66,195,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_TARGET,260,66,14,13,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Build",IDC_BUTTON_BUILD,171,88,50,16,BS_FLAT
+    DEFPUSHBUTTON   "Close",IDOK,224,88,50,16,BS_FLAT
+END
+
+IDD_PROGRESS_DIALOG DIALOGEX 0, 0, 281, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "TTranslator"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Current Action :",IDC_STATIC,7,8,58,8
+    LTEXT           "",IDC_STATIC_ACTION,65,8,209,8
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_BORDER | 
+                    0x1,7,19,244,8
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_BORDER | 
+                    0x1,7,29,244,8
+    PUSHBUTTON      "Cancel",IDCANCEL,115,43,50,16,BS_FLAT
+    RTEXT           "",IDC_STATIC_TOTAL,251,19,23,8
+    RTEXT           "",IDC_STATIC_CURRENT,251,29,23,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive Inc."
+            VALUE "FileDescription", "TTranslator"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TTranslator.exe"
+            VALUE "LegalCopyright", "Copyright (c) Zemi Interactive Inc. All rights reserved."
+            VALUE "OriginalFilename", "TTranslator.exe"
+            VALUE "ProductName", "TTranslator"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TTRANSLATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        VERTGUIDE, 65
+        VERTGUIDE, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+        HORZGUIDE, 14
+        HORZGUIDE, 28
+        HORZGUIDE, 45
+        HORZGUIDE, 58
+        HORZGUIDE, 72
+    END
+
+    IDD_PROGRESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        VERTGUIDE, 65
+        VERTGUIDE, 140
+        VERTGUIDE, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+        HORZGUIDE, 12
+        HORZGUIDE, 23
+        HORZGUIDE, 33
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_COMMAND MENU 
+BEGIN
+    POPUP "Command"
+    BEGIN
+        MENUITEM "Update",                      ID_MENU_UPDATE
+        MENUITEM "Close",                       ID_MENU_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About TTranslator..."
+    IDS_FMT_LIST_FILE       "%s\\TCHARTLIST.txt"
+    IDS_FMT_PATH            "%s\\%s"
+    IDS_FMT_REPLACE         "%c%c"
+    IDS_ERROR_INVALID_SRC_DATA 
+                            "Invalid source text file. Export source text files from XLS file and try again please."
+    IDS_FMT_LOG_FILE        "%s\\TBUILDLOG.txt"
+    IDS_LOG_BEGIN_BUILD     "=========================== Begin Building Client Files ==========================="
+    IDS_LOG_END_BUILD       "=========================== End Building Client Files ==========================="
+    IDS_LOG_BEGIN_LOAD_DB   "-------------------- Begin Loading Exported Text Files --------------------"
+    IDS_LOG_END_LOAD_DB     "-------------------- End Loading Exported Text Files --------------------"
+    IDS_LOG_FMT_START_TXT   "[Begine Loading Text File : %s]"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOG_FMT_END_TXT     "[End Loading Text File : %s]"
+    IDS_LOG_TEXT_PATH       "Text Path : %s"
+    IDS_LOG_SOURCE_PATH     "Source Path : %s"
+    IDS_LOG_TARGET_PATH     "Target Path : %s"
+    IDS_LOG_TEXT_KIND       "Text Kind : %s"
+    IDS_LOG_ERR_DUP_WORD    "(*) ERROR : Duplicate word [%s]"
+    IDS_LOG_FIELD_COUNT     "Field Count : %d"
+    IDS_LOG_ROW_COUNT       "Row Count : %d"
+    IDS_LOG_ERR_DUP_STRING_ID "(*) ERROR : Duplicate ID [%s]"
+    IDS_LOG_ERR_DUP_DWORD_ID "(*) ERROR : Duplicate ID [%d]"
+    IDS_FILE_IDH            ".\\TClientID.IDH"
+    IDS_ERROR_LOAD_IDH      "Error : Loading ""TClientID.IDH"" is failed."
+    IDS_LOG_ERR_INVALID_FORMAT_STRING "(*) ERROR : Invalid Format String [%d]"
+    IDS_FMT_PAIR_ID         "%s %s"
+    IDS_FMT_ACCESSID_DB_NAME "DB Name : %s"
+    IDS_FMT_TRIPLE_ID       "%s %s %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_FILE_PORTAL_REGION_TCD "%s\\Tcd\\TPortalRegion.tcd"
+    IDS_FMT_FILE_MONSTER_SHOP_TCD "%s\\Tcd\\TMonShop.tcd"
+    IDS_FMT_FILE_ITEM_MAGIC_TCD "%s\\Tcd\\TItemMagic.tcd"
+    IDS_FMT_FILE_MONTH_RANK_TCD "%s\\Tcd\\TMonthRank.tcd"
+    IDS_FMT_FILE_GOD_TOWER_TCD "%s\\Tcd\\TGodTower.tcd"
+    IDS_FMT_FILE_GOD_BALL_TCD "%s\\Tcd\\TGodBall.tcd"
+    IDS_FMT_FILE_AUCTION_TCD "%s\\Tcd\\TAuctionTree.tcd"
+    IDS_FMT_FILE_MONSTER_TCD "%s\\Tcd\\TMon.tcd"
+    IDS_FMT_FILE_PORTAL_TCD "%s\\Tcd\\TPortal.tcd"
+    IDS_FMT_FILE_SKILL_TCD  "%s\\Tcd\\TSkill.tcd"
+    IDS_FMT_FILE_ITEM_TCD   "%s\\Tcd\\TItem.tcd"
+    IDS_FMT_FILE_NPC_TCD    "%s\\Tcd\\TNPC*.tcd"
+    IDS_FMT_FILE_ACTION_DEFINE_TCD "%s\\Tcd\\TADEF.tcd"
+    IDS_FMT_FILE_REGION_TCD "%s\\Tcd\\TRegion.tcd"
+    IDS_FMT_FILE_COUNTRY_INFO_TCD "%s\\Tcd\\TCountryInfo.tcd"
+    IDS_FMT_FILE_DYNAMIC_HELP_TCD "%s\\Tcd\\TDynamicH.tcd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_FILE_INFO_TCD   "%s\\Tcd\\TInfo.tcd"
+    IDS_FMT_FILE_CLASS_INFO_TCD "%s\\Tcd\\TClassInfo.tcd"
+    IDS_FMT_FILE_MENU_ITEM_TCD "%s\\Tcd\\TMenuItem.tcd"
+    IDS_FMT_FILE_RACE_INFO_TCD "%s\\Tcd\\TRaceInfo.tcd"
+    IDS_FMT_FILE_HELP_TCD   "%s\\Tcd\\THelp.tcd"
+    IDS_FMT_FILE_TGAME_SQL  "%s\\TGAME.sql"
+    IDS_FMT_FILE_TQUEST_SQL "%s\\TQUEST.sql"
+    IDS_LOG_BEGIN_CONVERT   "-------------------- Begin Converting Text Data Files --------------------"
+    IDS_LOG_END_CONVERT     "-------------------- End Converting Text Data Files --------------------"
+    IDS_LOG_FMT_START_CLIENT_FILE "[Begine Converting Client File : %s]"
+    IDS_LOG_FMT_END_CLIENT_FILE "[End Converting Client File : %s]"
+    IDS_FMT_FILE_MPQ        "%s\\TQuest.mpq"
+    IDS_FMT_FILE_TIF        "%s\\TClientCmd.tif"
+    IDS_LOG_ERROR_FILE_OPEN "(*) ERROR : File open error [%s]"
+    IDS_FMT_PATH_CLIENT     "%s\\CLIENT"
+    IDS_FMT_PATH_SERVER     "%s\\SERVER"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_PATH_TCD        "%s\\CLIENT\\Tcd"
+    IDS_LOG_ERROR_CANNOT_FIND_STRING 
+                            "(*) ERROR : Cannot find translated text [%s]"
+    IDS_LOG_SUCCESS_COUNT   "Translated : %d"
+    IDS_LOG_ERROR_CANNOT_FIND_TID "(*) ERROR : Cannot find TID [%s]"
+    IDS_FMT_MONSTER_ID      "%d %s"
+    IDS_FMT_INTERFACE_ID    "%d %d"
+    IDS_FMT_MONSTER_SQL     "UPDATE TMONSTERCHART SET szName = '%s', szName2 = '%s' WHERE wID = %d;"
+    IDS_FMT_SKILL_SQL       "UPDATE TSKILLCHART SET szName = '%s' WHERE wID = %d;"
+    IDS_FMT_ITEM_SQL        "UPDATE TITEMCHART SET szNAME = '%s' WHERE wItemID = %d;"
+    IDS_FMT_NPC_SQL         "UPDATE TNPCCHART SET NC_szName2 = '%s', szName = '%s' WHERE wID = %d;"
+    IDS_LOG_ERROR_INVALID_SOURCE_TEXT 
+                            "(*) ERROR : Text data is not same as source TCD file [%s]"
+    IDS_LOG_ERROR_CANNOT_FIND_STR_ID "(*) ERROR : Cannot find string ID [%s]"
+    IDS_LOG_ERROR_CANNOT_FIND_DWORD_ID "(*) ERROR : Cannot find ID [%d]"
+    IDS_LOG_ERROR_INFO_TITLE_IS_EMPTY 
+                            "(*) ERROR : Title of info text is empty [%d]"
+    IDS_FMT_TQCATEGORY_SQL  "UPDATE TQCLASSCHART SET szNAME = '%s' WHERE dwClassID = %d;"
+    IDS_FMT_TERM_ID         "%d %d %d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOG_ERROR_CANNOT_FIND_TERM_ID "(*) ERROR : Cannot find Term ID [%s]"
+    IDS_LOG_ERROR_CANNOT_FIND_MISSION 
+                            "(*) ERROR : Cannot find Mission ID [%d]"
+    IDS_FMT_QUEST_SQL       "UPDATE TQTITLECHART SET szTitle = '%s', szMessage = '%s', szComplete = '%s', szAccept = '%s', szReject = '%s', szSummary = '%s', szNPCName = '%s', szReply = '%s' WHERE dwQuestID = %d;"
+    IDS_FMT_TERM_SQL        "UPDATE TQTERMTEXTCHART SET szObjective = '%s', szMessage = '%s' WHERE dwTermID = %d;"
+    IDS_LOG_ERROR_CANNOT_FIND_TSTRING "(*) ERROR : Cannot find TSTRING [%s]"
+    IDS_FMT_FILE_TSTRING_TCD "%s\\Tcd\\TString.tcd"
+    IDS_LOG_FMT_START_SQL_FILE "[Begine Converting Server File : %s]"
+    IDS_LOG_FMT_END_SQL_FILE "[End Converting Server File : %s]"
+    IDS_FMT_FILE_TEVENT_SQL "%s\\TEVENTQUARTERCHART.sql"
+    IDS_FMT_TBATTLEZONE_SQL "UPDATE TBATTLEZONECHART SET szName = '%s' WHERE wID = %d;"
+    IDS_FMT_START_BATTLE_ZONE "-- Update TBATTLEZONECHART"
+    IDS_FMT_START_MONSTER   "-- Update TMONSTERCHART"
+    IDS_FMT_START_SKILL     "-- Update TSKILLCHART"
+    IDS_FMT_START_ITEM      "-- Update TITEMCHART"
+    IDS_FMT_START_NPC       "-- Update TNPCCHART"
+    IDS_FMT_START_QTITLE    "-- Update TQTITLECHART"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_START_QTERM     "-- Update TQTERMTEXTCHART"
+    IDS_FMT_START_QCLASS    "-- Update TQCLASSCHART"
+    IDS_FMT_START_TEVENT    "-- Update TEVENTQUARTERCHART"
+    IDS_FMT_TEVENT_SQL      "UPDATE TEVENTQUARTERCHART SET szTitle = '%s', szMessage = '%s', szPresent = '%s', szAnnounce = '%s' WHERE bDay = %d AND bHour = %d AND bMinute = %d;"
+    IDS_FMT_WAIT            "Ready"
+    IDS_FMT_ACTION_LOAD     "Load Exported Text File - %s"
+    IDS_FMT_ACTION_BUILD    "Build Data File - %s"
+    IDS_FMT_ACTION_LOAD_SUB "Load Exported Text File - %s [%s]"
+    IDS_FMT_ACTION_BUILD_SUB "Build Data File - %s [%s]"
+    IDS_FMT_BUILD_COMPLETED "Building Converted Data is COMPLETED."
+    IDS_ERROR_CANNOT_CREATE_THREAD "Could not create build thread."
+    IDS_FMT_PROGRESS        "%d %%"
+    IDS_FMT_CANCEL_BUILD    "Do you want to cancel building converted data ?"
+    IDS_FMT_ACTION_CANCEL   "Cancel Building Converted Data"
+    IDS_LOG_BUILD_CANCEL    "=========================== Building Client Files is canceled ==========================="
+    IDS_FMT_BUILD_CANCEL    "Building Converted Data is CANCELED."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_START_DHELP     "-- Update THELPMESSAGETABLE"
+    IDS_FMT_THELPMESSAGETABLE_SQL 
+                            "UPDATE THELPMESSAGETABLE SET szMessage = '%s' WHERE bID = %d;"
+    IDS_FMT_NPC_NAME        """%s"""
+    IDS_FMT_START_SVRMSG    "-- Update TSVRMSGCHART"
+    IDS_FMT_SVRMSG_SQL      "UPDATE TSVRMSGCHART  SET szMessage = '%s' WHERE dwID = %d;"
+    IDS_FMT_START_TOURNAMENT "-- Update TTOURNAMENTCHART"
+    IDS_FMT_TOURNAMENT_SQL  "UPDATE TTOURNAMENTCHART  SET szName = '%s' WHERE bEntryID = %d;"
+    IDS_FMT_START_TOURNAMENTSCHEDULE "-- Update TTOURNAMENTSCHEDULECHART"
+    IDS_FMT_TOURNAMENTSCHEDULE_SQL 
+                            "UPDATE TTOURNAMENTSCHEDULECHART  SET szName = '%s' WHERE bStep = %d;"
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TTranslator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,18 @@
+// TControlSvr.idl : TControlSvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TControlSvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(761E89DF-0BF0-4F94-9143-BC64B2F459B8),
+	version(1.0),
+	helpstring("TControlSvr 1.0 형식 라이브러리")
+]
+library TControlSvrLib
+{
+	importlib("stdole2.tlb");
+};

@@ -1,0 +1,18 @@
+// TWorldSvr.idl : TWorldSvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TWorldSvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(E456FD0D-596E-449B-A444-9C103CD5BD2D),
+	version(1.0),
+	helpstring("TWorldSvr 1.0 형식 라이브러리")
+]
+library TWorldSvrLib
+{
+	importlib("stdole2.tlb");
+};

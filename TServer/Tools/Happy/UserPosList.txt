@@ -1,0 +1,1 @@
+NAME	Channel	MapID	PosX		PosY		PosZ

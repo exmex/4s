@@ -1,0 +1,18 @@
+// TRelaySvr.idl : TRelaySvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TRelaySvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(F9B8DE7C-7C6D-469F-9E46-06175C580FBF),
+	version(1.0),
+	helpstring("TRelaySvr 1.0 형식 라이브러리")
+]
+library TRelaySvrLib
+{
+	importlib("stdole2.tlb");
+};

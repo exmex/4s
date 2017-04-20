@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'TControlSvr'
+		'TControlSvr.EXE'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

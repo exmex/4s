@@ -1,0 +1,266 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\TMapViewer.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#include ""afxprint.rc""       // 인쇄 미리 보기 리소스\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TMapViewer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TMapViewer.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "TMapViewer.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "TMapViewer"
+    IDS_FILE_MAPNPC         ".\\Tcd\\TNPC%08x.tcd"
+    IDS_FMT_CHAT_NAME       "[%s] (%s)"
+    IDS_FILE_MAPCHART       ".\\Tcd\\TMAP.tcd"
+    IDS_FILE_NODECHART      ".\\Tcd\\TNODE.tcd"
+    IDS_FILE_ACTIONCHART    ".\\Tcd\\TAction.tcd"
+    IDS_FILE_PANTSCHART     ".\\Tcd\\TPants.tcd"
+    IDS_FILE_RACECHART      ".\\Tcd\\TRace.tcd"
+    IDS_FILE_HEADCHART      ".\\Tcd\\TFace.tcd"
+    IDS_FILE_BODYCHART      ".\\Tcd\\TBody.tcd"
+    IDS_FILE_HANDCHART      ".\\Tcd\\THand.tcd"
+    IDS_FILE_FOOTCHART      ".\\Tcd\\TFoot.tcd"
+    IDS_FILE_ITEMCHART      ".\\Tcd\\TItem.tcd"
+    IDS_FILE_SFXCHART       ".\\Tcd\\TSFX.tcd"
+    IDS_FILE_NPCCHART       ".\\Tcd\\TNPCTemp.tcd"
+    IDS_FILE_MINIMAP        ".\\Tcd\\TMinimap.tcd"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TMapViewer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_STEPCHART      ".\\Tcd\\TSTEP.tcd"
+    IDS_FMT_POS             "[POS : %.2f, %.2f, %.2f]"
+    IDS_TEXT_ERROR          "오류"
+    IDS_ERROR_UNKNOWN_CMD   "알 수 없는 명령어 입니다.\nHELP 명령어로 도움말을 참조 하십시요."
+    IDS_TCMD_UNKNOWN        "UNKNOWN"
+    IDS_ERROR_FOGRANGE      "잘못된 파라메터 입니다.\n사용법 :\nFR [FLOAT : START] [FLOAT : END] \n기능 : FOG의 시작지점과 종료지점을 설정합니다."
+    IDS_ERROR_MOVE          "잘못된 파라메터 입니다.\n사용법 :\nM [FLOAT : X좌표] [FLOAT : Z좌표]\n기능 : 입력한 좌표로 이동합니다."
+    IDS_ERROR_SPEED         "잘못된 파라메터 입니다.\n사용법 :\nS [FLOAT : 속도 배율]\n기능 : 이동 속도의 배율을 지정합니다."
+    IDS_TEXT_HELP           "잘못된 파라메터 입니다.\n사용법 :\nFD [FLOAT : DENSITY] \n기능 : FOG의 밀도을 지정합니다."
+    IDS_MSG_HELP            "[명령어] : [기능]\nHELP : 도움말을 표시 합니다.\nC : Climb 체크를 On/Off 합니다.\nLIGHT : 라이트 셑팅 표시를 켜고 끔니다.\nL : 특정 맵으로 이동합니다.\nM : 특정 위치로 이동합니다.\nS : 이동 속도의 배율을 지정합니다.\nLAND : 지형 라이트 컬러를 지정합니다.\nSHADOW : 그림자 농도를 지정합니다.\nA : Object 라이트 Ambient컬러를 지정합니다\nD : Object 라이트 Diffuse컬러를 지정합니다.\nDIR : Object 라이트 방향을 지정합니다.\nMA : 그림자속 메터리얼의 Ambient컬러를 설정합니다.\nMD : 그림자속 메터리얼의 Diffuse컬러를 설정합니다. .\nFR : FOG의 시작 지점과 끝 지점을 설정 합니다..\nFC : FOG의 색상을 설정합니다.\nFD : FOG의 밀도를 설정합니다.\nMINIMAP : 미니맵을 켜고 끔니다.\nFPS : 초당 프레임 수 표시를 켜고 끔니다.\nPOS : 현재 위치표시를 켜고 끔니다.\nEXIT : 프로그램을 종료 합니다."
+    IDS_ERROR_LOADMAP_NOTFOUND 
+                            "해당 맵을 찾을 수 없습니다.\n사용법 :\nLOADMAP [INT : 맵 ID]\n기능 : 해당 맵으로 이동합니다."
+    IDS_ERROR_BUILD_NOMAP   "맵이 로드되지 않았습니다.\nLOADMAP 명령으로 맵을 로드한 후\n다시 시도해 주십시요.\n사용법 : BUILD\n기능 : 현재 맵의 길찾기 포인트를\n[실행폴더]\\생성 합니다."
+    IDS_FMT_PATHFILE        ".\\Path\\TFLAG%08x.tpf"
+    IDS_FILE_ACTIONDEFCHART ".\\Tcd\\TADEF.tcd"
+    IDS_FILE_REGIONCHART    ".\\Tcd\\TRegion.tcd"
+    IDS_FILE_BGMCHART       ".\\Tcd\\TBGM.tcd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_MAPCOLOR      "잘못된 파라메터 입니다.\n사용법 :\nLAND [FLOAT : R] [FLOAT : G]\n[FLOAT : B]\n기능 : 지형 라이트 컬러를 설정합니다."
+    IDS_ERROR_SHADOW        "잘못된 파라메터 입니다.\n사용법 :\nSHADOW [FLOAT : Alpha]\n기능 : 그림자 농도를 설정합니다."
+    IDS_ERROR_AMBIENT       "잘못된 파라메터 입니다.\n사용법 :\nA [INT : Index] [FLOAT : R] [FLOAT : G]\n[FLOAT : B]\n기능 : Object라이트의 Ambient컬러를 설정합니다."
+    IDS_ERROR_DIFFUSE       "잘못된 파라메터 입니다.\n사용법 :\nD [INT : Index] [FLOAT : R] [FLOAT : G]\n[FLOAT : B]\n기능 : Object라이트의 Diffuse컬러를 설정합니다."
+    IDS_ERROR_LIGHTDIR      "잘못된 파라메터 입니다.\n사용법 :\nDIR [INT : Index] [FLOAT : X] [FLOAT : Y]\n[FLOAT : Z]\n기능 : Object라이트의 방향을 설정합니다."
+    IDS_FMT_LIGHT           "지형   컬러 : ( %.2f, %.2f, %.2f)\n그림자 농도 : %.2f\n\n0번 라이트 : 방향 ( %.2f, %.2f, %.2f)\n   Ambient : ( %.2f, %.2f, %.2f) Diffuse : ( %.2f, %.2f, %.2f)\n1번 라이트 : 방향 ( %.2f, %.2f, %.2f)\n   Ambient : ( %.2f, %.2f, %.2f) Diffuse : ( %.2f, %.2f, %.2f)\n2번 라이트 : 방향 ( %.2f, %.2f, %.2f)\n   Ambient : ( %.2f, %.2f, %.2f) Diffuse : ( %.2f, %.2f, %.2f)\n\n그림자속 오브젝트 메터리얼 :\n   Ambient : ( %.2f, %.2f, %.2f) Diffuse : ( %.2f, %.2f, %.2f) \n\n FOG : START(%.2f) END(%.2f) 컬러(%d, %d, %d) 밀도(%.2f)"
+    IDS_FILE_LIGHTCHART     ".\\Tcd\\TLIGHT.tcd"
+    IDS_ERROR_MATERIALA     "잘못된 파라메터 입니다.\n사용법 :\nMA [FLOAT : R] [FLOAT : G] [FLOAT : B]\n기능 : 그림자속 메터리얼의 Ambient컬러를 설정합니다."
+    IDS_ERROR_MATERIALD     "잘못된 파라메터 입니다.\n사용법 :\nMD [FLOAT : R] [FLOAT : G] [FLOAT : B]\n기능 : 그림자속 메터리얼의 Diffuse컬러를 설정합니다."
+    IDS_FILE_FOGCHART       ".\\Tcd\\TFog.tcd"
+    IDS_FILE_SKYCHART       ".\\Tcd\\TSky.tcd"
+    IDS_ERROR_CANNOT_OPEN_WORLDMAP "현재 맵은 월드맵을 사용할 수 없습니다."
+    IDS_OPEN_WORLDMAP       "월드맵"
+    IDS_FMT_WORLDMAP_NAME   "%s%s"
+    IDS_FMT_WORLDMAP_TITLE  "[%s]%s"
+    IDS_FILE_LOADINGIMG     ".\\Intro\\Loading%d.bmp"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_GAUGE          ".\\Intro\\Gauge.tga"
+    IDS_ERROR_FINDPATH_NOMAP 
+                            "맵이 로드되지 않았습니다.\nLOADMAP 명령으로 맵을 로드한 후\n다시 시도해 주십시요.\n사용법 : FP\n기능 : 현재 맵의 길찾기 데이터를\n[실행폴더]\\Path 폴더에 생성 합니다."
+    IDS_ERROR_DELRANGE      "잘못된 파라메터 입니다.\n사용법 :\nDR [FLOAT : 삭제범위]\n기능 : 깃발의 삭제범위를 설정 합니다."
+    IDS_ERROR_FOGCOLOR      "잘못된 파라메터 입니다.\n사용법 :\nFR [BYTE : R] [BYTE : G] [BYTE : B] \n기능 : FOG의 색상을 지정합니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SHADER
+//
+
+IDR_VS_WMESH            SHADER                  "res\\VS_WMESH.vsh"
+IDR_VS_MESH             SHADER                  "res\\VS_MESH.vsh"
+IDR_VS_LVERTEX          SHADER                  "res\\VS_LVERTEX.vsh"
+IDR_PS_SUBTRACT         SHADER                  "res\\PS_SUBTRACT.psh"
+IDR_PS_STAGE1           SHADER                  "res\\PS_STAGE1.psh"
+IDR_PS_SHADER           SHADER                  "res\\PS_SHADER.psh"
+IDR_PS_MULTIPLYADD      SHADER                  "res\\PS_MULTIPLYADD.psh"
+IDR_PS_MODULATEINVCOLOR_ADDALPHA SHADER                  "res\\PS_MODULATEINVCOLOR_ADDALPHA.psh"
+IDR_PS_MODULATEINVALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEINVALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATECOLOR_ADDALPHA SHADER                  "res\\PS_MODULATECOLOR_ADDALPHA.psh"
+IDR_PS_MODULATEALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATE4X       SHADER                  "res\\PS_MODULATE4X.psh"
+IDR_PS_MODULATE2X       SHADER                  "res\\PS_MODULATE2X.psh"
+IDR_PS_MODULATE         SHADER                  "res\\PS_MODULATE.psh"
+IDR_PS_MAP              SHADER                  "res\\PS_MAP.psh"
+IDR_PS_LERP             SHADER                  "res\\PS_LERP.psh"
+IDR_PS_DOTPRODUCT3      SHADER                  "res\\PS_DOTPRODUCT3.psh"
+IDR_PS_DETAILMAP        SHADER                  "res\\PS_DETAILMAP.psh"
+IDR_PS_BLENDTEXTUREALPHAPM SHADER                  "res\\PS_BLENDTEXTUREALPHAPM.psh"
+IDR_PS_BLENDTEXTUREALPHA SHADER                  "res\\PS_BLENDTEXTUREALPHA.psh"
+IDR_PS_BLENDFACTORALPHA SHADER                  "res\\PS_BLENDFACTORALPHA.psh"
+IDR_PS_BLENDDIFFUSEALPHA SHADER                  "res\\PS_BLENDDIFFUSEALPHA.psh"
+IDR_PS_BLENDCURRENTALPHA SHADER                  "res\\PS_BLENDCURRENTALPHA.psh"
+IDR_PS_ADDSMOOTH        SHADER                  "res\\PS_ADDSMOOTH.psh"
+IDR_PS_ADDSIGNED2X      SHADER                  "res\\PS_ADDSIGNED2X.psh"
+IDR_PS_ADDSIGNED        SHADER                  "res\\PS_ADDSIGNED.psh"
+IDR_PS_ADD              SHADER                  "res\\PS_ADD.psh"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MESH
+//
+
+IDR_MESH_PATH_FLAG      MESH                    "res\\PATH_FLAG.TMF"
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\TMapViewer.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#include "afxprint.rc"       // 인쇄 미리 보기 리소스
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

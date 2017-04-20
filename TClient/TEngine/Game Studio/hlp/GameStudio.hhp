@@ -1,0 +1,21 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=GameStudio.chm
+Contents file=GameStudio.hhc
+Display compile progress=No
+Full-text search=Yes
+Index file=GameStudio.hhk
+Language=0x412 ÇÑ±¹¾î
+
+
+[FILES]
+
+[MAP]
+#include HTMLDefines.h
+
+[TEXT POPUPS]
+HTMLDefines.h
+
+[INFOTYPES]
+

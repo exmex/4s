@@ -1,0 +1,100 @@
+In das Ende des SETUP-Verzeichnis
+laufen
+TCTRL_GSP SETUP
+TLOGIN_GSP SETUP
+TMAP_GSP SETUP
+TRELAY_GSP SETUP
+TWORLD_GSP SETUP
+LOG kann nicht auf Ihre Möglichkeiten hier sehen ist, um den Dienst beitreten werden fünf Programme sein
+Deinstallieren Deinstallieren Verzeichnis ausgeführt werden kann
+
+
+Der zweite Schritt
+eingeben
+Reg
+
+Ändern Sie die Registrierung, wo die IP Ihres Rechners die IP-Verbindung zur Datenbank für Sie
+Datenbank-Account-Passwort
+
+wie
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE \ SYSTEM \ CurrentControlSet \ Services \ TLOGIN_GSP \ Config]
+"DBPasswd" = "1234" an die Datenbank Passwort verbinden
+"DBUser" = "tglobal" Verbindung zur Datenbank-Konto
+"DSN" = "TGLOBAL_GSP" ODBC-Namen
+"Port" = dword: 000012d0
+"ServerID" = dword: 00000001
+"LogIP" = "192.168.1.50" Server-IP
+"Logport" = dword: 00001b5a
+
+Nur müssen Sie das Kennwort für ODBC-Namen zu ändern ohne Änderung
+Default
+
+Alle Registry-Hit
+
+Stellen Sie die Datenbank
+tgame_gsp.bak
+tglobal_gsp.bak
+
+eingeben
+tglobal_gsp
+
+Beachten Sie die folgende Tabelle zu ändern
+
+TMaschine ändern Sie den Namen Ihrer Maschine
+Tgroup ändern Sie Ihre Online-Namen online, wo ODBC Namen des Account-Passwort zu verbinden
+TChannel Kanaleinstellungen
+TIPADDR ist Ihre Server-IP
+TACCOUNT Kontokennwort Tisch
+
+
+TGAME_gsp Datenbank
+TMONSTERCHART Tisch
+Die Burst-Rate bDropCount Requisiten Burst-Rate-Werte umso größer ist die Gewalt ist mehr
+Die Erfahrung wexp Monster Erfahrung
+
+Autostart-Modus ist
+Arbeitsplatz - Verwalten - Dienstleistungen
+tStrg
+TLOGIN
+tworld
+TRELAY
+TMAP
+Muss hier klicken, um die Sequenz zu starten
+
+
+
+Stopp 1, in SETUP, laufen
+TCTRL_GSP SETUP
+TLOGIN_GSP SETUP
+TMAP_GSP SETUP
+TRELAY_GSP SETUP
+TWORLD_GSP SETUP
+
+Schritt 2:
+reg ändern
+Sie verändern nur DBPasswd, DBUserDSN
+
+Schritt 3:
+Datenbank wiederherstellen
+Open tglobal_gsp
+(Es folgen Tabellen innerhalb tglobal db).
+TMaschine ist Name der Maschine
+Tgroup contine Kanalnamen, Online-Benutzer zählen, ODBC-Name, DB-Benutzer und Kennwort
+TChannel ist Kanal
+TIPADDR ist Ihre IP-Adresse
+TACCOUNT Konto ist talble
+
+
+Der letzte Schritt:
+starten Sie Ihren Server.
+mein pc -> Verwaltung -> Service
+
+in dieser Reihenfolge:
+
+tStrg
+TLOGIN
+tworld
+TRELAY
+TMAP

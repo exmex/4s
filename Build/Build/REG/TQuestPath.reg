@@ -1,0 +1,13 @@
+REGEDIT
+; .REG 파일은 SETUP 프로그램에 사용될 수 있습니다.
+; SETUP 프로그램을 사용할 수 없는 경우 아래 항목이
+; CWinApp::RegisterShellFileTypes 및 COleObjectFactory::UpdateRegistryAll을
+; 호출하여 InitInstance에 자동으로 등록됩니다.
+
+HKEY_CLASSES_ROOT\.TPD = TQuestPath.Document
+HKEY_CLASSES_ROOT\TQuestPath.Document\shell\open\command = TQuestPath.EXE %1
+HKEY_CLASSES_ROOT\TQuestPath.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\TQuestPath.Document\shell\open\ddeexec\application = TQuestPath
+    ; 참고: 응용 프로그램은 선택적인 요소입니다.
+    ;  기본값으로 "command"에 있는 응용 프로그램 이름이 사용됩니다.
+HKEY_CLASSES_ROOT\TQuestPath.Document = TQuestPath.Document

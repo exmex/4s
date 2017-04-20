@@ -1,0 +1,231 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TCOLOR_DIALOG DIALOGEX 0, 0, 230, 185
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Select color ..."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Colors:",IDC_STATIC,7,9,25,9
+    COMBOBOX        IDC_COMBO_SEL_TYPE,34,7,189,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_STATIC_HEX_FULL,7,25,139,130,NOT WS_TABSTOP
+    RTEXT           "Red",IDC_STATIC_R,149,26,35,10
+    EDITTEXT        IDC_EDIT_R,188,24,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_R,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,28,12,
+                    7
+    RTEXT           "Green",IDC_STATIC_G,149,38,35,10
+    EDITTEXT        IDC_EDIT_G,188,36,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_G,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,40,12,
+                    7
+    RTEXT           "Blue",IDC_STATIC_B,149,51,35,10
+    EDITTEXT        IDC_EDIT_B,188,49,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_B,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,53,12,
+                    7
+    RTEXT           "Cyan",IDC_STATIC_C,149,66,35,10
+    EDITTEXT        IDC_EDIT_C,188,65,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_C,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,69,12,
+                    7
+    RTEXT           "Magenta",IDC_STATIC_M,149,79,35,10
+    EDITTEXT        IDC_EDIT_M,188,77,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_M,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,81,12,
+                    7
+    RTEXT           "Yellow",IDC_STATIC_Y,149,92,35,10
+    EDITTEXT        IDC_EDIT_Y,188,90,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_Y,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,94,12,
+                    7
+    RTEXT           "Hue",IDC_STATIC_H,149,108,35,10
+    EDITTEXT        IDC_EDIT_H,188,106,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_H,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,109,
+                    12,7
+    RTEXT           "Saturation",IDC_STATIC_S,149,121,35,10
+    EDITTEXT        IDC_EDIT_S,188,119,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_S,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,123,
+                    12,7
+    RTEXT           "Light",IDC_STATIC_L,149,134,35,10
+    EDITTEXT        IDC_EDIT_L,188,132,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_L,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,213,136,
+                    12,7
+    RTEXT           "New",IDC_STATIC_TXT_NEW,149,152,35,10
+    PUSHBUTTON      "",IDC_STATIC_CMP,188,149,35,29,NOT WS_TABSTOP
+    RTEXT           "Current",IDC_STATIC_TXT_CURRENT,149,166,35,10
+    DEFPUSHBUTTON   "OK",IDOK,7,162,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,62,162,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TCOLOR_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SEL_TYPE, 0x403, 14, 0
+0x6220, 0x7361, 0x6369, 0x6320, 0x6c6f, 0x726f, 0x0073, 
+    IDC_COMBO_SEL_TYPE, 0x403, 39, 0
+0x6820, 0x6575, 0x202c, 0x6173, 0x7574, 0x6172, 0x6974, 0x6e6f, 0x6120, 
+0x646e, 0x6c20, 0x6d75, 0x6e69, 0x6e61, 0x6563, 0x2d20, 0x6d20, 0x7869, 
+0x7265, "\000" 
+    IDC_COMBO_SEL_TYPE, 0x403, 43, 0
+0x6820, 0x6575, 0x202c, 0x6173, 0x7574, 0x6172, 0x6974, 0x6e6f, 0x6120, 
+0x646e, 0x6c20, 0x6d75, 0x6e69, 0x6e61, 0x6563, 0x2d20, 0x6220, 0x7361, 
+0x6369, 0x6820, 0x6575, "\000" 
+    IDC_COMBO_SEL_TYPE, 0x403, 40, 0
+0x6820, 0x6575, 0x202c, 0x6173, 0x7574, 0x6172, 0x6974, 0x6e6f, 0x6120, 
+0x646e, 0x6c20, 0x6d75, 0x6e69, 0x6e61, 0x6563, 0x2d20, 0x7220, 0x6c6f, 
+0x656c, 0x0072, 
+    IDC_COMBO_SEL_TYPE, 0x403, 28, 0
+0x7220, 0x6465, 0x202c, 0x7267, 0x6565, 0x206e, 0x6e61, 0x2064, 0x6c62, 
+0x6575, 0x2d20, 0x6320, 0x6275, 0x0065, 
+    IDC_COMBO_SEL_TYPE, 0x403, 29, 0
+0x7220, 0x6465, 0x202c, 0x7267, 0x6565, 0x206e, 0x6e61, 0x2064, 0x6c62, 
+0x6575, 0x2d20, 0x6d20, 0x7869, 0x7265, "\000" 
+    IDC_COMBO_SEL_TYPE, 0x403, 18, 0
+0x6720, 0x6172, 0x2079, 0x6373, 0x6c61, 0x2065, 0x696d, 0x6578, 0x0072, 
+
+    IDC_COMBO_SEL_TYPE, 0x403, 33, 0
+0x6320, 0x6179, 0x2c6e, 0x6d20, 0x6761, 0x6e65, 0x6174, 0x6120, 0x646e, 
+0x7920, 0x6c65, 0x6f6c, 0x2077, 0x202d, 0x7563, 0x6562, "\000" 
+    IDC_COMBO_SEL_TYPE, 0x403, 34, 0
+0x6320, 0x6179, 0x2c6e, 0x6d20, 0x6761, 0x6e65, 0x6174, 0x6120, 0x646e, 
+0x7920, 0x6c65, 0x6f6c, 0x2077, 0x202d, 0x696d, 0x6578, 0x0072, 
+    IDC_COMBO_SEL_TYPE, 0x403, 10, 0
+0x7220, 0x6465, 0x6120, 0x6978, 0x0073, 
+    IDC_COMBO_SEL_TYPE, 0x403, 12, 0
+0x6720, 0x6572, 0x6e65, 0x6120, 0x6978, 0x0073, 
+    IDC_COMBO_SEL_TYPE, 0x403, 11, 0
+0x6220, 0x756c, 0x2065, 0x7861, 0x7369, "\000" 
+    IDC_COMBO_SEL_TYPE, 0x403, 11, 0
+0x6320, 0x6179, 0x206e, 0x7861, 0x7369, "\000" 
+    IDC_COMBO_SEL_TYPE, 0x403, 14, 0
+0x6d20, 0x6761, 0x6e65, 0x6174, 0x6120, 0x6978, 0x0073, 
+    IDC_COMBO_SEL_TYPE, 0x403, 13, 0
+0x7920, 0x6c65, 0x6f6c, 0x2077, 0x7861, 0x7369, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TCOLOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        VERTGUIDE, 140
+        VERTGUIDE, 149
+        VERTGUIDE, 184
+        VERTGUIDE, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 36
+        HORZGUIDE, 48
+        HORZGUIDE, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

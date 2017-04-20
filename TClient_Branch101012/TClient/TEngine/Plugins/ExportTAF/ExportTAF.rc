@@ -1,0 +1,173 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL_TAF DIALOGEX 0, 0, 155, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "ExportTAF 3.0"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "Tachyon Animation File Exporter [TAF]",IDC_STATIC,7,7,
+                    141,21,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Option",IDC_STATIC,7,36,141,63,BS_CENTER | BS_FLAT
+    CONTROL         "Sampling",IDC_CHECK_SAMPLING,"Button",BS_AUTOCHECKBOX | 
+                    BS_CENTER | BS_VCENTER | BS_PUSHLIKE | BS_FLAT | 
+                    WS_TABSTOP,12,52,130,13
+    LTEXT           "Frame Rate",IDC_STATIC,12,69,41,8
+    CONTROL         "",IDC_EDIT_FRAME,"CustEdit",WS_TABSTOP,53,68,82,10
+    CONTROL         "",IDC_SPIN_FRAME,"SpinnerControl",0x0,135,68,7,10
+    LTEXT           "Scale",IDC_STATIC,12,82,41,8
+    CONTROL         "",IDC_EDIT_SCALE,"CustEdit",WS_TABSTOP,53,81,82,10
+    CONTROL         "",IDC_SPIN_SCALE,"SpinnerControl",0x0,135,81,7,10
+    DEFPUSHBUTTON   "Export...",IDC_BTN_TAFEXPORT,7,107,71,13
+    PUSHBUTTON      "Cancel",IDCANCEL,85,107,63,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PANEL_TAF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        VERTGUIDE, 12
+        VERTGUIDE, 53
+        VERTGUIDE, 135
+        VERTGUIDE, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+        HORZGUIDE, 36
+        HORZGUIDE, 58
+        HORZGUIDE, 73
+        HORZGUIDE, 86
+        HORZGUIDE, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileVersion", "4.0.0.0"
+            VALUE "InternalName", "CExportTAF"
+            VALUE "OriginalFilename", "CExportTAF.dle"
+            VALUE "ProductName", "3ds max"
+            VALUE "ProductVersion", "4.0.0.0"
+            VALUE "Comments", "TECH: "
+            VALUE "LegalTrademarks", "3D Studio MAX, Biped, Character Studio, Heidi, Kinetix and Physique are registered trademarks and 3ds max, combustion, Discreet, DWG Unplugged, DXF, FLI and FLC are trademarks of Autodesk, Inc."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CLASS_NAME          "CExportTAF"
+    IDS_PARAMS              "Parameters"
+    IDS_SPIN                "Spin"
+    IDS_FMT_DUP_BONES_NAME  "Duplicate BONES Name : %s"
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

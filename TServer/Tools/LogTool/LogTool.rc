@@ -1,0 +1,463 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGTOOL_DIALOG DIALOGEX 0, 0, 589, 389
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LogTool Ver.1.0.2"
+MENU IDR_MENU
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Quit",IDOK,536,370,51,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,1,34,584,325
+    DEFPUSHBUTTON   "Search",IDC_BUTTON_SEARCH,468,370,51,14
+    LTEXT           "",IDC_STATIC_MSG,49,370,260,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    DEFPUSHBUTTON   "<<",IDC_BUTTON_PREV,379,370,32,14
+    DEFPUSHBUTTON   ">>",IDC_BUTTON_NEXT,423,370,32,14
+    LTEXT           "",IDC_STATIC_SERVER,4,370,39,14,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "All",IDC_BUTTON_ALL,335,370,32,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LOGTOOL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 587
+        BOTTOMMARGIN, 384
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LogTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 217, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LogTool"
+FONT 8, "Verdana"
+BEGIN
+    ICON            IDR_TRAICON,IDC_STATIC,8,8,20,20
+    LTEXT           "LogTool Ver. 1.0.2",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002~2008 Zemi Interactive",IDC_STATIC,40,
+                    25,166,8
+    DEFPUSHBUTTON   "O K",IDOK,76,44,50,14,WS_GROUP
+END
+
+IDD_DIALOG_SEARCH DIALOGEX 0, 0, 303, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Search Condtion"
+FONT 8, "Verdana", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Search",IDOK,177,215,45,16
+    PUSHBUTTON      "Cancel",IDCANCEL,236,215,45,16
+    CONTROL         "DATE",IDC_CHECK_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,6,38,12
+    CONTROL         "ACTION",IDC_CHECK_ACTION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,58,44,12
+    COMBOBOX        IDC_COMBO_ACTION,20,72,125,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,81,6,62,12
+    CONTROL         "DateTimePicker1",IDC_DATETIME2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,81,21,62,12
+    LTEXT           "FROM",IDC_STATIC,54,6,21,12,SS_CENTERIMAGE
+    LTEXT           "TO",IDC_STATIC,54,21,21,12,SS_CENTERIMAGE
+    CONTROL         "AccID",IDC_CHECK_KEY1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,153,42,12
+    CONTROL         "CharID",IDC_CHECK_KEY2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,181,42,12
+    CONTROL         "strKey3",IDC_CHECK_KEY3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,25,42,12
+    CONTROL         "strKey4",IDC_CHECK_KEY4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,55,50,12
+    CONTROL         "strKey5",IDC_CHECK_KEY5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,85,42,12
+    EDITTEXT        IDC_EDIT_KEY1,54,153,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY2,54,181,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY3,209,25,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY4,209,56,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY5,209,86,91,12,ES_AUTOHSCROLL
+    CONTROL         "strKey6",IDC_CHECK_KEY6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,115,42,12
+    CONTROL         "strKey7",IDC_CHECK_KEY7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,145,42,12
+    EDITTEXT        IDC_EDIT_KEY6,209,117,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KEY7,209,147,91,12,ES_AUTOHSCROLL
+    CONTROL         "MAP",IDC_CHECK_MAPID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,121,42,12
+    EDITTEXT        IDC_EDIT_MAPID,54,121,91,12,ES_AUTOHSCROLL
+    CONTROL         "DAccID",IDC_CHECK_DK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,139,42,12
+    EDITTEXT        IDC_EDIT_DK1,54,139,91,12,ES_AUTOHSCROLL
+    CONTROL         "DCharID",IDC_CHECK_DK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,167,42,12
+    EDITTEXT        IDC_EDIT_DK2,54,167,91,12,ES_AUTOHSCROLL
+    CONTROL         "dwKey3",IDC_CHECK_DK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,10,47,12
+    EDITTEXT        IDC_EDIT_DK3,209,9,91,12,ES_AUTOHSCROLL
+    CONTROL         "dwKey4",IDC_CHECK_DK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,40,57,12
+    EDITTEXT        IDC_EDIT_DK4,209,41,91,12,ES_AUTOHSCROLL
+    CONTROL         "dwKey5",IDC_CHECK_DK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,70,42,12
+    EDITTEXT        IDC_EDIT_DK5,209,71,91,12,ES_AUTOHSCROLL
+    CONTROL         "dwKey6",IDC_CHECK_DK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,100,42,12
+    EDITTEXT        IDC_EDIT_DK6,209,101,91,12,ES_AUTOHSCROLL
+    CONTROL         "dwKey7",IDC_CHECK_DK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,130,42,12
+    EDITTEXT        IDC_EDIT_DK7,209,132,91,12,ES_AUTOHSCROLL
+    CONTROL         "ClientIP",IDC_CHECK_IP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,41,42,12
+    EDITTEXT        IDC_EDIT_IP,54,41,91,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_ACTION,20,86,124,30,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">",IDC_ACTION_INSERT,5,86,13,14
+    PUSHBUTTON      "<",IDC_ACTION_DELETE,5,101,13,14
+    LISTBOX         IDC_LIST_CHAR,54,195,90,30,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">",IDC_CHAR_INSERT,40,194,12,13
+    PUSHBUTTON      "<",IDC_CHAR_DELETE,40,210,12,13
+    CONTROL         "Log",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,190,42,12
+    EDITTEXT        IDC_EDIT_LOG,209,194,91,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,1,0,147,38
+    GROUPBOX        "",IDC_STATIC,1,34,147,23
+    GROUPBOX        "",IDC_STATIC,1,54,147,65
+    GROUPBOX        "",IDC_STATIC,0,132,147,98
+    GROUPBOX        "",IDC_STATIC,149,0,154,215
+    CONTROL         "dwKey8",IDC_CHECK_DK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,160,42,12
+    CONTROL         "dwKey9",IDC_CHECK_DK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,175,42,12
+    EDITTEXT        IDC_EDIT_DK8,209,162,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DK9,209,178,91,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CONNECT DIALOG  0, 0, 163, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Connect Log"
+FONT 8, "Verdana"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,62,50,14
+    LTEXT           "Select Log",IDC_STATIC,7,3,48,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CONNECT,61,4,94,140,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ACCOUNT,61,24,94,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,61,42,94,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Account",IDC_STATIC,7,26,47,13
+    LTEXT           "Password",IDC_STATIC,7,44,47,13
+END
+
+IDD_DIALOG_DETAIL DIALOG  0, 0, 201, 281
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_THICKFRAME
+CAPTION "Item Detail View"
+FONT 8, "Verdana"
+BEGIN
+    DEFPUSHBUTTON   "O K",IDOK,0,267,200,14
+    LISTBOX         IDC_LIST_DETAIL,0,0,200,265,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_DIALOG_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_DIALOG_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 274
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_TRAICON             ICON                    "res\\LogTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive"
+            VALUE "FileDescription", "LogTool"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "LogTool"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "LogTool.EXE"
+            VALUE "ProductName", "LogTool ?? ????"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_TOOLBAR_CONNECT
+    BUTTON      ID_TOOLBAR_SAVE
+    BUTTON      ID_TOOLBAR_SEARCH
+    SEPARATOR
+    BUTTON      ID_MENU_SAVELOGCOLUMN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "Menu(&M)"
+    BEGIN
+        MENUITEM "Connect(&C)\tCtrl+N",         ID_CONNECT
+        MENUITEM "Save(&S)\tCtrl+S",            ID_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Save LOG column",             ID_MENU_SAVELOGCOLUMN
+        MENUITEM SEPARATOR
+        MENUITEM "Quit(&Q)\tCtrl+Q",            ID_QUIT
+    END
+    POPUP "Function(&F)"
+    BEGIN
+        MENUITEM "Search(&S)\tCtrl+F",          ID_SEARCH
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Info(&I)",                    ID_INFO
+    END
+END
+
+IDR_POPUP MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Search",                      ID_POPUP_SEARCH
+    END
+END
+
+IDR_POPUP_DEVELOPER MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Search",                      ID_POPUP_SEARCH
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS 
+BEGIN
+    "A",            ID_ACCEL_SELECTALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_ACCEL_COPY,          VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_ACCEL_SEARCH,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_ACCEL_CONNECT,       VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_ACCEL_QUIT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_ACCEL_SAVE,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "LogTool (&A)..."
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\LogTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

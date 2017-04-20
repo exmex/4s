@@ -1,0 +1,33 @@
+#pragma once
+#include "afxcmn.h"
+
+// CTChannelDlg 대화 상자입니다.
+
+class CTChannelDlg : public CDialog
+{
+	DECLARE_DYNAMIC(CTChannelDlg)
+
+public:
+	CTChannelDlg(CWnd* pParent = NULL);   // 표준 생성자입니다.
+	virtual ~CTChannelDlg();
+
+public:
+	LPTCHANNEL m_pTCHANNEL;
+	CListCtrl m_cTCHANNEL;
+	VTCHANNEL m_vTCHANNEL;
+
+// 대화 상자 데이터입니다.
+	enum { IDD = IDD_DIALOG_CHANNEL };
+
+public:
+	void ClearTCHANNEL();
+
+protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
+
+	DECLARE_MESSAGE_MAP()
+public:
+	virtual BOOL OnInitDialog();
+protected:
+	virtual void OnOK();
+};

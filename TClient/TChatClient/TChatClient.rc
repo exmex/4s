@@ -1,0 +1,648 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\TChatClient.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#include ""afxprint.rc""       // 인쇄 미리 보기 리소스\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TChatClient.ico"
+IDR_TChatClientTYPE     ICON                    "res\\TChatClientDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_CON_LOGIN
+    BUTTON      ID_CON_LOGOUT
+    SEPARATOR
+    BUTTON      ID_CHATTAB_ALL
+    BUTTON      ID_CHATTAB_NORMAL
+    BUTTON      ID_CHATTAB_WISPER
+    BUTTON      ID_CHATTAB_ANNOUNCE
+    SEPARATOR
+    BUTTON      ID_SET_TARGET
+    SEPARATOR
+    BUTTON      ID_SHOP_OPEN
+    BUTTON      ID_SHOP_AUTO_OPEN
+    BUTTON      ID_SHOP_CLOSE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "Connect(&C)"
+    BEGIN
+        MENUITEM "Log In(&I)",                  ID_CON_LOGIN
+        MENUITEM "Log Out(&O)",                 ID_CON_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Chating(&T)"
+    BEGIN
+        MENUITEM "All(&A)",                     ID_CHATTAB_ALL
+        MENUITEM "General(&N)",                 ID_CHATTAB_NORMAL
+        MENUITEM "Whisper(&W)",                 ID_CHATTAB_WISPER
+        MENUITEM "Notifications(&G)",           ID_CHATTAB_ANNOUNCE
+        MENUITEM SEPARATOR
+        MENUITEM "From a whisper a Last whisper(&L)", ID_SET_TARGET
+    END
+    POPUP "Store(&S)"
+    BEGIN
+        MENUITEM "Create Private Store(&O)",    ID_SHOP_OPEN
+        MENUITEM "Close Private Store(&C)",     ID_SHOP_CLOSE
+        MENUITEM "Auto Store(&A)",              ID_SHOP_AUTO_OPEN
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "ToolBar(&T)",                 ID_VIEW_TOOLBAR
+        MENUITEM "Status(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "Tool(&U)"
+    BEGIN
+        MENUITEM "Ping Test (&P)",              ID_TOOL_PINGTEST
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "TChatClient Info(&A)...",     ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_SET_TARGET,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "TChatClient Infomation"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TChatClient Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007 신실짱이 만들었씀 !!",IDC_STATIC,40,
+                    25,129,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 153, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS_LOGIN,"SysIPAddress32",WS_TABSTOP,35,8,
+                    111,14
+    EDITTEXT        IDC_EDIT_PORT,35,24,111,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_ID,35,38,111,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_RIGHT | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PW,35,52,111,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_RIGHT | WS_EX_STATICEDGE
+    CONTROL         "PW Encrypt",IDC_CHK_PWENCRYPT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,33,72,53,10
+    DEFPUSHBUTTON   "Connect",IDOK,35,87,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,96,87,50,14,BS_FLAT
+    LTEXT           "Address",IDC_STATIC,7,11,25,8
+    LTEXT           "Port",IDC_STATIC,7,26,25,8
+    LTEXT           "Account",IDC_STATIC,7,40,25,8
+    LTEXT           "Password",IDC_STATIC,7,54,25,8
+END
+
+IDD_DIALOG_GROUP DIALOGEX 0, 0, 201, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Server"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,156,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,144,156,50,14,BS_FLAT
+    CONTROL         "",IDC_LIST_GROUP,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,7,7,187,
+                    143,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_CHANNEL DIALOGEX 0, 0, 201, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Channel"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,156,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,144,156,50,14,BS_FLAT
+    CONTROL         "",IDC_LIST_CHANNEL,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,7,7,187,
+                    143,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_CHAR DIALOGEX 0, 0, 201, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Character"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,91,156,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,144,156,50,14,BS_FLAT
+    CONTROL         "",IDC_LIST_CHAR,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,7,7,187,
+                    143,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_INVEN DIALOGEX 0, 0, 489, 322
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Private Store"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Private Name",IDC_STATIC,7,12,45,8
+    EDITTEXT        IDC_EDIT_SHOP_NAME,52,9,430,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_INVEN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,7,30,94,265,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_ITEM,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,103,30,179,265,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      ">>",IDC_BUTTON_TOSHOP,285,117,15,14,BS_FLAT
+    PUSHBUTTON      "<<",IDC_BUTTON_TOINVEN,285,133,15,14,BS_FLAT
+    CONTROL         "",IDC_LIST_SHOP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,303,30,179,265,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,379,301,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,432,301,50,14,BS_FLAT
+END
+
+IDD_DIALOG_PRICE DIALOGEX 0, 0, 117, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Price"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_RUNE,7,8,75,14,ES_AUTOHSCROLL | ES_NUMBER | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "Rune",IDC_STATIC,82,11,28,8
+    EDITTEXT        IDC_EDIT_LUNA,7,24,75,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "Luna",IDC_STATIC,82,27,28,8
+    EDITTEXT        IDC_EDIT_CRON,7,40,75,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "Crone",IDC_STATIC,82,43,28,8
+    DEFPUSHBUTTON   "OK",IDOK,7,58,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,60,58,50,14,BS_FLAT
+END
+
+IDD_DIALOG_SHOP_NAME DIALOGEX 0, 0, 186, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Private Store Create"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Store Name",IDC_STATIC,7,11,38,8
+    EDITTEXT        IDC_EDIT_SHOP_NAME,45,8,134,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Create",IDOK,77,26,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,14,BS_FLAT
+END
+
+IDD_PINGTEST DIALOGEX 0, 0, 478, 329
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ping Test"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "CLOSE",IDOK,424,307,50,14
+    LTEXT           "IP       : ",IDC_STATIC,20,311,28,9
+    LTEXT           "PORT :",IDC_STATIC,144,311,28,9
+    LTEXT           "Cur PING  :",IDC_STATIC,43,286,37,9
+    CONTROL         "Loop",IDC_CHK_PINGLOOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,228,310,31,10
+    EDITTEXT        IDC_EDIT_PINGSECOND,259,307,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    LTEXT           "Second",IDC_STATIC,303,313,24,8
+    PUSHBUTTON      "SEND",IDC_BTN_SEND,337,307,50,14
+    LTEXT           "NULL",IDC_TEXT_IP,52,311,82,8
+    LTEXT           "NULL",IDC_TEXT_PORT,176,311,44,8
+    LTEXT           "NULL",IDC_TEXT_PING,86,286,42,8
+    LTEXT           "Max PING : ",IDC_STATIC,160,286,37,8
+    LTEXT           "NULL",IDC_TEXT_MAXPING,205,286,40,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TChatClient.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "TChatClient.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        VERTGUIDE, 32
+        VERTGUIDE, 35
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+        HORZGUIDE, 15
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 58
+    END
+
+    IDD_DIALOG_GROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 150
+    END
+
+    IDD_DIALOG_CHANNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 150
+    END
+
+    IDD_DIALOG_CHAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 150
+    END
+
+    IDD_DIALOG_INVEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 482
+        VERTGUIDE, 52
+        VERTGUIDE, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+        HORZGUIDE, 16
+        HORZGUIDE, 30
+    END
+
+    IDD_DIALOG_PRICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        VERTGUIDE, 82
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+        HORZGUIDE, 15
+        HORZGUIDE, 31
+        HORZGUIDE, 47
+    END
+
+    IDD_DIALOG_SHOP_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 45
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+        HORZGUIDE, 15
+    END
+
+    IDD_PINGTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 474
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 321
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "TChatClient\n\nTChatClient\n\n\nTChatClient.Document\nTChatClient.Document"
+    IDS_CONNECT_LOGIN       "Connect to Login Server."
+    IDS_CANNOT_CREATE_SOCK  "Soket Create Failed"
+    IDS_CANNOT_SET_SOCKOPT  "Soket Option Set Failed"
+    IDS_CANNOT_SET_RECVBUF  "Soket Recv Buffer Set Failed"
+    IDS_FMT_IPADDR          "%d.%d.%d.%d"
+    IDS_CONNECT_FAILED      "Server Connect Failed"
+    IDS_LOGIN_INFO          "Send to Login Infomation."
+    IDS_CONNECT_INVALID_PW  "Password Error"
+    IDS_CONNECT_INVALID_VERSION "Version Error"
+    IDS_CONNECT_INVALID_USER "Can not find User"
+    IDS_CONNECT_IPBLOCK     "Invald Address"
+    IDS_CONNECT_DUPLICATE   "Users can already access and the same"
+    IDS_CONNECT_INTERNAL    "internal error failed to connect to the server."
+    IDS_FMT_LOGIN           "User[%s] Connecting"
+    IDS_CONNECT_NOSERVER    "Can not find Server"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TChatClient"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document.\nCreate"
+    ID_FILE_OPEN            "Open an existing document.\nOpen"
+    ID_FILE_CLOSE           "Close the active document.\nClose"
+    ID_FILE_SAVE            "Save the active document.\nSave"
+    ID_FILE_SAVE_AS         "Save the active document under a new name.\nSave As.."
+    ID_FILE_PAGE_SETUP      "Change the printing options.\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options.\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document.\nPrint"
+    ID_FILE_PRINT_PREVIEW   "To display the entire page.\nPrint View"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Program information, version number, copyright is displayed.\nInfo"
+    ID_APP_EXIT             "Quit the application.\nQuit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Toolbar Enable/Disable\nToolbar Enable/Disable"
+    ID_VIEW_STATUS_BAR      "StatusBar Enable/Disable\nStatusBar Enable/Disable"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change Window Size"
+    AFX_IDS_SCMOVE          "Chage Window Position"
+    AFX_IDS_SCMINIMIZE      "Minimize Window"
+    AFX_IDS_SCMAXIMIZE      "Maximaiz Window"
+    AFX_IDS_SCNEXTWINDOW    "Next Window"
+    AFX_IDS_SCPREVWINDOW    "Prev Window"
+    AFX_IDS_SCCLOSE         "Close Window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore"
+    AFX_IDS_SCTASKLIST      "TaskList"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CON_LOGIN            "Join to Game\nLogin"
+    ID_CON_LOGOUT           "Out to Account \nLogout"
+    ID_CHATTAB_ALL          "All message is displayed.\nAll"
+    ID_CHATTAB_NORMAL       "General message is displayed.\nGeneral"
+    ID_CHATTAB_WISPER       "Whisper message is displayed.\nWhisper"
+    ID_CHATTAB_ANNOUNCE     "Notice message is displayed.\nNotice message"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONNECT_INVALIDCHAR "Invalid Character! Block please."
+    IDS_CONNECT_MAP         "Connect to MapServer."
+    IDS_CONNECT_NOCHANNEL   "Can not find Channel"
+    IDS_CONNECT_NOCHAR      "Can not find Character"
+    IDS_FMT_START           "Playing Character[%s]"
+    IDS_FMT_TARGET          "Target : %s"
+    IDS_KEYWORD_CHAT_NORMAL "/n /N /General"
+    IDS_KEYWORD_CHAT_NATION "/w /W /All"
+    IDS_KEYWORD_CHAT_PARTY  "/p /P /Party"
+    IDS_KEYWORD_CHAT_GUILD  "/g /G /Guild"
+    IDS_KEYWORD_CHAT_WHISPER "/r /R /Whisper"
+    IDS_KEYWORD_CHAT_FORCE  "/c /C /Corps"
+    IDS_CHAT_WHISPER        "Whisper"
+    IDS_CHAT_FORCE          "Corps"
+    IDS_CHAT_GUILD          "Guild"
+    IDS_CHAT_NATION         "All"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHAT_NORMAL         "General"
+    IDS_CHAT_PARTY          "Party"
+    IDS_CHAT_WORLD          "Notifications"
+    IDS_CHAT_OPERATOR       "Infomation"
+    IDS_KEYWORD_CHAT_WORLD  "/Notifications"
+    IDS_KEYWORD_CHAT_INFO   "/Infomation"
+    IDS_FILE_ITEMCHART      ".\\TItem.tcd"
+    IDS_SHOPPANE_MSG        "Store %u Item left"
+    IDS_MSG_STOREOPEN_SUCC  "Private stores to start selling."
+    IDS_MSG_STOREOPEN_FAIL  "You can not open a private stores"
+    IDS_MSG_STORENAME       "Private Stroes"
+    IDS_MSG_STORECLOSE_SUCC "End to Private Stores"
+    IDS_MSG_STORECLOSE_FAIL "Private stores can not quit."
+    IDS_MSG_STORESELL       "[%s]is [%u]EA Sold"
+    IDS_CHAT_OPERATOR2      "Infomation"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SET_TARGET           "From a whisper a Last whisper\nWhisper Target"
+    ID_SHOP_OPEN            "Create Priveat Store\nCreate Priveat Store"
+    ID_SHOP_CLOSE           "Close Priveat Store\nClose Priveat Store"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SHOP_AUTO_OPEN       "Auto Store\nAuto Store"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\TChatClient.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#include "afxprint.rc"       // 인쇄 미리 보기 리소스
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1769 @@
+#ifdef ENGLISH
+
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "TClient.manifest"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_ERROR_DIALOG DIALOGEX 0, 0, 251, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "오류"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_ERROR,7,40,237,69,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "오류내용 보고",IDOK,7,176,182,14
+    PUSHBUTTON      "닫기",IDCANCEL,194,176,50,14
+    LTEXT           "실행 중 예상치 못한 오류를 발견하였습니다.\n불편을 끼쳐드려 대단히 죄송합니다.",
+                    IDC_STATIC_MESSAGE,7,7,237,20
+    LTEXT           "보고내용",IDC_STATIC_CONTENTS,7,30,32,8
+    LTEXT           "해당 오류를 보고 하여 문제 해결에 도움을 주실 수 있습니다.\n\n수집된 데이터는 오직 문제를 해결하는데 만 사용됩니다. 이 오류 보고는 오류 해결 외에 마케팅 등의 다른 목적으로 사용되지 않습니다. 홈페이지를 통해 오류내용을 상세히 기술해 주시면 빠른 문제해결에 큰 도움이 됩니다.",
+                    IDC_STATIC_MESSAGE2,7,115,237,57
+END
+
+ID_PACKET_DIALOG DIALOGEX 0, 0, 529, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "패킷 감시기"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_PACKET,7,43,257,54,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_LIST_CAPTURED,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,113,257,230
+    LTEXT           "감시된 패킷",IDC_STATIC,7,102,71,8
+    LTEXT           "패킷 내용",IDC_STATIC,268,7,71,8
+    LTEXT           "감시중인 패킷",IDC_STATIC,7,34,242,8
+    LTEXT           "패킷 타입종류",IDC_STATIC,7,7,40,8
+    LTEXT           "패킷",IDC_STATIC,63,7,40,8
+    COMBOBOX        IDC_COMBO1,7,17,54,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,62,18,155,195,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "등록",IDC_BUTTON_ADD,219,17,46,15
+    CONTROL         "",IDC_EDIT_OUTPUT,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,267,17,255,326
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    ID_ERROR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    ID_PACKET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 522
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT_CURSE          TEXT                    "res\\Curse.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DRAGSIZE            CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "4Story\n\n4Story\n\n\nTClient.Document\nTClient Document"
+    IDS_QUIT_TITLE          "Exit game"
+    IDS_QUIT_MSG            "Exit game and Quit program"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_LOGIN_ID            "Please enter your ID"
+    IDS_ERROR_TITLE         "Error"
+    IDS_OK                  "Ok"
+    IDS_CANCEL              "Cancel"
+    IDS_CONNECT_FAILED      "Disconnecting from server due to network error."
+    IDS_INVALID_PASSWD      "Incorrect PW. Please check your PW."
+    IDS_DUPLICATE_CONNECT   "Another player is connecting to the game with the same ID. Disconnecting from the server. "
+    IDS_INVALID_VERSION     "Incorrect version. Please connect to the game again."
+    IDS_INTERNAL            "System error.Please try again later."
+    IDS_INVALID_USER        "Unable to find the user or wrong password. Please check the ID and password."
+    IDS_NOGROUP             "Choose a server."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "4Story"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DUPNAME             "The name is already in use."
+    IDS_INVALID_SLOT        "Choose a slot"
+    IDS_NOCHANNEL           "Unable to find the channel. Disconnecting from the server."
+    IDS_NOCHAR              "Choose a character"
+    IDS_NOSERVER            "Unable to find the World. Please try again later."
+    IDS_NEW_CHAR            "New character"
+    IDS_NONAME              "Please enter a character name."
+    IDS_DELCHAR             "Delete character."
+    IDS_INVALID_CHAR        "Disconnecting from server due to internal error."
+    IDS_FILE_MONCHART       ".\\Tcd\\TMon.tcd"
+    IDS_FILE_ITEMCHART      ".\\Tcd\\TItem.tcd"
+    IDS_FILE_RACECHART      ".\\Tcd\\TRace.tcd"
+    IDS_FILE_HEADCHART      ".\\Tcd\\TFace.tcd"
+    IDS_FILE_BODYCHART      ".\\Tcd\\TBody.tcd"
+    IDS_FILE_PANTSCHART     ".\\Tcd\\TPants.tcd"
+    IDS_FILE_HANDCHART      ".\\Tcd\\THand.tcd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_FOOTCHART      ".\\Tcd\\TFoot.tcd"
+    IDS_ERROR_ITEM_NODESTINVEN "Unable to find the bag."
+    IDS_ERROR_ITEM_NOSRCINVEN "Unable to find a bag."
+    IDS_ERROR_ITEM_NOSRCITEM "Unable to find the item."
+    IDS_ERROR_ITEM_CANNOTEQUIP "This item cannot be equipped here."
+    IDS_ERROR_ITEM_INVENFULL "Insufficient space in the bag."
+    IDS_FILE_ACTIONCHART    ".\\Tcd\\TAction.tcd"
+    IDS_NOSLOT              "There are no slots to create a character."
+    IDS_FMT_LEVEL           "%d"
+    IDS_FMT_GAUGE           "%d/%d"
+    IDS_FMT_NUMBER          "%d"
+    IDS_FILE_SKILLCHART     ".\\Tcd\\TSkill.tcd"
+    IDS_DELCHAR_TITLE       "Delete character."
+    IDS_DELCHAR_MSG         "The character you have chosen will be deleted. \n\nPlease enter your login PW."
+    IDS_FMT_PARTY_REQ       "[%s]has asked you to join the party."
+    IDS_PARTY_REQ           "Invite to Party"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOT_PARTYCHIEF      "Only the party leader has the authority to invite."
+    IDS_NOPARTY             "The party does not exist."
+    IDS_FMT_ALREADY_PARTY   "[%s] is already in another party."
+    IDS_FMT_PARTY_WAITERS   "[%s] was already invited to another party."
+    IDS_FMT_PARTY_NOUSER    "[%s] has logged off."
+    IDS_FMT_PARTY_DENY      "[%s] has politely turned down your invitation to join your party."
+    IDS_PARTY_FULL          "There are no empty spaces in the party."
+    IDS_REVIVAL_MSG         "Do you want to resurrect?"
+    IDS_REVIVAL_TITLE       "Resurrect"
+    IDS_REVIVAL             "Resurrect"
+    IDS_CHAT_NORMAL         "General"
+    IDS_CHAT_WHISPER        "Whisper"
+    IDS_CHAT_NATION         "All"
+    IDS_CHAT_WORLD          "Notice"
+    IDS_CHAT_PARTY          "Party"
+    IDS_CHAT_GUILD          "Guild"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_CHAT_NAME       "[%s] (%s)"
+    IDS_KEYWORD_CHAT_NORMAL "/n /N /General /general /Normal /normal"
+    IDS_KEYWORD_CHAT_NATION "/a /A /All /all"
+    IDS_MBOX_GUILD_BUILD    "Please enter a name for your new guild and click ""Yes""."
+    IDS_KEYWORD_CHAT_PARTY  "/p /P /Party /party"
+    IDS_KEYWORD_CHAT_GUILD  "/g /G /Guild /guild"
+    IDS_KEYWORD_CHAT_WHISPER "/w /W /Whisper /whisper"
+    IDS_PASSWORD            "Login PW"
+    IDS_FMT_BUYITEM         "Purchase an item.\n[%s]"
+    IDS_EA                  "Number of Items"
+    IDS_BUYITEM             "Buy an Item"
+    IDS_FMT_BUYSTACK        "The maximum order for [%s] is %d. Do you want to buy them?"
+    IDS_FMT_BUYONE          "The minimum order for [%s] is one. Do you want to buy it?"
+    IDS_SELLITEM            "Sell Items"
+    IDS_FMT_SELLITEM        "Sell [%s](%d EA) at [%s]."
+    IDS_FMT_SELLALL         "The maximum sales volume for [%s] is %d.\n\n Do you want to sell them?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_SELLONE         "The minimum sales volume for [%s] is one.\n\nDo you want to sell it?"
+    IDS_SKILLTAB_PASSIVE    "Basic"
+    IDS_SKILLTAB_ATTACK     "Attack"
+    IDS_SKILLTAB_DEFENSE    "Defense"
+    IDS_SKILLTAB_STATE      "Stance"
+    IDS_SKILLTAB_BATTLE     "Battle"
+    IDS_SKILLTAB_ASSASSIN   "Assassinate"
+    IDS_SKILLTAB_TRAP       "Survival"
+    IDS_SKILLTAB_SHOOT      "Shooting"
+    IDS_SKILLTAB_SURVIVAL   "Survival"
+    IDS_SKILLTAB_FIRE       "Flame"
+    IDS_SKILLTAB_ICE        "Cold"
+    IDS_SKILLTAB_ELEC       "Lightning"
+    IDS_SKILLTAB_DIVINE     "Holiness"
+    IDS_SKILLTAB_DARK       "Darkness"
+    IDS_SKILLTAB_SACRIFICE  "Sacrifice"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SKILLTAB_SUPPORT    "Support"
+    IDS_SKILLTAB_SUMMON     "Summon"
+    IDS_SKILLTAB_CONTROL    "Control"
+    IDS_FILE_SKILLTREECHART ".\\Tcd\\TSkillTree.tcd"
+    IDS_FMT_REALPERCENT     "%.2f%%"
+    IDS_ACCEPT              "Accept"
+    IDS_CLOSE               "Close"
+    IDS_FILE_QUEST          ".\\TQuest.mpq"
+    IDS_COMPLETE            "Complete"
+    IDS_FMT_TERM            "%d."
+    IDS_FMT_REWARD          "%s\n%d EA"
+    IDS_ERROR_SILENCE       "Your opponent has blocked the use of this skill."
+    IDS_FMT_REWARD_EXP      "Experience Point\n%d"
+    IDS_FMT_NAME            "%s"
+    IDS_QRESULT_COMPLETE    "(Completed)"
+    IDS_QRESULT_INCOMPLETE  "(In Progress)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_QRESULT_FAILED      "(Failed)"
+    IDS_QUEST_STATUS        "(%d/%d)"
+    IDS_FMT_COUNT           "(%d)"
+    IDS_GIVEUP              "Give Up"
+    IDS_QUEST_CONTENT       "<Content>"
+    IDS_QUEST_SUMMARY       "<Summary>"
+    IDS_QUEST_TERM          "<Objective>"
+    IDS_FMT_QUEST_STATUS    "%s %s"
+    IDS_TCHARINFO_PHYSIC    "Physical"
+    IDS_TCHARINFO_MAGIC     "Magic"
+    IDS_TCHARINFO_REG       "Resistance"
+    IDS_TCHARINFO_RANK      "Position"
+    IDS_FILE_REGIONCHART    ".\\Tcd\\TRegion.tcd"
+    IDS_FILE_SKILLFUNCTION  ".\\Tcd\\TSkillFunction.tcd"
+    IDS_FMT_BASIC_STAT      "%3d"
+    IDS_FMT_CHARINFO_RANGE  "%d ~%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_INFOCHART      ".\\Tcd\\TInfo.tcd"
+    IDS_FILE_MINIMAP        ".\\Tcd\\TMinimap.tcd"
+    IDS_FILE_NPCCHART       ".\\Tcd\\TNPCTemp.tcd"
+    IDS_FILE_MAPNPC         ".\\Tcd\\TNPC%08x.tcd"
+    IDS_FMT_FIELDNAME       "%s"
+    IDS_FMT_FIELDTITLE      "[%s]\n%s"
+    IDS_SERVER_LOW          "Good"
+    IDS_SERVER_NORMAL       "Crowded"
+    IDS_SERVER_FULL         "Full"
+    IDS_NORMAL_SERVER       "Normal"
+    IDS_BATTLE_SERVER       "Battle"
+    IDS_ERROR_NEEDWEAPON    "You're not equiped with the Weapon needed for this skill."
+    IDS_ERROR_TOOCLOSE      "The target is too close. "
+    IDS_ERROR_LOOKAT        "You must face the target."
+    IDS_ERROR_TOOFAR        "The target is too far away."
+    IDS_INFO_TITLE          "Information"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_SKILL         "Failed to use the skill."
+    IDS_FILE_SFXCHART       ".\\Tcd\\TSFX.tcd"
+    IDS_FILE_STEPCHART      ".\\Tcd\\TSTEP.tcd"
+    IDS_FILE_MAPCHART       ".\\Tcd\\TMAP.tcd"
+    IDS_FILE_NODECHART      ".\\Tcd\\TNODE.tcd"
+    IDS_FMT_PATHFILE        ".\\Path\\TFLAG%08x.tpf"
+    IDS_GOTO_THUMB_MSG      "Some unknown power is summoning your soul."
+    IDS_GOTO_THUMB_TITLE    "Summon Soul"
+    IDS_FMT_DEAD            "[%s]'s corpse"
+    IDS_FILE_SWITCHCHART    ".\\Tcd\\TSwitch.tcd"
+    IDS_FILE_GATECHART      ".\\Tcd\\TGate.tcd"
+    IDS_FILE_LIGHTCHART     ".\\Tcd\\TLIGHT.tcd"
+    IDS_FILE_BGMCHART       ".\\Tcd\\TBGM.tcd"
+    IDS_FILE_ACTIONDEFCHART ".\\Tcd\\TADEF.tcd"
+    IDS_ERROR_NEEDSKILLPOINT "You cannot learn this skill because you don't have enough skill points."
+    IDS_ERROR_NEEDPREVACT   "The prerequisite skill is not activated."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_ENVCHART       ".\\Tcd\\TENV.tcd"
+    IDS_VK_SNAPSHOT         "PtrScr"
+    IDS_GAMBLING_TITLE      "Sorcery"
+    IDS_GAMBLING_MSG        "Wait a second."
+    IDS_ITEM_ERR_GAMBLE     "This item is sealed."
+    IDS_FMT_SKILL_REWARD    "%s"
+    IDS_FMT_DURATIONDEL     "[%s]'s durability reached 0 and was destroyed."
+    IDS_EXTENSION_PERIOD    "Extend period"
+    IDS_FMT_DATE_YMD        "%04dY/%02dM/%02dD"
+    IDS_LIMIT_PERIOD        "Expiration Date:"
+    IDS_BUY                 "Purchase"
+    IDS_CASH_WOULDBUY       "%d cash. Do you want to buy it?"
+    IDS_ERR_CASHSHOP_NOTFOUND "Unable to find the item."
+    IDS_ERR_CASHSHOP_MAXCOUNT "The cash item bank is full."
+    IDS_ERR_CASHSHOP_NEEDEXTEND "The use period for the cash item bank has expired."
+    IDS_FMT_DATE_YMDHM      "%04dY/%02dM/%02dD %02d:%02d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_MAXLEVEL      "You have already reached the maximum level for this skill."
+    IDS_ERROR_NEEDLEVELUP   "You cannot learn this skill because your level is too low."
+    IDS_ERROR_WRONGTARGET   "This skill cannot be used against the target."
+    IDS_ERROR_NEEDPARENT    "You must learn the prerequisite skill first."
+    IDS_ERROR_WRONGREGION   "You cannot use this skill in this area."
+    IDS_ERROR_MATCHCLASS    "You cannot learn this skill because of your class"
+    IDS_ERROR_NEEDMONEY     "You cannot learn this skill because you don't have enough money on you."
+    IDS_ERROR_SPEEDYUSE     "Charging skill."
+    IDS_ERROR_NOTFOUND      "Unable to find the skill."
+    IDS_ERROR_NEEDMP        "Not enough MP."
+    IDS_ERROR_NEEDHP        "Not enough HP."
+    IDS_ERROR_TRANS         "You cannot use skills while transforming into a flying object."
+    IDS_ERROR_HIDE          "Skill cannot be used because of an obstacle."
+    IDS_ERROR_STUN          "Skill cannot be used while stunned."
+    IDS_ERROR_DEAD          "Skill cannot be used while you're a ghost. "
+    IDS_FMT_SQUAD_NAME      """%s"" squad"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_NEED_PARTY    "You're not in a party."
+    IDS_ERROR_TARGET_NO_PARTY "The player is not in a party."
+    IDS_ERROR_NOT_COMMANDER "This function can be used only by the commander."
+    IDS_ERROR_WRONG_TARGET  "Incorrect target."
+    IDS_FMT_CORPS_ASK       "[%s] has asked you to join the corps."
+    IDS_FMT_CORPS_DENY      "[%s] has politely turned down your invitation to join the corps."
+    IDS_ERROR_CORPS_ALREADY "Already participating in another corps."
+    IDS_TCMD_NONE           "Standby"
+    IDS_TCMD_MOVE           "Move"
+    IDS_TCMD_ATTACK         "Attack"
+    IDS_TCMD_PROTECT        "Escort"
+    IDS_UNKNOWN             "Unidentified"
+    IDS_MENU_CHARINFO       "Character Information"
+    IDS_MENU_SKILLINFO      "Skill Information"
+    IDS_MENU_EXITPARTY      "Leave Party"
+    IDS_MENU_GUILDINFO      "Guild Information"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_EXITGUILD      "Withdrawal from Guild"
+    IDS_MENU_EXITCORPS      "Withdrawal from Corps"
+    IDS_MENU_PC_TRADE       "Request to Trade"
+    IDS_MENU_PARTY_REQ      "Invite to Party"
+    IDS_MENU_PARTY_KICK     "Ban a Party Member"
+    IDS_MENU_GUILD_REQ      "Invite to Guild"
+    IDS_MENU_CORPS_REQ      "Corps"
+    IDS_MENU_CORPS_KICK     "Ban from a Squad"
+    IDS_MENU_SETCOMMANDER   "Yield General"
+    IDS_MENU_SETCHIEF       "Yield Squad Leader"
+    IDS_FILE_SKYCHART       ".\\Tcd\\TSky.tcd"
+    IDS_FILE_POPUPITEMCHART ".\\Tcd\\TMenuItem.tcd"
+    IDS_FILE_POPUPMENUCHART ".\\Tcd\\TPopupMenu.tcd"
+    IDS_FILE_FOGCHART       ".\\Tcd\\TFog.tcd"
+    IDS_TCLASS_WARRIOR      "Warrior"
+    IDS_TCLASS_RANGER       "Assassin"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TCLASS_ARCHER       "Archer"
+    IDS_TCLASS_WIZARD       "Wizard "
+    IDS_TCLASS_PRIEST       "Priest"
+    IDS_TCLASS_SORCERER     "Summoner"
+    IDS_INVALID_NAME        "You cannot use this name.\nYou can only use English characters and numbers in a character name."
+    IDS_NAME_TOO_LONG       "The character name is too long.\nYou can use up to 16 English characters."
+    IDS_FMT_REVIVAL_REQ     "[%s]has used the resurrection skill. Do you want to be resurrected?"
+    IDS_FMT_REVIVAL_REJECT  "[%s]has politely turned down your request to be resurrected."
+    IDS_FILE_LEVELCHART     ".\\Tcd\\TLevel.tcd"
+    IDS_FMT_RUNE            "%d Rune"
+    IDS_SKILLUPGRADEINFO_TITLE "[Next Level Info]"
+    IDS_TEXT_MASTER         "Master"
+    IDS_FMT_LUNA            "%d Luna"
+    IDS_FMT_CRON            "%d Cron "
+    IDS_EXITGAME_MSG        "Finish the game and return to the Character Selection window."
+    IDS_ERROR_CANNOT_OPEN_WORLDMAP 
+                            "You cannot use the World Map while travelling space-time."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_WORLDMAP_TITLE  "[%s]%s"
+    IDS_FMT_WORLDMAP_NAME   "%s%s"
+    IDS_FILE_TCOUNTRYINFO   ".\\Tcd\\TCountryInfo.tcd"
+    IDS_FILE_TCLASSINFO     ".\\Tcd\\TClassInfo.tcd"
+    IDS_FILE_TRACEINFO      ".\\Tcd\\TRaceInfo.tcd"
+    IDS_CONTRY_D            "DeFugel"
+    IDS_CONTRY_C            "Craxion"
+    IDS_CONTRY_B            "Broa"
+    IDS_RACE_HUMAN          "Human"
+    IDS_RACE_BEAST          "Werebeast"
+    IDS_RACE_NYMPH          "Fairy"
+    IDS_DROP_ITEM           "Do you want to discard this item?"
+    IDS_SET_HOME            "Do you want to designate this area as a returning point?"
+    IDS_SET_RETURNPOS       "You have designated this area asa returning point."
+    IDS_ERROR_SET_RETURNPOS "You have failed to designate a returning point."
+    IDS_ERROR_ITEM_DEAD     "Skill cannot be used while you're a ghost. "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEXT_SELREWARD      " (Choose one)"
+    IDS_FMT_PROBREWARD      "\n(%d %c Probability)"
+    IDS_ERROR_SKILLMODE     "This skill cannot be used in current stance."
+    IDS_FILE_LOADINGIMG     ".\\Intro\\Loading%d.bmp"
+    IDS_FILE_GAUGE          ".\\Intro\\Gauge.tga"
+    IDS_FMT_TRADE_REQ       "[%s]has asked you to exchange items.\nDo you accept?"
+    IDS_ERROR_ITEM_BLOCK    "Items cannot be used while stunned."
+    IDS_ERROR_ITEM_NOSKILL  "You do not have the skill to use this item."
+    IDS_ERROR_ITEM_TRADE    "Items cannot be used or move while trading."
+    IDS_ERROR_ITEM_LEVEL    "You cannot use this item because your level is too low."
+    IDS_ERROR_ITEM_NOMATCHCLASS 
+                            "You cannot use this item because of your class."
+    IDS_ERROR_ITEM_BOTHHANDWEAPON 
+                            "This item cannot be used with a two-handed Weapon."
+    IDS_ERROR_TRADE_INVALIDITEM 
+                            "One of [%s]'s items cannot be traded."
+    IDS_ERROR_TRADE_TARGET  "Unable to find the player to trade with."
+    IDS_ERROR_TRADE_NOMONEY "[%s] does not have enough money."
+    IDS_ERROR_TRADE_NOITEM  "One of [%s]'s items is not in the player's possession."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_TRADE_ALREADY "[%s] is currently in another transaction."
+    IDS_ERROR_TRADE_CANCEL  "[%s] has cancelled the transaction."
+    IDS_ERROR_TRADE_DENY    "[%s] has politely turned down your request to trade."
+    IDS_ERROR_TRADE_ENEMY   "You cannot trade with enemy countries."
+    IDS_ERROR_TRADE_CANTRECV "You do not have a bag to retrieve items."
+    IDS_ERROR_TRADE_SUCCESS "The transaction with [%s] is successful."
+    IDS_NPC_REVIVAL         "Do you want themonk to resurrect you?\nThe side effects will be much more severe when you're resurrected by a monk."
+    IDS_FMT_QUEST_SPEEKER   "%s :"
+    IDS_ERROR_CORPS_DEAD    "You cannot manage your corps or squad(party) while you're a ghost."
+    IDS_FILE_ARROWDIR       ".\\Tcd\\TArrowDIR.tcd"
+    IDS_ERROR_PEACEZONE     "The opposing parties cannot attack each other because this is a demilitarized zone."
+    IDS_ERROR_NOTARGET      "You do not have a target to use the skill within the skill range."
+    IDS_ERROR_NOTMOVESKILL  "This skill cannot be used while you're on the move."
+    IDS_FMT_EXP             "You have gained (%d) experience points."
+    IDS_GETMONEY            " is obtained."
+    IDS_FMT_DEFENDMA        "You have received damage from [%s]. (%d Damage)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_DEFENDM         "You have received damage. (%d Damage)"
+    IDS_FMT_ATTACK          "You have inflicted damage on [%s]. (%d Damage)"
+    IDS_FMT_DEFENDA         "[%s] has inflicted damage on [%s]. (%d Damage)"
+    IDS_FMT_DEFEND          "[%s] has received damage. (%d Damage)"
+    IDS_FMT_ATTACKA         "[%s] has inflicted damage on [%s]. (%d Damage)"
+    IDS_FMT_LEVELUPM        "Congratulations! You have reached level (%d)!"
+    IDS_FMT_LEVELUP         "[%s] has reached level (%d)."
+    IDS_FMT_DIE             "[%s]'s soul was summoned and became a ghost."
+    IDS_ERROR_ACTIONLOCK    "You're currently using another skill. You must use the next skill after the skill action is completed."
+    IDS_FILE_TDYNAMICHELP   ".\\Tcd\\TDynamicH.tcd"
+    IDS_ITEM_NOT_FOUND      "Unable to find the item."
+    IDS_ITEM_NO_MONEY       "You do not have enough money on you."
+    IDS_ITEM_NO_SLOT        "You don't have any space in the bag."
+    IDS_ITEM_DEALING        "You cannot use the shop while trading with the user."
+    IDS_FMT_TIMMER          "(%02d:%02d)"
+    IDS_QRESULT_TIMEOUT     "(Time Expired)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_NPCNAME         "[%s] %s"
+    IDS_ITEM_CANNOT_SELL    "This item cannot be sold."
+    IDS_ITEM_CANNOT_TRADE   "This item cannot be traded."
+    IDS_FMT_FLOAT_NUMBER    "%.2f"
+    IDS_TEXT_PRMWEAPON      "Main Weapon"
+    IDS_TEXT_SNDWEAPON      "Sub Weapon"
+    IDS_TEXT_LONGWEAPON     "Long Range Weapon"
+    IDS_TEXT_HEAD           "Hat"
+    IDS_TEXT_BACK           "Cloak"
+    IDS_TEXT_BODY           "Shirt"
+    IDS_TEXT_PANTS          "Pants"
+    IDS_TEXT_FOOT           "Shoes"
+    IDS_TEXT_HAND           "Gloves"
+    IDS_TEXT_NECK           "Necklace"
+    IDS_TEXT_RING           "Ring"
+    IDS_TEXT_EARING         "Earring"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEXT_FACE           "Face"
+    IDS_MENU_CHAR           "Character Information"
+    IDS_MENU_SKILL          "Skill Information"
+    IDS_MENU_COMMUNITY      "Guild"
+    IDS_MENU_QUEST          "Quest Information"
+    IDS_MENU_HELP           "Help"
+    IDS_MENU_SYSTEM         "System Menu"
+    IDS_MENU_MESSENGER      "Messenger"
+    IDS_MENU_MAIL           "Letter"
+    IDS_MENU_ACTLIST        "List of Motions"
+    IDS_CHAT_TAB_ALL        "All"
+    IDS_CHAT_TAB_NORMAL     "General"
+    IDS_CHAT_TAB_WHISPER    "Whisper"
+    IDS_CHAT_TAB_PARTY      "Party"
+    IDS_CHAT_TAB_GUILD      "Guild"
+    IDS_CHAT_TAB_FORCE      "Corps"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHAT_TAB_RESULT     "Result"
+    IDS_CHAT_FORCE          "Corps"
+    IDS_KEYWORD_CHAT_FORCE  "/c /C /Corps /corps"
+    IDS_REPRESENTATION_WHISPER "Whisper"
+    IDS_REPRESENTATION_FORCE "Corps"
+    IDS_REPRESENTATION_GUILD "Guild"
+    IDS_REPRESENTATION_NATION "All"
+    IDS_REPRESENTATION_NORMAL "General"
+    IDS_REPRESENTATION_PARTY "Party"
+    IDS_MBOX_GUILD_BUILD_LOWLEVEL 
+                            "Your level is not high enough to create a guild.\nYour level must be at least %u in order to create a guild."
+    IDS_TITLE_CLOSE         "Close"
+    IDS_ITEMUP_WARN_UP      "You need %s to upgrade, and the item may disappear if you fail. The cost of upgrade will not be refunded even if you fail. Do you want to continue?"
+    IDS_ITEMUP_WARN_DOWN    "Lowering the Weapon level by one.\nDo you want to continue?"
+    IDS_ITEMUP_WARN_NOITEM  "You must insert the Weapon to be upgraded in the slot."
+    IDS_ITEMUP_WARN_NOMAT   "You must insert the spell scroll to be used for upgrade in the slot."
+    IDS_ITEMUP_SUCCESS      "Congratulations! You have successfully enchanted an item!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEMUP_FAIL         "We're sorry. You have failed to enchant an item."
+    IDS_FILE_ITEMMAGIC      ".\\Tcd\\TItemMagic.tcd"
+    IDS_FMT_ITEMMAGIC       "%c%u"
+    IDS_CANNOT_REVIVALPOS   "You cannot be resurrected in current location. Please try again later after moving a little."
+    IDS_ERROR_FILE          "Unable to find the file, %s, necessary for running the game. "
+    IDS_ERROR_MEMORY        "Unable to continue the game because of insufficient system memory."
+    IDS_CHATFLAG_WHISPER    "Whisper"
+    IDS_CHATFLAG_NEAR       "General"
+    IDS_CHATFLAG_MAP        "All"
+    IDS_CHATFLAG_WORLD      "All"
+    IDS_CHATFLAG_PARTY      "Party"
+    IDS_CHATFLAG_GUILD      "Guild"
+    IDS_CHATFLAG_INFO       "Result"
+    IDS_CHATFLAG_FORCE      "Corps"
+    IDS_FMT_CAPTURE         ".\\Img\\IMG%08X.jpg"
+    IDS_FMT_CAPTUREMSG      "The captured image is saved in %s."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_BUILD_FAIL 
+                            "You have failed to create a guild.\nPlease check and see if you have met all the requirements for creating a guild."
+    IDS_MBOX_GUILD_BUILD_SUCC "[%s] Guild was created."
+    IDS_CMD_GUILD_INVITE    "ginvite"
+    IDS_CMD_GUILD_ALLINFO   "All Guild Members"
+    IDS_CMD_GUILD_OUT       "gleave"
+    IDS_CMD_GUILD_KICK      "gkick"
+    IDS_CMD_GUILD_DISORG    "disorg"
+    IDS_CMD_GUILD_DISORGCANCEL "cdisorg"
+    IDS_CMD_GUILD_MASTER    "cmaster"
+    IDS_CMD_GUILD_SUBMASTER "setsubmaster"
+    IDS_MBOX_GUILD_ALREADYGUILDNAME "The guild name already exists."
+    IDS_MBOX_GUILD_DISORG_SUCC "Your request to disband the guild is accepted."
+    IDS_MBOX_GUILD_INVITE   "[%s] has asked to join [%s] Guild. \nDo you accept the request?"
+    IDS_MBOX_GUILD_DISORGCANCLE_SUCC "You have cancelled the request to disband the guild."
+    IDS_MBOX_GUILD_NEWMEMBER "[%s] has agreed to join your guild."
+    IDS_MBOX_GUILD_JOIN_DENY "[%s] has turned down your invitation to join your guild."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_JOIN_SUCC "You are accepted to [%s] Guild."
+    IDS_MBOX_GUILD_LEAVE_SELF "You have withdrawn from the guild."
+    IDS_MBOX_GUILD_LEAVE_DISORG "The guild has been disbaned."
+    IDS_MBOX_GUILD_LEAVE_KICK "You have been banned from the guild."
+    IDS_MBOX_GUILD_KICK_SUCC "[%s] was banned from the guild."
+    IDS_GUILD_DUTY_NONE     "Guild Member"
+    IDS_GUILD_DUTY_VICECHIEF "Second Guild Master"
+    IDS_GUILD_DUTY_CHIEF    "Guild Master"
+    IDS_GUILD_PEER_NONE     "Commoner"
+    IDS_GUILD_PEER_BARON    "Baron"
+    IDS_GUILD_PEER_VISCOUNT "Viscount"
+    IDS_GUILD_PEER_COUNT    "Count"
+    IDS_GUILD_PEER_MARQUIS  "Marquis"
+    IDS_GUILD_PEER_DUKE     "Duke"
+    IDS_MBOX_GUILD_DUTY     "Your rank was changed to [%s]."
+    IDS_MBOX_GUILD_DUTY_ACK "[%s]'s rank was changed to [%s]."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_PEER     "Your rank in the guild was changed from [%s] to [%s]."
+    IDS_DELCHAR_ERR_INGUILD "You cannot remove the characters belonging to the guild."
+    IDS_CMD_GUILD_BARON     "setbaron"
+    IDS_CMD_GUILD_PEER_CANCEL "delrank"
+    IDS_CMD_GUILD_VISCOUNT  "setviscount"
+    IDS_CMD_GUILD_COUNT     "setcount"
+    IDS_CMD_GUILD_MARQUIS   "setmarquis"
+    IDS_CMD_GUILD_DUKE      "setduke"
+    IDS_MBOX_GUILD_PEER_ACK "[%s]'s rank was changed from [%s] to [%s]."
+    IDS_CMSG_FRIEND_CONNECT "[%s] has connected."
+    IDS_COMMMSG_NOGUILD     "You currently don't belong to any guild."
+    IDS_ITEMUP_WARN_MAGIC   "Endowing the Weapon with magic properties.\nDo you want to continue?"
+    IDS_ITEMUP_WARN_RARE    "Endowing the Weapon with rare properties.\nThe item may disappear if you fail.\nDo you want to continue?"
+    IDS_PRIVATE_SHOP_START  "Start Selling"
+    IDS_PRIVATE_SHOP_END    "Stop Selling"
+    IDS_PRIVATE_SHOP_BUY    "Buy"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_PRIVSHOP_FOR_SELL "Personal Shop"
+    IDS_MENU_PRIVSHOP_FOR_BUY "Use Shop"
+    IDS_PRVSHOP_BUY_SUCC    "You have purchased %u items."
+    IDS_PRVSHOP_BUY_NOITEM  "The item does not exist."
+    IDS_PRVSHOP_BUY_NEEDMONEY "You don't have enough money to purchase an item."
+    IDS_PRVSHOP_BUY_NOITEMCOUNT "You don't have enough items."
+    IDS_PRVSHOP_BUY_INVENFULL "The bag is full."
+    IDS_PRVSHOP_SELL_NOSHOPNAME "You must enter the shop name."
+    IDS_PRVSHOP_SELL_ACK    "[%s] were sold. (%u EA)"
+    IDS_PRVSHOP_REQBUY_MSG  "Do you want to buy this item?"
+    IDS_PRVSHOP_REQBUY_EDIT "Amount"
+    IDS_STATE_CONNECT       "Online"
+    IDS_FMT_PRVSHOP_TITLE   "%s's Shop"
+    IDS_STATE_DISCONNECT    "Offline"
+    IDS_MBOX_ADD_FRIEND     "Please enter the name of the character to be added as your friend."
+    IDS_MBOX_FRIEND_INVITE  "[%s] has asked you to be added as his/her friend. Do you accept?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_FRIENDREPLY_YES "[%s] has been added to your friends list."
+    IDS_MBOX_FRIENDREPLY_NO "[%s] has politely turned down your request to be added as your friend."
+    IDS_CMSG_ERASEFRIEND    "[%s] was deleted from your friends list."
+    IDS_CMSG_ALEADYFRIEND   "[%s] is already in your friends list."
+    IDS_CMD_MSG_ADD_FRIEND  "addfriend"
+    IDS_CMD_MSG_DEL_FRIEND  "delfriend"
+    IDS_CMSG_MAKEGROUP_SUCC "You have created [%s] group in the messenger."
+    IDS_CMD_MSG_MAKE_GROUP  "mgroup"
+    IDS_CMSG_MAKEGROUP_MAX  "You cannot create any more groups."
+    IDS_CMSG_ALEADYGROUP    "The group name is duplicated."
+    IDS_CMD_MSG_CHANGE_GROUP "cgroup"
+    IDS_CMD_MSG_DEL_GROUP   "dgroup"
+    IDS_CMSG_ERASEFRIENDGROUP "You have deleted the [%s] Friends Group."
+    IDS_CMSG_FRIEND_DISCONNECT "[%s] has disconnected."
+    IDS_CMD_MSG_NAME_GROUP  "ngroup"
+    IDS_FMT_MSGHAT_TITLE    "%s (+%u Players)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MPOPUP_CHAT         "1:1 Conversation"
+    IDS_MPOPUP_SENDMAIL     "Send a Letter"
+    IDS_MBOX_ADDTOBLOCKLIST "Please enter the name of the user you wish to block."
+    IDS_CMD_MSG_ADD_BLOCK   "ignore"
+    IDS_CMD_MSG_DEL_BLOCK   "unignore"
+    IDS_MAILTYPE_NORMAL     "[General]"
+    IDS_MAILTYPE_PACKATE    "[Package]"
+    IDS_MAILTYPE_BILLS      "[Bill]"
+    IDS_MAILTYPE_RETURN     "[Return]"
+    IDS_MAILTYPE_PAYMENT    "[Pay]"
+    IDS_MAILTYPE_NPC        "[NPC]"
+    IDS_MAILTYPE_OPERATOR   "[Administrator]"
+    IDS_CMSG_POST_FULL      "You have failed to send it because the recipient's mailbox is full."
+    IDS_FMT_DATE            "%02dM/%02dD"
+    IDS_MAILTYPE_CASH       "[Cash Item Shop]"
+    IDS_CMSG_RECVMAIL       "A letter has arrived from [%s]."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_POST_COST       "Delivery Fee: %u Cron"
+    IDS_FMT_MAIL_REPLY      "[Reply] %s"
+    IDS_CMSG_POST_SUCCESS   "The letter was successfully sent."
+    IDS_CMSG_POST_NORECEIVER "The recipient's ID is incorrect."
+    IDS_CMSG_POST_NEEDMONEY "You do not have enough money to send the letter."
+    IDS_CMSG_POST_NOTITLE   "Incorrect Letter Title"
+    IDS_MAIL_TITLE_BLANK    "No Title"
+    IDS_MIALERR_NORECEIVER  "You need to enter the name of the recipient."
+    IDS_FILE_PET            ".\\Tcd\\TPet.tcd"
+    IDS_PETKIND_ONE         "It can carry the master. (+%u%% Moving Speed)"
+    IDS_PETKIND_TWO         "It can carry one more person. (+%u%% Moving Speed)"
+    IDS_GUILD_EXIT_WARN     "You won't be able to join the guild for %u days after once withdraw from the guild. Do you really want to lwithdraw from this guild?"
+    IDS_PETKIND_TELE        "It can remember up to %u returning points."
+    IDS_MBOX_GUILD_ALREADYMEMBER "You're already in a guild."
+    IDS_PETKIND_INVEN       "You can use a bag with up to %u slots."
+    IDS_PETKIND_EXP         "You will earn %u%% additional experience points when you hunt."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_LEAVE_SELF_ERR 
+                            "This user is not able to register and create the guild for withdraw of his own accord."
+    IDS_MBOX_GUILD_LEAVE_DISO_ERR 
+                            "This user is not able to register and create the guild for disbanding guild "
+    IDS_GUILD_LEAVE_SELF_CHIEF_ERR "The guild master withdraw from the guild."
+    IDS_CAPTURE_FOLDER      ".\\Img"
+    IDS_PETCON_LEVEL        "You can use the summon skill from level %u."
+    IDS_CMD_PARTY_INVITE    "invite"
+    IDS_FMT_PET_ENDTIME     "Expiration Time : %04dY/%02dM/%02dD %02d:00"
+    IDS_IPBLOCK             "Your account has been suspended for violating the management regulations of 4STORY.\nPlease use the 1:1 inquiry section on our website for more information."
+    IDS_FMT_PET_USETIME     "Period of Use : %u Days"
+    IDS_PETMAKE_NONAME      "You didn't enter the animal's name."
+    IDS_PETCON_NO           "There are no restriction on using the summon skill."
+    IDS_PETMAKE_ACK_FULL    "You cannot create any more animals."
+    IDS_PETMAKE_ACK_SUCC    "The animal was successfully created."
+    IDS_PETMAKE_ACK_EXPTIME "The expiration date for animal use was extended to %04dY/%02dM/%02dD."
+    IDS_FMT_PETLISTITEM_RECALL "Summoning"
+    IDS_FMT_PETLISTITEM_READY "Standby"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_PETMNGBTN_DORECALL "Summon"
+    IDS_FMT_PETMNGBTN_CANCELRECALL "Cancel"
+    IDS_PETRECALL_ACK_USETIME "You cannot summon it because the period has expired."
+    IDS_MENU_PC_PETTAKEDOWN "dismount"
+    IDS_FMT_PETMNGBTN_RECALLING "Summoning"
+    IDS_FMT_EXPTEXT         "Exp. %d/%d"
+    IDS_MENU_MAIN_MENU      "Show/Hide Main Menu"
+    IDS_MENU_INVEN_SLOT     "Show/Hide Inventory"
+    IDS_MENU_FRIEND_REQ     "Ask the Player to be Your Friend"
+    IDS_FILE_PORTAL         ".\\Tcd\\TPortal.tcd"
+    IDS_CMSG_NOMENYPORTAL   "You do not have enough money to move to the designated location."
+    IDS_FMT_MSGSENDER_ME    "My Message:"
+    IDS_FMT_MSGSENDER       "[ %s ]'s Message:"
+    IDS_MPOPUP_MOVEGROUP    "Move Group ▶"
+    IDS_MPOPUP_BLOCK        "Block"
+    IDS_MPOPUP_DELETE       "Delete"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MPOPUP_NEWGROUP     "New Group"
+    IDS_GPOPUP_CHAT         "Group Conversation"
+    IDS_GPOPUP_CHANGENAME   "Change Name"
+    IDS_GPOPUP_DELETE       "Delete"
+    IDS_GPOPUP_NEWGROUP     "New Group"
+    IDS_MBOX_NEWFRIENDGROUP "Please enter a group name."
+    IDS_MBOX_CHANGEFRIENDGROUP "Please enter the group you wish to change."
+    IDS_FMT_GUILDCOUNTTXT   "%u guild members are active."
+    IDS_MENU_PC_PETMANAGE   "Animal Management"
+    IDS_DEFAULT_MSGBOX_TITLE "Notice"
+    IDS_FILE_ITEMATTR       ".\\Tcd\\TItemAttr.tcd"
+    IDS_FILE_ITEMGRADE      ".\\Tcd\\TItemGrade.tcd"
+    IDS_SHOPTITLE_PORTAL    "Portal"
+    IDS_SHOPBUTTON_PORTAL   "Move"
+    IDS_SHOPTITLE_ITEM      "Shop"
+    IDS_SHOPBUTTON_ITEM     "Buy"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEED_RESTART_OPTION "This option is applied when you restart the game."
+    IDS_PET_NAMEBOX_MSG     "Please name your animal."
+    IDS_ITEMUP_ERR_GRADEMAGIC "Magic property Weapon cannot be upgraded."
+    IDS_ITEMUP_ERR_DOWNGRADE "Only upgraded Weapon can be purified."
+    IDS_ITEMUP_ERR_MAGICMAGIC "This Weapon is already endowed with magic properties."
+    IDS_ITEMUP_ERR_MAGICRARE 
+                            "Rare enchant scrolls can be used only on magic property Weapon."
+    IDS_ITEMUP_ERR_MAGICGRADE "Upgraded Weapon cannot be imbued with magic properties."
+    IDS_ITEMUP_ERR_RARE     "Rare magic Weapon cannot be upgraded nor enchanted."
+    IDS_ITEMUP_ERR_INVALIDITEM "This is not an item for upgrade nor enchant."
+    IDS_PET_NAMEBOX_EDIT    "Animal Name:"
+    IDS_PETMAKE_BTN_MAKE    "Create "
+    IDS_PETMAKE_BTN_EXT     "Extend period"
+    IDS_PETMAKE_KINDNAME    "%s (%s)"
+    IDS_CMD_PARTY_KICK      "kick"
+    IDS_CMD_PARTY_OUT       "leave"
+    IDS_FMT_SELLITEMS       "How many items do you want to sell?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NAME                "Name"
+    IDS_FMT_SERVERNAME      "%s %s"
+    IDS_FMT_PARTY_ITEM_FREE "Obtain Freely"
+    IDS_FMT_PARTY_ITEM_HUNTER "Maximum Score"
+    IDS_FMT_PARTY_ITEM_LOTTERY "Draw to Obtain"
+    IDS_FMT_PARTY_ITEM_CHIEF "Party Leader"
+    IDS_FMT_TPARTYITEMTAKE  "[%s] has obtained %s."
+    IDS_FMT_ADDITEM         "You have obtained %s."
+    IDS_FMT_TIME_HOUR       "%uH"
+    IDS_FMT_TIME_MINUTE     "%u:%02u"
+    IDS_CMSG_CHGPARTYTYPE_FREE 
+                            "The method of obtaining party items has changed to [Free]."
+    IDS_CMSG_CHGPARTYTYPE_HUNTER 
+                            "The method of obtaining party items has changed to [Maximum Score]."
+    IDS_CMSG_CHGPARTYTYPE_LOTTERY 
+                            "The method of obtaining party items has changed to [Lottery]."
+    IDS_CMSG_CHGPARTYTYPE_CHIEF 
+                            "The method of obtaining party items has changed to [Party Leader]."
+    IDS_FMT_TIME_SECOND     "%u"
+    IDS_FMT_LEVELCLASS      "%d / %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUTOCHANNEL         "Auto Select Channel"
+    IDS_FMT_CHANNELBUTTON   "%s (%s)"
+    IDS_SERVER_SLEEP        "Maintenance"
+    IDS_ERR_SERVER_BUSY     "We're sorry. You cannot connect to this World. Please choose another World."
+    IDS_ERR_CHANNEL_BUSY    "We're sorry. You cannot connect to this Channel. Please choose another Channel."
+    IDS_FMT_PARTY_ITEM_SEQ  "Obtain by Order"
+    IDS_CMSG_CHGPARTYTYPE_SEQ 
+                            "The method of obtaining party items has changed to [Obtain by Order]."
+    IDS_ERR_MAIL_REGION     "You cannot use letter options in this area."
+    IDS_NEEDCREATECARD      "You need a card to create a character."
+    IDS_FMT_CHARTYPE        "%c TYPE"
+    IDS_MPOPUP_BLOCKLIST    "I Don't Love You :P"
+    IDS_NPOPUP_INVITE       "Friends List"
+    IDS_MBOX_GUILD_MEMBER_FULL 
+                            "No more Guild members can be accepted. The Maximum number of this guild is %d."
+    IDS_FMT_PETLISTITEM_TIME "By %04dY/%02dM/%02dD"
+    IDS_FMT_PC_COMMANDER    "Commander-in-Chief"
+    IDS_FMT_PC_CHIEF        "Squad Leader"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STARTCMD_FORCECON   "/f"
+    IDS_NOTIFY_CHANGE_CHANNEL "Time Remaining to Change Channel: %d Seconds"
+    IDS_NOTIFY_SELECT_CHARACTER "Time Remaining to Disconnect: %d Seconds"
+    IDS_MBOX_DUPLICATEDID   "You have tried to connect to the game with a duplicate ID. Do you want to connect to the game again?"
+    IDS_MBOX_CANCELQUIT     "Disconnecting."
+    IDS_MBOX_CANCELCH       "Changing Channel."
+    IDS_ERR_FAILINITDEVICE  "You are using an incompatible graphic card or the graphic driver is not of the latest version.\n\nPlease upgrade the driver to the latest version."
+    IDS_LOADMSG_WAITFORSTART "Starting game."
+    IDS_CHAT_OPERATOR       "Information"
+    IDS_LOADMSG_WAITFORCON  "Connecting to the game server."
+    IDS_LOADMSG_SUCCESSCON  "You have successfully connected to the game server."
+    IDS_LOADMSG_LOADDATA    "Loading the data."
+    IDS_REPRESENTATION_GM   "Administrator"
+    IDS_GM_NAME             "Administrator"
+    IDS_MOVEITEM_COUNT      "Please enter the number of items."
+    IDS_FMT_UPGRADE_SUCCESS "%s's [%s] has successfully upgraded the item to [+%d]."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING704           "IDS_MIALERR_TRADING"
+    IDS_MIALERR_TRADING     "You cannot send a letter while trading.Please try again after completing the \n transaction."
+    IDS_CABINET_OPEN_WARN   "The cost of opening this inventory is %s.\nDo you want to open a inventory?"
+    IDS_CABINET_NAME        "[Inventory %u ]"
+    IDS_CABINET_COST        "Cost of Retrieving: %s"
+    IDS_ERR_CABINET         "An error has occurred while using the inventory."
+    IDS_ERR_CABINET_NO_SLOT "The inventory does not have any empty space."
+    IDS_ERR_MAX_CABINET     "You cannot open a inventory anymore."
+    IDS_CABINET_BTN_OPEN    "Open inventory %u"
+    IDS_CABINET_BTN_USE     "Inventory %u"
+    IDS_FMT_QUESTLEVEL      "%u"
+    IDS_FMT_QUESTLEVEL_LIM  "%u~%u"
+    IDS_QUEST_CANNOTPERF    "You didn't meet the requirements to carry out this quest."
+    IDS_ERR_CURSE_STR       "An invalid character is included."
+    IDS_ITEMUP_ERR_CANNOTGRADE "This item cannot be upgraded."
+    IDS_ITEMUP_ERR_CANNOTMAGIC "This item cannot be endowed with magic properties."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEMUP_ERR_CANNOTRARE 
+                            "This item cannot be endowed with rare magic properties."
+    IDS_FOLLOW_TARGET       "Follow"
+    IDS_TKEY_FORWARD        "Run Forward"
+    IDS_REGIONINFO_D        "(DeFugel District) "
+    IDS_REGIONINFO_C        "(Craxion District)"
+    IDS_REGIONINFO_B        "(Broa District) "
+    IDS_REGIONINFO_BATTLE   "(Battle District)"
+    IDS_REGIONINFO_NORMAL   "(Neutral District)"
+    IDS_TKEY_BACK           "Walk Backwards"
+    IDS_TKEY_LEFT           "Turn Left"
+    IDS_TKEY_RIGHT          "Turn Right"
+    IDS_TKEY_LSIDEE         "Run Diagonally to the Left"
+    IDS_TKEY_RSIDE          "Run Diagonally to the Right"
+    IDS_TKEY_JUMP           "Jump"
+    IDS_TKEY_AUTORUN        "Auto Run"
+    IDS_TKEY_RUN            "Change Walk/Run"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_CAM_LEFT       "Turn the camera to the left"
+    IDS_TKEY_CAM_RIGHT      "Turn the camera to the right"
+    IDS_TKEY_CAM_UP         "Lift the camera angle"
+    IDS_TKEY_CAM_DOWN       "Lower the camera angle"
+    IDS_TKEY_ZOOM_IN        "Camera zoom in"
+    IDS_TKEY_ZOOM_OUT       "Camera zoom out"
+    IDS_TKEY_PICK_NEXT      "Choose the nearest next target"
+    IDS_TKEY_SKILL_1        "Lower Skill, Item, Action Shortcut Key 1"
+    IDS_TKEY_SKILL_2        "Lower Skill, Item, Action Shortcut Key 2"
+    IDS_TKEY_SKILL_3        "Lower Skill, Item, Action Shortcut Key 3"
+    IDS_TKEY_SKILL_4        "Lower Skill, Item, Action Shortcut Key 4"
+    IDS_TKEY_SKILL_5        "Lower Skill, Item, Action Shortcut Key 5"
+    IDS_TKEY_SKILL_6        "Lower Skill, Item, Action Shortcut Key 6"
+    IDS_TKEY_SKILL_7        "Lower Skill, Item, Action Shortcut Key 7"
+    IDS_TKEY_SKILL_8        "Lower Skill, Item, Action Shortcut Key 8"
+    IDS_TKEY_SKILL_9        "Lower Skill, Item, Action Shortcut Key 9"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_SKILL_10       "Lower Skill, Item, Action Shortcut Key 10"
+    IDS_TKEY_SKILL_11       "Lower Skill, Item, Action Shortcut Key 11"
+    IDS_TKEY_SKILL_12       "Lower Skill, Item, Action Shortcut Key 12"
+    IDS_TKEY_CHAT           "Enter/Send Chat Message"
+    IDS_TKEY_INVEN          "Open/Close Bag"
+    IDS_TKEY_CHAR_INFO      "Open/Close Character Info Window"
+    IDS_TKEY_MODE           "Sit/Stand Up"
+    IDS_TKEY_RECALL_BACK    "Make the summoned beast to tag along"
+    IDS_TKEY_RECALL_STAY    "Stop the summoned beast"
+    IDS_TKEY_RECALL_SKILL_1 "Summoned Beast Skill 1"
+    IDS_TKEY_RECALL_SKILL_2 "Summoned Beast Skill 2"
+    IDS_TKEY_RECALL_SKILL_3 "Summoned Beast Skill 3"
+    IDS_TKEY_RECALL_SKILL_4 "Summoned Beast Skill 4"
+    IDS_TKEY_RECALL_ACTIVE  "Aggressive Summoned Beast"
+    IDS_TKEY_RECALL_PASSIVE "Defensive Summoned Beast"
+    IDS_TKEY_RECALL_MANUAL  "Passive Summoned Beast"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_TRSCS_ME       "Choose Yourself"
+    IDS_TKEY_TRSCS_F1       "Choose a Party Member 1"
+    IDS_TKEY_TRSCS_F2       "Choose a Party Member 2"
+    IDS_TKEY_TRSCS_F3       "Choose a Party Member 3"
+    IDS_TKEY_TRSCS_F4       "Choose a Party Member 4"
+    IDS_TKEY_TRSCS_F5       "Choose a Party Member 5"
+    IDS_TKEY_TRSCS_F6       "Choose a Party Member 6"
+    IDS_TKEY_TRSCS_F7       "Choose a Party Member 7"
+    IDS_TKEY_HOTKEY_F1      "Change Lower Shortcut Key Slot 1"
+    IDS_TKEY_HOTKEY_F2      "Change Lower Shortcut Key Slot 2"
+    IDS_TKEY_HOTKEY_F3      "Change Lower Shortcut Key Slot 3"
+    IDS_TKEY_HOTKEY_F4      "Change Lower Shortcut Key Slot 4"
+    IDS_TKEY_HOTKEY_F5      "Change Lower Shortcut Key Slot 5"
+    IDS_TKEY_HOTKEY_F6      "Change Lower Shortcut Key Slot 6"
+    IDS_TKEY_HOTKEY_F7      "Change Lower Shortcut Key Slot 7"
+    IDS_TKEY_HOTKEY_F8      "Change Lower Shortcut Key Slot 8"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_HOTKEY_F9      "Change Lower Shortcut Key Slot 9"
+    IDS_TKEY_HOTKEY_F10     "Change Lower Shortcut Key Slot 10"
+    IDS_TKEY_HOTKEY_PREV    "Move to previous lower shortcut key slot"
+    IDS_TKEY_HOTKEY_NEXT    "Move to next lower shortcut key slot"
+    IDS_TKEY_HOTKEY_ACTION  "Auto action by target"
+    IDS_TKEY_CLOSE_UI       "Cancel"
+    IDS_TKEY_WORLDMAP       "Open/Close Whole Map"
+    IDS_TKEY_SKILL_INFO     "Open/Close Skill Window"
+    IDS_TKEY_QUEST_INFO     "Open/Close Quest Window"
+    IDS_TKEY_GET_ALL        "Auto Item Looting"
+    IDS_TKEY_SHOW_UI        "Show/Hide UI"
+    IDS_TKEY_SCRCAP         "Take a Screenshot"
+    IDS_TKEY_HUD            "Show/Hide HUD"
+    IDS_TKEY_FOLLOW         "Follow the target"
+    IDS_VK_LBUTTON          "LBtn"
+    IDS_VK_RBUTTON          "RBtn"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_CANCEL           "Cancel"
+    IDS_VK_MBUTTON          "MBtn"
+    IDS_VK_BACK             "Back"
+    IDS_VK_TAB              "Tab"
+    IDS_VK_CLEAR            "Clr"
+    IDS_VK_RETURN           "Enter"
+    IDS_VK_SHIFT            "Shift"
+    IDS_VK_MENU             "Alt"
+    IDS_VK_PAUSE            "Pause"
+    IDS_VK_ESCAPE           "Esc"
+    IDS_VK_SPACE            "Space"
+    IDS_VK_END              "End"
+    IDS_VK_HOME             "Home"
+    IDS_VK_LEFT             "←"
+    IDS_VK_UP               "↑"
+    IDS_VK_RIGHT            "→"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_DOWN             "↓"
+    IDS_VK_INSERT           "Ins."
+    IDS_VK_DELETE           "Del."
+    IDS_VK_NUMPAD0          "NUM0"
+    IDS_VK_NUMPAD1          "NUM1"
+    IDS_VK_NUMPAD2          "NUM2"
+    IDS_VK_NUMPAD3          "NUM3"
+    IDS_VK_NUMPAD4          "NUM4"
+    IDS_VK_NUMPAD5          "NUM5"
+    IDS_VK_NUMPAD6          "NUM6"
+    IDS_VK_NUMPAD7          "NUM7"
+    IDS_VK_NUMPAD8          "NUM8"
+    IDS_VK_NUMPAD9          "NUM9"
+    IDS_VK_MULTIPLY         "*"
+    IDS_VK_ADD              "+"
+    IDS_VK_SEPARATOR        "|"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_SUBTRACT         "-"
+    IDS_VK_DECIMAL          "%"
+    IDS_VK_DIVIDE           "/"
+    IDS_VK_F1               "F1"
+    IDS_VK_F2               "F2"
+    IDS_VK_F3               "F3"
+    IDS_VK_F4               "F4"
+    IDS_VK_F5               "F5"
+    IDS_VK_F6               "F6"
+    IDS_VK_F7               "F7"
+    IDS_VK_F8               "F8"
+    IDS_VK_F9               "F9"
+    IDS_VK_F10              "F10"
+    IDS_VK_F11              "F11"
+    IDS_VK_F12              "F12"
+    IDS_VK_NUMLOCK          "NumLock"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_SCROLL           "Scroll"
+    IDS_VK_LSHIFT           "LShift"
+    IDS_VK_RSHIFT           "RShift"
+    IDS_VK_A                "A"
+    IDS_VK_B                "B"
+    IDS_VK_C                "C"
+    IDS_VK_D                "D"
+    IDS_VK_E                "E"
+    IDS_VK_F                "F"
+    IDS_VK_G                "G"
+    IDS_VK_H                "H"
+    IDS_VK_I                "I"
+    IDS_VK_J                "J"
+    IDS_VK_K                "K"
+    IDS_VK_L                "L"
+    IDS_VK_M                "M"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_N                "N"
+    IDS_VK_O                "O"
+    IDS_VK_P                "P"
+    IDS_VK_Q                "Q"
+    IDS_VK_R                "R"
+    IDS_VK_S                "S"
+    IDS_VK_T                "T"
+    IDS_VK_U                "U"
+    IDS_VK_V                "V"
+    IDS_VK_W                "W"
+    IDS_VK_X                "X"
+    IDS_VK_Y                "Y"
+    IDS_VK_Z                "Z"
+    IDS_VK_0                "0"
+    IDS_VK_1                "1"
+    IDS_VK_2                "2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_3                "3"
+    IDS_VK_4                "4"
+    IDS_VK_5                "5"
+    IDS_VK_6                "6"
+    IDS_VK_7                "7"
+    IDS_VK_8                "8"
+    IDS_VK_9                "9"
+    IDS_VK_CONTROL          "Ctrl"
+    IDS_KEY_CANNOTUSE       "This key cannot be used."
+    IDS_MENU_DUEL           "Duel Request"
+    IDS_VK_OEM_1            ";"
+    IDS_VK_OEM_2            "/"
+    IDS_VK_OEM_3            "`"
+    IDS_VK_OEM_4            "["
+    IDS_VK_OEM_5            "\\"
+    IDS_VK_OEM_6            "]"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_OEM_PLUS         "="
+    IDS_VK_OEM_COMMA        ","
+    IDS_VK_OEM_MINUS        "-"
+    IDS_VK_OEM_PERIOD       "~"
+    IDS_KEYRT_NONE          "Please choose the key to be designated."
+    IDS_KEYRT_SUCCESS       "The key was successfully applied."
+    IDS_KEYRT_WAITINPUT     "Please enter the key you want."
+    IDS_KEYRT_CANNOTUSE     "This key is not available."
+    IDS_KEYRT_REPLACE       "[%s] <-> [%s]"
+    IDS_DUELINVITE_MSG      "[%s] has challenged you to a duel.\nDo you accept the challenge?"
+    IDS_DUEL_START          "The duel with [%s] has begun."
+    IDS_DUEL_REFUSE         "[%s] has refused to accept your challenge."
+    IDS_DUEL_ERROR          "You have failed to start a duel."
+    IDS_DUEL_WIN            "You have won the duel with [%s]."
+    IDS_DUEL_LOSE           "You have lost the duel with [%s]."
+    IDS_DUEL_AREAOUT        "You are out of the duel range. It will be regarded as a loss after %u seconds."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DUEL_DRAW           "You have tied in the duel with [%s]."
+    IDS_CMD_GUILD_DISUBMASTER "delsubmaster"
+    IDS_DUEL_WAIT           "The duel will start in a moment: %u Seconds"
+    IDS_DUEL_TIMEOUT_MIN    "The duel will end in %u minutes."
+    IDS_DUEL_TIMEOUT_SEC    "The duel will end in %u seconds."
+    IDS_TKEY_PICK_NEXT_DEAD "Choose the nearest next corpse"
+    IDS_ERR_ITEM_INTERNAL   "An internal item error has occurred. Please try it again later."
+    IDS_ERR_SND_TARGET      "Invalid sender."
+    IDS_SMS_SUCCESS         "The SMS was successfully send."
+    IDS_SMS_TXTLEN          "Current Number of Letters: %u / %u"
+    IDS_SMS_SEND            "Do you want to send an SMS message?"
+    IDS_ERR_NO_GUILD        "The guild does not exist."
+    IDS_ERR_TARGET_BUSY     "[%s] cannot send a reply at the moment."
+    IDS_TKEY_WHISPER_REPLY  "Recent whisper replies"
+    IDS_FMT_SMSTITLE        "[4S]%s:"
+    IDS_FMT_SMSWARN         "Each SMS can contain up to %d Korean characters or %d English characters."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATCMD_ERROR       "This command does not exist."
+    IDS_FMT_NUMPERCENT      "%d%%"
+    IDS_TACKIND_FREELANCE   "Freelancer"
+    IDS_FMT_TACTICSCOUNTTXT "%u mercenaries are currently active."
+    IDS_ERR_NOTENOUGHDNEXP  "You do not have enough experience points to donate."
+    IDS_FMT_NUMPERNUM       "%u / %u"
+    IDS_WRAN_DONATE_EXP     "You will donate the following experience points to the guild.\nExperience Points to be donated: %u\nDo you want to continue?"
+    IDS_WRAN_DONATE_MONEY   "You will donate the following amount of money to the guild.\nAmount: %uRune %uLuna %uCron\nDo you want to continue?"
+    IDS_DONERR_NOTENOUGH_EXP 
+                            "You have failed to make a donation to the guild. Please check your experience points before making a donation."
+    IDS_DONERR_MAXGUILDLEVEL 
+                            "You cannot donate experience points to the highest level guild."
+    IDS_DONERR_UNKNOWN      "You have failed to send a donation to the guild. Please try again later."
+    IDS_DONATION_SUCCESS    "You have successfully made a donation to the guild."
+    IDS_DONERR_NOTENOUGH_MONEY 
+                            "You have failed to make a donation to the guild. Please try again after checking your current balance."
+    IDS_NEW_NOTIFY          "Write a New Notice"
+    IDS_MODIFY              "Modify"
+    IDS_FMT_TIME_ONEHOUR    "%dh"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_PCROOM          "[Internet Cafe]\n"
+    IDS_FMT_TIME_ONEMINUTE  "%dm"
+    IDS_FMT_PCROOM_1        "You will receive various benefits if you play 4Stroy in one of our affiliated internet cafes."
+    IDS_FMT_PCROOM_2        "You will be provided with a ride exclusive to internet caf? users."
+    IDS_FMT_PCROOM_3        "120% more experience points, 200% more chance to succeed upgrades, 300% more chance to drop magic items."
+    IDS_FMT_PCROOM_4        "Providing Ordinary Horse ( + Movement speed 135%) 20% discount of repairment fee"
+    IDS_ERROR_ITEM_CANTDROP "Selected item cannot be disposed"
+    IDS_FMT_GUILDMARKREG_SUCC "You have successfully registered a guild mark."
+    IDS_FMT_GUILDMARKREG_FAIL 
+                            "You have failed to register a guild mark. Please try again later."
+    IDS_FMT_TYPE            "TYPE %u"
+    IDS_GINV_APP            "Guild Application"
+    IDS_FMT_GUILDMEMBER     "Guild Member"
+    IDS_FMT_TACTICS         "Mercenary"
+    IDS_GINV_EDIT           "Modify"
+    IDS_GINV_NEW            "Write"
+    IDS_GINV_DEL            "Complete"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GERR_GUILDWANTEDWORK "You have failed to write a message on guild recruitment."
+    IDS_GSEEK_INV           "Invite to Join"
+    IDS_ERR_GUILDAPPLICATIONADD "You have failed to write a message on guild support."
+    IDS_GSEEK_EDIT          "Modify"
+    IDS_GSEEK_NEW           "New"
+    IDS_GSEEK_DEL           "Delete"
+    IDS_FMT_GUILDSEEKER     "Lv %u / %s / %s"
+    IDS_ERR_GUILDWANTEDADD  "You have failed to register a recruitment message."
+    IDS_CMDESC_GUILD_INVITE "Invite the player to your guild."
+    IDS_CMDESC_GUILD_OUT    "Withdraw from the guild."
+    IDS_CMDESC_GUILD_KICK   "Ban a guild member."
+    IDS_CMDESC_GUILD_DISORG "Request to disband the guild."
+    IDS_CMDESC_GUILD_DISORGCANCEL "Cancel the request to disband the guild"
+    IDS_CMDESC_GUILD_MASTER "Appoint another guild member as the guild master."
+    IDS_CMDESC_GUILD_SUBMASTER "Appoint a guild member as the second guild master."
+    IDS_CMDESC_GUILD_PEER_CANCEL "Cancel the guild member's rank."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CMDESC_GUILD_BARON  "Appoint a guild member to be a baron."
+    IDS_CMDESC_GUILD_VISCOUNT "Appoint a guild member to be a viscount."
+    IDS_CMDESC_GUILD_COUNT  "Appoint a guild member to be a count."
+    IDS_CMDESC_GUILD_MARQUIS "Appoint a guild member to be a marquis."
+    IDS_CMDESC_GUILD_DUKE   "Appoint a guild member to be a duke."
+    IDS_CMDESC_GUILD_DISUBMASTER "Relieve a guild member from the rank of second guild master."
+    IDS_FMT_GUILDCMD        "/%s:"
+    IDS_FMT_GUILDCMDESC     " >> %s"
+    IDS_GERR_GUILDOFFERDUPL "A recruitment message in the same area already exists. Do you want to replace the existing message with this one?"
+    IDS_GERR_GUILDSEEKDUPL  "A volunteer message in the same area already exists. Do you want to replace the existing message with this one?"
+    IDS_DELETE              "Delete"
+    IDS_GMP_WHISPER         "Whisper"
+    IDS_GMP_MAIL            "Letter"
+    IDS_GMP_KICK            "Ban "
+    IDS_GMP_ET_GM           "Appoint Guild Master"
+    IDS_GMP_SET_GSM         "Appoint Second Guild Master"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GMP_CANCEL_GSM      "Relieve Second Guild Master"
+    IDS_GMP_PEER_BARON      "Baron Appointment"
+    IDS_GMP_PEER_VISCOUNT   "Viscount Appointment"
+    IDS_GMP_PEER_COUNT      "Count Appointment"
+    IDS_GMP_PEER_MARQUIS    "Marquis Appointment"
+    IDS_GMP_PEER_DUKE       "Duke Appointment"
+    IDS_GMP_CANCEL_PEER     "Cancel Rank"
+    IDS_GMP_CANCEL          "Close"
+    IDS_GMP_DISORG_TACTICS  "Disband Mercenary Team"
+    IDS_GUILD_CABINET_FULL  "You don't have enough inventory space to insert an item."
+    IDS_GUILD_CABINET_PUTINFAIL "You have failed to put the item in the inventory."
+    IDS_GUILD_CABINET_ITEMNOTFOUND "The item does not exist in the inventory."
+    IDS_GUILD_CABINET_INVENFULL 
+                            "You don't have enough space in the bag to retrieve an item from the inventory."
+    IDS_GUILD_CABINET_TAKEOUTFAIL 
+                            "You have failed to retrieve an item from the inventory."
+    IDS_GUILD_CABINET_LEVEL "You cannot use an inventory at current guild level."
+    IDS_GUILD_CABINET_TITLE "Inventory of %s Guild (%u Slot)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_CABINET_NOTDUTY 
+                            "The guild inventory can be used only by the second guild master or higher."
+    IDS_ITEMUP_MONEYFAIL    "You don't have enough money to upgrade an item."
+    IDS_SKILLINITERR_TRADING 
+                            "You cannot intialize skills while learning a skill."
+    IDS_WARN_SKILLINIT_ALL  "All the skills you have learned will be initialized.\nDo you want to continue?"
+    IDS_WARN_SKILLINIT_ONE  "Initializing [%s] skill.\nDo you want to continue?"
+    IDS_SKILLINIT_ONE_SUCCESS "[%s] skill was successfully initialized."
+    IDS_SKILLINIT_FAIL      "Failed to initialize skills. Please try again later."
+    IDS_SKILLINIT_ALL_SUCCESS "All the skills are successfully initialized."
+    IDS_GUILDVOLUNTEERING_SUCC "The application was successfully accepted."
+    IDS_GUILDVOLUNTEERING_HAVEGUILD "You're already in another guild."
+    IDS_GUILDVOLUNTEERING_FAIL "You have failed to make a request."
+    IDS_FILE_QUESTITEM      ".\\Tcd\\TQuestItem.tcd"
+    IDS_GVP_WHISPER         "Whisper"
+    IDS_GVP_MAIL            "Letter"
+    IDS_GVP_INVITE_YES      "Approve Application"
+    IDS_GVP_INVITE_NO       "Deny Application"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GVP_CANCEL          "Close"
+    IDS_WARN_GUILDKICKOUT   "Ban [%s] from your guild.\nDo you want to continue?"
+    IDS_FMT_LUCKNUMBER      "Lucky Number: %u"
+    IDS_CMD_SHOW_GUILDAPPDLG "applications"
+    IDS_CMDESC_SHOW_GUILDAPPDLG "Open the guild recruitment window."
+    IDS_TKEY_TOGGLE_GUILD_UI "Open/Close Guild Window"
+    IDS_TKEY_TOGGLE_MENU_UI "Open/Close Menu Window"
+    IDS_MBOX_GUILD_PEERMAX  "You cannot appoint anymore %s at current guild level."
+    IDS_EXE_PRMPC_URL       "[InternetShortcut]\nURL=http://www.4story.com/event/pcbang/20070803/nochargeevent.asp?PSN=%u&UID=%u"
+    IDS_FMT_NOTITLE         "No Title"
+    IDS_GET_ITEM            "Retrieve"
+    IDS_FMT_CASH            "%u cash"
+    IDS_FMT_CASHNBONUS      "Cash %u / Bonus %u"
+    IDS_MENU_PARTYMEMBERRECALL "Summon Party Member"
+    IDS_IU_SUCCESS          "You have summoned [%s]."
+    IDS_ERR_IU_RIDING       "You cannot summon [%s] because he/she (is) on a ride."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_IU_DEALING      "You cannot summon [%s] because he/she is currently trading with someone."
+    IDS_ERR_IU_NOTFOUND     "Unable to find the item necessary for summoning."
+    IDS_ERR_IU_BUSY         "[%s] cannot respond to your summon at this time."
+    IDS_URL_CASHCHARGE      "http://www.4story.com/chargecash/Charge_Main.asp"
+    IDS_CASHITEMBUY_SUCCESS "You bought cash item in cash shop successfully.\nYou can see cash item which you bought in your cash item bank."
+    IDS_ERR_DOSKILLDISGUISE "You cannot use a skill while you're in disguise."
+    IDS_ERR_NEED_CASH       "You don't have enough cash."
+    IDS_MENU_END_MAINTAIN   "Unfreeze"
+    IDS_SOULMATEBOX_SELREG  "Your soul misses someone very badly. Do you have someone in your mind as your soulmate?"
+    IDS_SOULMATEBOX_NAME    "Please tell me his/her name."
+    IDS_SOULMATEBOX_SEARCH  "Lonely traveller. I'm a poor blind , and I'll tell you who your soulmate is if you have mercy on me and give me %s."
+    IDS_SOULMATEBOX_NO      "So you're not ready to accept the blessings of the goddess. Dear sir/mam, come back)whenever you need my prayer. I'll pray for you anytime you want me your blessing."
+    IDS_SOULMATEBOX_REG     "Your souls are fully ready to accept the blessings of the goddess. I'm a poor blind , and I'll pray the goddess to bless you if you have mercy on me and give me %s."
+    IDS_ERR_SOULMATE_SILENCE 
+                            "Your soul was deserted by your mate and you is going through a period of silence. I'm sorry, but I cannot help you at this moment. Come back to me after one day and night."
+    IDS_ERR_SOULMATE_NEEDMONEY 
+                            "What? You want it for free? Are you making fun of this poor blind? If you don't have money, get out of my sight before you get what you deserve."
+    IDS_ERR_SOULMATE_FAIL   "I can hear the voice of the goddess. Hmm…I think he/she is not meant for you. Don't be so sad though. Althought this is not the time, the goddess will some day allow it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_SOULMATE_NOTFOUND 
+                            "I cannot feel the power of the goddess. I don't think it's time to see the goddess yet. I'm sorry but I cannot help you yet. Did you say you want your money back? Hmm, hmm. Well that is...Oh my back. My back hurts nowadays. I must go now. See you later th"
+    IDS_SOULMATE_REG_SUCCESS 
+                            "I can feel the power of the goddess. Dear sir/mam, both of you will be blessed by the goddess if you two stay together."
+    IDS_SOULMATE_SEARCH_SUCCESS 
+                            "I can feel the power of the goddess. He/She is currently at %s. Dear sir/mam, you'll be blessed by the goddess if you share your destiny with %s as a soulmate."
+    IDS_ITRF_ERR_DUPLICATE  "This item is already listed."
+    IDS_DETMSG_SEALEDITEM   "This item is sealed. Show it to the Elf Sorcerer , and you will know what it is."
+    IDS_SOULMATEEND_SUCCESS "You're not a soulmate with %s anymore. Also, you cannot choose a new soulmate for one day from now."
+    IDS_SOULMATE_MARK       "♥"
+    IDS_GAMBLE_NO           "Sometimes you need to discard something valuable  before going on an adventure in order to obtain something precious. Come back to me whenever you need me."
+    IDS_GAMBLE_ASK          "Hmm…This will cost you at least %s  to see the original shape of something like this. You won't regret it. Do you believe my sorcery skill? But do you know that the item may)disappear if my sorcery fails?"
+    IDS_GAMBLE_SUCC         "Oh, the item regained its original shape at last. I hope you like it."
+    IDS_GAMBLE_FAIL_NEEDMONEY 
+                            "It's difficult for someone without money to be welcomed. Carry some money on you."
+    IDS_GAMBLE_FAIL_REP     "What is this? This is how the item looked like from the start. I'll give you back the item. But I cannot give you back the money because I have tried my best. See you later."
+    IDS_GAMBLE_FAIL_OCC     "Hmm? What is this? I'm sorry, but it didn't have an original shape. We all have our share of unlucky days in our lives. It's not my fault, so I won't give you back the item nor the money. See you later."
+    IDS_GAMBLE_FAIL         "I cannot use sorcery skills right now. Please try again later."
+    IDS_GAMBLE_CHECK_FAIL   "You cannot use sorcery skills with this item."
+    IDS_FMT_ITEMMAGIC_TITLE "[Additional Option]"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_ITEMATTRLEVEL_0 "Old Mass-Produced Item"
+    IDS_FMT_ITEMATTRLEVEL_1 "Well Cared Mass-Produced Item"
+    IDS_FMT_ITEMATTRLEVEL_2 "Heavy Duty Mass-Produced Item"
+    IDS_FMT_ITEMATTRLEVEL_3 "Shining Mass-Produced Item"
+    IDS_FMT_ITEMATTRLEVEL_4 "Old Mass-Produced Item"
+    IDS_FMT_ITEMATTRLEVEL_5 "Well Cared Name Brand Product"
+    IDS_FMT_ITEMATTRLEVEL_6 "Heavy Duty Name Brand Product"
+    IDS_FMT_ITEMATTRLEVEL_7 "Shining Name Brand Product"
+    IDS_FMT_ITEMATTRLEVEL_8 "Old Relic"
+    IDS_FMT_ITEMATTRLEVEL_9 "Well Cared Relic"
+    IDS_FMT_ITEMATTRLEVEL_10 "Heavy Duty Relic"
+    IDS_FMT_ITEMATTRLEVEL_11 "Shining Relic"
+    IDS_FMT_ITEMATTRLEVEL_12 "Legendary Relic"
+    IDS_FMT_HEIGHTFILE      ".\\Tmh\\MH%08x.tmh"
+    IDS_MBOX_TACTICS_INVITE "[%s] requires you to join in [%s] guild as the mercenary.\nDo you accept?"
+    IDS_MBOX_TACTICS_MONEY_INVITE 
+                            "[%s] requires you to join in [%s] guild as the mercenary.\nDeposit : %s\nDo you accept?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USEITEM_REVIVAL     "Some unknown power is summoning your soul.\nDo you want to use a resurrection scroll?"
+    IDS_IU_ERR_OVERLAPPREMIUM 
+                            "The premium benefit period is still valid. You can still use it again after the expiration date."
+    IDS_CASHITEMPRESENT_SUCCESS "Your gift was successfully delivered."
+    IDS_ERR_IU_TARGETNOTFOUND "Unable to find the target."
+    IDS_ERR_MOVETO          "You have failed to move to [%s]."
+    IDS_WORLDUNIFY_URL      "[InternetShortcut]\nURL=http://www.4story.com/serverchange/servb.asp"
+    IDS_USEITEM_MEMBERRECALL "Summoning [%s]. Do you want to continue?"
+    IDS_MEMBERRECALL_INVALIDTARGET 
+                            "You must choose a party member you wish to summon in order to use the summon item."
+    IDS_USEITEM_MOVETOCHAR  "Please enter the name of the character you wish to move."
+    IDS_CHAR_NAME           "Character Name"
+    IDS_FMT_TIME_ONEDAY     "%dd"
+    IDS_FMT_PRESENTITEM     "Please enter the name of the character you wish to send [%s] item as a gift."
+    IDS_NEEDWORLDUNIFY      "Exiting game and moving to the server integration web page for the server integration process."
+    IDS_FILE_AGREEMENT      ".\\agreement.txt"
+    IDS_ERR_NOTARGET_CASH   "Unable to find the player to send your gift."
+    IDS_FMT_PARTYMEMBERRECALLANS 
+                            "[%s] is attempting to summon [%s] to his/her location.\nDo you accept the request to be summoned?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_DURATIONEND     "[%s] is no longer usable because it's durability reached 0."
+    IDS_DURATIONREP_COST    "I can repair this like a brand new items with %s."
+    IDS_SOULMATESEARCH_TITLE "Praying"
+    IDS_SOULMATESEARCH_MSG  "Oh Goddess, I offer you my both eyes, please bless this precious soul."
+    IDS_DURATIONREP_SUCC    "It's done. How about it? Do you like it?"
+    IDS_ERR_DURATIONREP_FAIL "You have failed to repair the item."
+    IDS_ERR_DURATIONREP_NOTNEED "Hmm? There is nothing to be repaired. You may go now."
+    IDS_ERR_DURATIONREP_NOMONEY "I cannot fix it for free, so bring me some money."
+    IDS_REFINE_COST         "%s would do. Let me see if I can do it."
+    IDS_DURATIONREPAIRING_TITLE "Repairing"
+    IDS_DURATIONREPAIRING_MSG "Good! I'll show you who's the best."
+    IDS_REFINING_TITLE      "Refining"
+    IDS_REFINING_MSG        "That's right! You have made a great choice! Life is a gamble anyway! Here we go!"
+    IDS_REFINE_SUCC         "Ha, ha, ha! It worked! How about it? Do you like it my friend?"
+    IDS_REFINE_FAIL         "You have failed to refine an item."
+    IDS_ERR_DURATIONREP_DISALLOW "This item cannot be repaired."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_REFINE_NOMONEY  "I'm sorry, but I cannot fix it for free. Don't forget to come back to me when you have the money."
+    IDS_ERR_REFINE_MAXREFINE 
+                            "Hmm…This cannot be refined anymore. Give me something else."
+    IDS_ERR_REFINE_LEVELDIFF 
+                            "It cannot be refined because the items to be used in the refine are of very different level."
+    IDS_ERR_REFINE_FAIL     "Oh no, I blew it. Don't feel too bad. I promise I'll succeed next time, so come back to me again."
+    IDS_FILE_ITEMVISUALCHART ".\\Tcd\\TItemVisual.tcd"
+    IDS_FILE_ITEMGRADESFXCHART ".\\Tcd\\TItemGradeSfx.tcd"
+    IDS_FILE_ITEMMAGICSFXCHART ".\\Tcd\\TItemMagicSfx.tcd"
+    IDS_ITEMREP_ERR_NOTNEED "This item doesn't have to be repaired."
+    IDS_ITEMREP_ERR_CANNOT  "This item cannot be repaired."
+    IDS_ITRF_ERR_CANNOTREFINE "This item cannot be refined."
+    IDS_ITRF_ERR_MAXREFINE  "This item cannot be refined anymore."
+    IDS_FILE_SKILLPOINT     ".\\Tcd\\TSkillPoint.tcd"
+    IDS_FILE_TFORMULA       ".\\Tcd\\TFormula.tcd"
+    IDS_FORMAT_HOUR         "%dH"
+    IDS_FORMAT_MIN          "%dM"
+    IDS_FORMAT_FSEC         "%.2fS"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_LEVELB          "%d Level"
+    IDS_ITEMGAMBLE_ERR      "This item doesn't have the sorcery skills."
+    IDS_TKEY_SKILL2_1       "Upper Skill, Item, Shortcut Action Key 1"
+    IDS_TKEY_SKILL2_2       "Upper Skill, Item, Shortcut Action Key 2"
+    IDS_TKEY_SKILL2_3       "Upper Skill, Item, Shortcut Action Key 3"
+    IDS_TKEY_SKILL2_4       "Upper Skill, Item, Shortcut Action Key 4"
+    IDS_TKEY_SKILL2_5       "Upper Skill, Item, Shortcut Action Key 5"
+    IDS_TKEY_SKILL2_6       "Upper Skill, Item, Shortcut Action Key 6"
+    IDS_TKEY_SKILL2_7       "Upper Skill, Item, Shortcut Action Key 7"
+    IDS_TKEY_SKILL2_8       "Upper Skill, Item, Shortcut Action Key 8"
+    IDS_TKEY_SKILL2_9       "Upper Skill, Item, Shortcut Action Key 9"
+    IDS_TKEY_SKILL2_10      "Upper Skill, Item, Shortcut Action Key 10"
+    IDS_TKEY_SKILL2_11      "Upper Skill, Item, Shortcut Action Key 11"
+    IDS_TKEY_SKILL2_12      "Upper Skill, Item, Shortcut Action Key 12"
+    IDS_TKEY_VERSION        "TKEY_VERSION"
+    IDS_MENU_CHAT_LOCK      "Lock/Unlock"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FCEVENT_D           "40 years of long lasting war with Craxion…. Most of the people in town were sacrificed due to this endless war.\n I can't just leave this. I am applying to Legion of great DeFugel to put my life behind and free myself from the dreadful fact that I was born in the Village of the Devil. \n Hoping to find the meaning of my life after putting an end to this hideous war with my own hands…."
+    IDS_FCEVENT_C           "DeFugel's soldiers led by Neban Maha have ruined Queen's Sanctuary, and the invasion of Lahoor Tribe is continuous. Besides, emperor Luad has been acting strange recently….\n I can't just sit and watch. For the sake of my friends at Magic School who were sacrificed in this meaningless war, I got to find the truth behind the veil of history and clean this mess up.\n To do so, I'll have to throw myself into this chaos of history…."
+    IDS_ERR_CASHSHOP_NOTARGET "Unable to find the designated target."
+    IDS_ERR_CASHSHOP_NOCASHINFO "Unable to find the user's cash information."
+    IDS_ITEM_CANNOT_CABINET "Unable to store this item."
+    IDS_FILE_JOINTCHART     ".\\Tcd\\TJoint.tcd"
+    IDS_FILE_GRADEVISUALCHART ".\\Tcd\\TItemGradeVisual.tcd"
+    IDS_FMT_BUYITEM_AS_PRICE "Buy [%s] item as (%s) price."
+    IDS_REFINE_COST_SALE    "I'll cut this off by %d%% for ya! So, it'll be %s…. Let me see…"
+    IDS_TKEY_CHAR_ROT180    "Rotate character by 180 degrees"
+    IDS_DURATIONREP_COST_SALE 
+                            "I can make it as brand new with %s. It is %d%% discounted."
+    IDS_GAMBLE_ASK_SALE     "Hmm… You have to pay %s to see it's original shape. It is %d%% discounted! You will never regret. Believe my sorcery skills. Did you know that the item could be disapeared if the sorcery fails?"
+    IDS_SHOPTITLE_ITEM_SALE "%d%% discount Shop."
+    IDS_SHOPTITLE_PORTAL_SALE "%d%% discount portal"
+    IDS_SKILLNEXTPRICE_SALE " (%d%% discounted)"
+    IDS_CHANGE_NAME         "Type a name you want"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PERIOD_EXTENSION    "Extend a period"
+    IDS_PRESENT             "Presents"
+    IDS_FMT_EXTEND_PERIOD   "Do you want to extend a period of [%s]? (%d Days)"
+    IDS_FMT_EXTPERIOD       "Remained period : %d days"
+    IDS_FMT_DAYS            "%d days"
+    IDS_ISNT_EXTPERIOD_ITEM "This item period is not extendable."
+    IDS_ITEM_NAME_PERIOD    "%s %d days"
+    IDS_EXTENDED_PERIOD     "The period is extended."
+    IDS_ERR_EXTEND_PERIOD_FAIL "Extention was failed."
+    TERR_CHANGECHARBASE_FAIL "Change was failed."
+    IDS_TKEY_CAM_ROT180     "Rotate camera by 180 degrees"
+    IDS_SM_BATTLE_NORMAL    "Territory occupation area was changed to normal state."
+    IDS_SM_BATTLE_START     "Territory occupation was started."
+    IDS_SM_BATTLE_START_ALARM "Territory occupation will be started in %d minutes."
+    IDS_SM_BATTLE_END_ALARM "Territory occupation will be ended in %d minutes."
+    IDS_SM_BATTLE_PEACE     "Territory Occupation has ended and it turned back to peaceful time. You cannot battle at Territory occupation area for %d minutes."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SM_BATTLE_OPENGATE  "The castle gate in your realm is opened."
+    IDS_SM_BATTLE_BOSSDIE   "Occupation kingdom is changed because Guardian Spirit of this territory defeated."
+    IDS_SM_DUAL_WIN         "Player [%s] won a battle with player [%s]."
+    IDS_SM_EVENT_QUARTER    "%02d:%02d, [%s], [%d]"
+    IDS_SM_CHAT_BAN         "You are banned chatting for %d minutes."
+    IDS_SM_BATTLE_END_ALARM_SEC "Territory occupation will be ended in %d seconds."
+    IDS_SM_BATTLE_START_ALARM_SEC "Territory occupation will be started in %d seconds."
+    IDS_SM_CHAT_BAN_SEC     "You are banned chatting for %d seconds."
+    IDS_PETKIND_ONE_CONTRACT "[Speed %u%%]"
+    IDS_PETKIND_TWO_CONTRACT "[Riding together %u%%]"
+    IDS_PETKIND_TELE_CONTRACT "[Number of returning locaion %u]"
+    IDS_PETKIND_INVEN_CONTRACT "[%d slots bag]"
+    IDS_PETKIND_EXP_CONTRACT "[%u%% addition exerience]"
+    IDS_PETCON_LEVEL_CONTRACT "[%u level required]"
+    IDS_FMT_PET_EXTPERIOD   "%u days left to expiration"
+    IDS_FMT_PET_PERIOD_FIRED "It is expired"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_PET            "Manage pets"
+    IDS_TKEY_PET_INFO       "Open/close manage pets window"
+    IDS_OPENMONEY           "You acquired %s opening a treasure box that was locked."
+    IDS_GUILD_JOB           "Class"
+    IDS_GUILD_LEVEL         "Level"
+    IDS_GUILD_CONTRIBUTION  "Contribution"
+    IDS_CASHCABINET_PUTIN_PR 
+                            "Addition fee is 25 cach per item. Do you want to store?"
+    IDS_CASHCABINET_PUTIN   "Addition fee is 50 cach per item. Do you want to store?"
+    IDS_CASHCABINET_REMAIN_COUNT "Remained days : %d days   Number of items : %d/10"
+    IDS_CASHCABINET_REMAIN_COUNT_ON_PR 
+                            "Remained days : %d days   Number of items : %d/(30+10)"
+    IDS_GUILD_RANK          "Position"
+    IDS_GUILD_PEERAGE       "Peerage"
+    IDS_GUILD_NOWPOS        "Current Position"
+    IDS_GUILD_EARNESTMONEY  "Deposit"
+    IDS_GUILD_JOININGYESORNO "Division of participation"
+    IDS_GUILD_APPDAY        "Applied date"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_APPTYPE       "Division of applicants"
+    IDS_GUILD_OCCUPATIONGUILD "Occupying guild"
+    IDS_GUILD_BELONGNATION  "Kingdom"
+    IDS_GUILD_CASTLE        "Castle"
+    IDS_GUILD_VILLAGE       "Town"
+    IDS_FMT_LEVEL_IN_LOBY   "Level %d"
+    IDS_FMT_RESOLUTION      "%d x %d"
+    IDS_MY_POS              "My position : %.2f , %.2f"
+    IDS_CURSOR_POS          "Cursor position : %.2f , %.2f"
+    IDS_FMT_TERRITORYTIME   "Next war time : %04dY/%02dM/%02dD %02d:%02d"
+    IDS_FMT_HERO            "The hero of war : %s"
+    IDS_DONTHAVEINITSKILL   "There is no skill to initialize."
+    IDS_TEST                "String test"
+    IDS_FMT_WHISPER         "(To %s) %s"
+    IDS_BUGREPORTER_TITLE   "Error"
+    IDS_BUGREPORTER_MESSAGE "Serious error has been found. \nSorry for inconvenience."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BUGREPORTER_CONTENTS "Reported contents"
+    IDS_BUGREPORTER_MESSAGE2 
+                            "You can help us by reporting specified error.\n\nCollected data is only used for troubleshooting. This error reporting system is not used for other purpose such as marketing, but only troubleshooting. If you report in detail through our homepage, it helps us process easily and quickly."
+    IDS_BUGREPORTER_BTN_OK  "Report errors"
+    IDS_BUGREPORTER_BTN_CLOSE "Close"
+    IDS_DIRECT_DELCHAR_MSG  "The character you have chosen will be deleted."
+    IDS_CONNET_RETRY        "Disconnecting from server due to network error.\nPlease try again."
+    IDS_VK_OEM_7            "^"
+    IDS_FAILED_STOREOPEN    "You failed to open your Personal Shop."
+    IDS_CANTUSEINPLACE      "You can Not use it in this area."
+    IDS_FILE_THELPCHART     ".\\Tcd\\THelp.tcd"
+    IDS_FILE_THELPLINKCHART ".\\Tcd\\THelpLink.tcd"
+    IDS_IU_OVERLAPEXPBONUS  "You still in a growth accelerating time period left. You may use it again, after the period."
+    IDS_FILE_TNPCGLOBAL     ".\\Tcd\\TNPCGlobal.tcd"
+    IDS_URL_CASHCHARGE_CH1  "http://www.4story.com/chargecash/Charge_Main.asp"
+    IDS_DEF_ID              "4Story@zemiinc.com"
+    IDS_TKEY_HELP           "Open/Close Help Window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_POST_SAMEACCOUNT    "You can NOT send letter to the same account."
+    IDS_MENU_WHISPER        "Whisper"
+    IDS_KEYWORD_CHAT_TITLE  "/comment"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR                  "res\\Hand.cur"
+IDC_SWORD               CURSOR                  "res\\Sword.cur"
+IDC_TALK                CURSOR                  "res\\Talk.cur"
+IDC_ROUTING             CURSOR                  "res\\ROUTING.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SHADER
+//
+
+IDR_PS_STAGE1           SHADER                  "res\\PS_STAGE1.psh"
+IDR_VS_WMESH            SHADER                  "res\\VS_WMESH.vsh"
+IDR_VS_MESH             SHADER                  "res\\VS_MESH.vsh"
+IDR_VS_LVERTEX          SHADER                  "res\\VS_LVERTEX.vsh"
+IDR_PS_MODULATE         SHADER                  "res\\PS_MODULATE.psh"
+IDR_PS_MODULATE2X       SHADER                  "res\\PS_MODULATE2X.psh"
+IDR_PS_MODULATE4X       SHADER                  "res\\PS_MODULATE4X.psh"
+IDR_PS_ADD              SHADER                  "res\\PS_ADD.psh"
+IDR_PS_ADDSIGNED        SHADER                  "res\\PS_ADDSIGNED.psh"
+IDR_PS_ADDSIGNED2X      SHADER                  "res\\PS_ADDSIGNED2X.psh"
+IDR_PS_SUBTRACT         SHADER                  "res\\PS_SUBTRACT.psh"
+IDR_PS_ADDSMOOTH        SHADER                  "res\\PS_ADDSMOOTH.psh"
+IDR_PS_BLENDDIFFUSEALPHA SHADER                  "res\\PS_BLENDDIFFUSEALPHA.psh"
+IDR_PS_BLENDTEXTUREALPHA SHADER                  "res\\PS_BLENDTEXTUREALPHA.psh"
+IDR_PS_BLENDFACTORALPHA SHADER                  "res\\PS_BLENDFACTORALPHA.psh"
+IDR_PS_BLENDTEXTUREALPHAPM SHADER                  "res\\PS_BLENDTEXTUREALPHAPM.psh"
+IDR_PS_BLENDCURRENTALPHA SHADER                  "res\\PS_BLENDCURRENTALPHA.psh"
+IDR_PS_MODULATEALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATECOLOR_ADDALPHA SHADER                  "res\\PS_MODULATECOLOR_ADDALPHA.psh"
+IDR_PS_MODULATEINVALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEINVALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATEINVCOLOR_ADDALPHA SHADER                  "res\\PS_MODULATEINVCOLOR_ADDALPHA.psh"
+IDR_PS_DOTPRODUCT3      SHADER                  "res\\PS_DOTPRODUCT3.psh"
+IDR_PS_MULTIPLYADD      SHADER                  "res\\PS_MULTIPLYADD.psh"
+IDR_PS_LERP             SHADER                  "res\\PS_LERP.psh"
+IDR_PS_SHADER           SHADER                  "res\\PS_SHADER.psh"
+IDR_PS_DETAILMAP        SHADER                  "res\\PS_DETAILMAP.psh"
+IDR_PS_MAP              SHADER                  "res\\PS_MAP.psh"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,1
+ PRODUCTVERSION 3,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive Inc."
+            VALUE "FileDescription", "4Story"
+            VALUE "FileVersion", "3, 0, 0, 1"
+            VALUE "InternalName", "TClient"
+            VALUE "LegalCopyright", "Copyright (c) Zemi Interactive Inc. All rights reserved."
+            VALUE "OriginalFilename", "TClient.EXE"
+            VALUE "ProductName", "4Story"
+            VALUE "ProductVersion", "3, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TClient.ico"
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\TClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+#endif

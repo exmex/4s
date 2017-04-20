@@ -1,0 +1,18 @@
+// TLoginSvr.idl : TLoginSvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TLoginSvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(E9F8E765-87F4-4E21-AB86-AA8103806A01),
+	version(1.0),
+	helpstring("TLoginSvr 1.0 형식 라이브러리")
+]
+library TLoginSvrLib
+{
+	importlib("stdole2.tlb");
+};

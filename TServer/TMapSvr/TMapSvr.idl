@@ -1,0 +1,18 @@
+// TMapSvr.idl : TMapSvr의 IDL 소스입니다.
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(TMapSvr.tlb) 및 마샬링 코드가 생성됩니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(134290F0-F7CB-4413-8EE6-96D517C4E3CA),
+	version(1.0),
+	helpstring("TMapSvr 1.0 형식 라이브러리")
+]
+library TMapSvrLib
+{
+	importlib("stdole2.tlb");
+};

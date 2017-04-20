@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GMTool", "GMTool.vcproj", "{EE7E70A0-BA3E-4976-98C9-051BE40F27E0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {609902CD-67D3-4A7B-A94F-1CB0247F46A6}
+		SccProjectUniqueName1 = GMTool.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EE7E70A0-BA3E-4976-98C9-051BE40F27E0}.Debug.ActiveCfg = Debug|Win32
+		{EE7E70A0-BA3E-4976-98C9-051BE40F27E0}.Debug.Build.0 = Debug|Win32
+		{EE7E70A0-BA3E-4976-98C9-051BE40F27E0}.Release.ActiveCfg = Release|Win32
+		{EE7E70A0-BA3E-4976-98C9-051BE40F27E0}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

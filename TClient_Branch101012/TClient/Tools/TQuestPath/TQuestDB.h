@@ -1,0 +1,32 @@
+#pragma once
+
+
+class CTQuestDB
+{
+public:
+	MAPVDWORD m_mapTMONITEMDATA;
+	MAPVDWORD m_mapTNPCITEMDATA;
+
+	MAPTQDATA m_mapTQDATA;
+	MAPTCDATA m_mapTCDATA;
+
+public:
+	LPTQDATA FindTMISSION( LPTQDATA pTQDATA);
+	LPTQDATA FindTQDATA( DWORD dwQuestID);
+	LPTCDATA FindTCDATA( DWORD dwClassID);
+
+	LPVDWORD FindVDWORD(
+		LPMAPVDWORD pTITEMDATA,
+		DWORD dwItemID);
+
+	void ReleaseDATA();
+	BYTE LoadDATA();
+
+	BYTE LoadTTERM(
+		LPTQDATA pTQDATA,
+		CDatabase *pDB);
+
+public:
+	CTQuestDB();
+	virtual ~CTQuestDB();
+};

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A57EE9F1-1F72-4776-8309-F27E15568C2E}</ProjectGuid>
+    <SccProjectName>"$/TClient", HDAAAAAA</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Exec\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Exec\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\TProtocol;..\..\TEngine\TachyonControl;..\..\TEngine\Engine Lib;..\..\TEngine\TComp;..\..\TEngine\TCML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D3d9.lib;D3dx9.lib;EngineLibd.lib;winmm.lib;Imm32.lib;dsound.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Exec/TMapViewer.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\TEngine\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)TMapViewer.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\TProtocol;..\..\TEngine\TachyonControl;..\..\TEngine\Engine Lib;..\..\TEngine\TComp;..\..\TEngine\TCML;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D3d9.lib;D3dx9.lib;EngineLib.lib;winmm.lib;Imm32.lib;dsound.lib;dxguid.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Exec/TMapViewer.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\TEngine\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TCMDHandler.cpp" />
+    <ClCompile Include="TMapViewer.cpp" />
+    <ClCompile Include="TMapViewerBSP.cpp" />
+    <ClCompile Include="TMapViewerCAM.cpp" />
+    <ClCompile Include="TMapViewerChar.cpp" />
+    <ClCompile Include="TMapViewerFlag.cpp" />
+    <ClCompile Include="TMapViewerGame.cpp" />
+    <ClCompile Include="TMapViewerGM.cpp" />
+    <ClCompile Include="TMapViewerInven.cpp" />
+    <ClCompile Include="TMapViewerItem.cpp" />
+    <ClCompile Include="TMapViewerKEY.cpp" />
+    <ClCompile Include="TMapViewerMAP.cpp" />
+    <ClCompile Include="TMapViewerMoveObj.cpp" />
+    <ClCompile Include="TMapViewerNpc.cpp" />
+    <ClCompile Include="TMapViewerObjBase.cpp" />
+    <ClCompile Include="TMapViewerObject.cpp" />
+    <ClCompile Include="TMapViewerSFX.cpp" />
+    <ClCompile Include="TMapViewerWnd.cpp" />
+    <ClCompile Include="TMinimapDlg.cpp" />
+    <ClCompile Include="TWorldmapDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TErrorCode.h" />
+    <ClInclude Include="TMapViewer.h" />
+    <ClInclude Include="TMapViewerBSP.h" />
+    <ClInclude Include="TMapViewerCAM.h" />
+    <ClInclude Include="TMapViewerChar.h" />
+    <ClInclude Include="TMapViewerCMD.h" />
+    <ClInclude Include="TMapViewerFlag.h" />
+    <ClInclude Include="TMapViewerGame.h" />
+    <ClInclude Include="TMapViewerInven.h" />
+    <ClInclude Include="TMapViewerItem.h" />
+    <ClInclude Include="TMapViewerKEY.h" />
+    <ClInclude Include="TMapViewerMAP.h" />
+    <ClInclude Include="TMapViewerMoveObj.h" />
+    <ClInclude Include="TMapViewerNpc.h" />
+    <ClInclude Include="TMapViewerObjBase.h" />
+    <ClInclude Include="TMapViewerObject.h" />
+    <ClInclude Include="TMapViewerSFX.h" />
+    <ClInclude Include="TMapViewerType.h" />
+    <ClInclude Include="TMapViewerWnd.h" />
+    <ClInclude Include="TMinimapDlg.h" />
+    <ClInclude Include="TWorldmapDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Path_flag.tmf" />
+    <None Include="res\PS_ADD.psh" />
+    <None Include="res\PS_ADDSIGNED.psh" />
+    <None Include="res\PS_ADDSIGNED2X.psh" />
+    <None Include="res\PS_ADDSMOOTH.psh" />
+    <None Include="res\PS_BLENDCURRENTALPHA.psh" />
+    <None Include="res\PS_BLENDDIFFUSEALPHA.psh" />
+    <None Include="res\PS_BLENDFACTORALPHA.psh" />
+    <None Include="res\PS_BLENDTEXTUREALPHA.psh" />
+    <None Include="res\PS_BLENDTEXTUREALPHAPM.psh" />
+    <None Include="res\PS_DETAILMAP.psh" />
+    <None Include="res\PS_DOTPRODUCT3.psh" />
+    <None Include="res\PS_LERP.psh" />
+    <None Include="res\PS_MAP.psh" />
+    <None Include="res\PS_MODULATE.psh" />
+    <None Include="res\PS_MODULATE2X.psh" />
+    <None Include="res\PS_MODULATE4X.psh" />
+    <None Include="res\PS_MODULATEALPHA_ADDCOLOR.psh" />
+    <None Include="res\PS_MODULATECOLOR_ADDALPHA.psh" />
+    <None Include="res\PS_MODULATEINVALPHA_ADDCOLOR.psh" />
+    <None Include="res\PS_MODULATEINVCOLOR_ADDALPHA.psh" />
+    <None Include="res\PS_MULTIPLYADD.psh" />
+    <None Include="res\PS_SHADER.psh" />
+    <None Include="res\PS_STAGE1.psh" />
+    <None Include="res\PS_SUBTRACT.psh" />
+    <None Include="res\TMapViewer.ico" />
+    <None Include="res\TMapViewer.rc2" />
+    <None Include="res\TMapViewerDoc.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\VS_LVERTEX.vsh" />
+    <None Include="res\VS_MESH.vsh" />
+    <None Include="res\VS_WMESH.vsh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TMapViewer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

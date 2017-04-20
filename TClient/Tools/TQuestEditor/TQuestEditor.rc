@@ -1,0 +1,997 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TQuestEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""l.kor\\afxdb.rc""           // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TQuestEditor.ico"
+IDR_TQUESTYPE           ICON                    "res\\TQuestEditorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_TREEIMG      BITMAP                  "res\\bitmap_t.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_DATABASE_OPEN
+    BUTTON      ID_DATABASE_CLOSE
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_QUEST_ADD
+    BUTTON      ID_QUEST_DELETE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLASS
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "저장(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "인쇄 미리 보기(&V)",          ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",            ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "데이터베이스(&D)"
+    BEGIN
+        MENUITEM "데이터베이스 연결",           ID_DATABASE_OPEN
+        MENUITEM "연결 종료",                   ID_DATABASE_CLOSE
+    END
+    POPUP "퀘스트"
+    BEGIN
+        MENUITEM "퀘스트 추가(&A)",             ID_QUEST_ADD
+        MENUITEM "퀘스트 검색(&F)",             32791
+        MENUITEM "퀘스트 삭제(D)",              ID_QUEST_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "카테고리 편집",               ID_EDIT_CLASS
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",        ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+        MENUITEM "나누기(&P)",                  ID_WINDOW_SPLIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "TQuestEditor 정보(&A)...",    ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP MENU 
+BEGIN
+    POPUP "Empty Menu"
+    BEGIN
+        MENUITEM "데이터베이스 연결",           ID_DATABASE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "취소",                        ID_POPUP_CANCEL
+    END
+    POPUP "Root Menu"
+    BEGIN
+        MENUITEM "연결 종료",                   ID_DATABASE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "퀘스트 추가(&A)",             ID_QUEST_ADD
+        MENUITEM "퀘스트 검색(&F)",             ID_QUEST_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "취소",                        ID_POPUP_CANCEL
+    END
+    POPUP "Item Menu"
+    BEGIN
+        MENUITEM "연결 종료",                   ID_DATABASE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "퀘스트 추가(&A)",             ID_QUEST_ADD
+        MENUITEM "퀘스트 검색(&F)",             ID_QUEST_FIND
+        MENUITEM "퀘스트 삭제(&D)",             ID_QUEST_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "부모노드 변경(&M)",           ID_QUEST_CHGPARENT
+        MENUITEM SEPARATOR
+        MENUITEM "요약정보출력(&P)",            ID_QUEST_PRINTSUMMARY
+        MENUITEM SEPARATOR
+        MENUITEM "취소",                        ID_POPUP_CANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_SPACE,       ID_CHILD_EXPAND,        VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FIND,                VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_LOCK,                VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "H",            ID_SHOW_CLASSTITLEDLG,  VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "FileDescription", "TQuestEditor MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "TQuestEditor"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "TQuestEditor.EXE"
+            VALUE "ProductName", "TQuestEditor 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "TQuestEditor\n\nTQues\nTQuest 파일 (*.mpq)\n.mpq\nTQuestEditor.Document\nTQues Document"
+    IDS_FMT_DEL_CLASS_ERROR """%s(ID = %d)""가 사용중인 카테고리 입니다. 해당 퀘스트의 카테고리를 수정한 후 삭제하여 주십시요."
+    IDP_OLE_INIT_FAILED     "OLE 초기화 실패."
+    ID_FMT_OVERLAPMONID     "ID:%u 중복된 아이디가 발생했습니다.\n로딩을 중단합니다."
+    ID_ALREADY_OPENED_TMONCHART 
+                            "몬스터차트가 이미 로딩되어있습니다. 다시 로딩하시겠습니까?"
+    ID_NOT_LOADED_TMONTEMP  "몬스터차트가 로드되지 않았습니다."
+    ID_NOT_COLLECT_QUEST    "수집할 퀘스트가 없습니다."
+    ID_SUCCESS_PRINT_SUMMARY "완료되었습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TQuestEditor"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "쪽 전체를 표시합니다\n인쇄 미리 보기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보와 버전 정보, 저작권 정보를 표시합니다\n정보"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DATABASE_OPEN        "데이터베이스 연결\n데이터베이스 연결"
+    ID_DATABASE_CLOSE       "연결 종료\n연결 종료"
+    ID_QUEST_ADD            "퀘스트 추가\n퀘스트 추가"
+    ID_QUEST_DELETE         "퀘스트 삭제\n퀘스트 삭제"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLASS           "퀘스트 카테고리 편집\n퀘스트 카테고리 편집"
+    ID_QUEST_FIND           "퀘스트 검색\n퀘스트 검색"
+    ID_QUEST_CHGPARENT      "부모노드 변경\n부모노드 변경"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_QUEST_PRINTSUMMARY   "요약정보출력\n요약정보출력"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TQuestEditor ??"
+FONT 9, "??"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TQuestEditor ?? 1.03a",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "??",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_QUEST DIALOGEX 0, 0, 438, 441
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    GROUPBOX        " No quest selected ",IDC_STATIC_QUESTID,7,7,424,427
+    LTEXT           "Quest Type",IDC_STATIC_TYPE,13,23,52,8
+    COMBOBOX        IDC_EDIT_TYPE,65,21,53,161,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Repeat Max",IDC_STATIC_COUNTMAX,13,36,52,8
+    EDITTEXT        IDC_EDIT_COUNTMAX,65,34,53,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Force Run",IDC_STATIC_FORCERUN,13,49,52,8
+    EDITTEXT        IDC_EDIT_FORCERUN,65,47,53,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Trigger Type",IDC_STATIC_TRIGGERTYPE,13,62,52,8
+    COMBOBOX        IDC_EDIT_TRIGGERTYPE,65,60,53,120,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Trigger ID",IDC_STATIC_TRIGGERID,13,75,52,8
+    EDITTEXT        IDC_EDIT_TRIGGERID,65,73,53,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Category",IDC_STATIC_CLASS_INFO,13,108,105,47
+    LTEXT           "Name",IDC_STATIC_CLASS_NAME,17,118,26,8
+    COMBOBOX        IDC_CLASS_LIST,43,115,69,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ID",IDC_STATIC_CLASS_ID,17,130,26,8
+    EDITTEXT        IDC_CLASS_ID,43,128,69,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Trigger Message",IDC_STATIC_TRIGGERMSG,124,23,147,8
+    EDITTEXT        IDC_EDIT_TRIGGERMSG,124,34,147,38,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Complete Message",IDC_STATIC_COMPLETEMSG,277,23,147,8
+    EDITTEXT        IDC_EDIT_COMPLETEMSG,277,34,147,38,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Accept Message",IDC_STATIC_ACCEPTMSG,124,75,147,8
+    EDITTEXT        IDC_EDIT_ACCEPTMSG,124,85,147,38,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Reject Message",IDC_STATIC_REJECTMSG,277,75,147,8
+    EDITTEXT        IDC_EDIT_REJECTMSG,277,85,147,38,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "NPC Name",IDC_STATIC_NPC_NAME,124,134,53,8
+    EDITTEXT        IDC_EDIT_NPC_NAME,177,132,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Player answer",IDC_STATIC_PLAYER_ANSWER,277,134,53,8
+    EDITTEXT        IDC_EDIT_PLAYER_ANSWER,330,132,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,151,424,283
+    CONTROL         "List1",IDC_LIST_CONDITION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,13,162,105,65
+    PUSHBUTTON      "Add",IDC_BUTTON_ADDCON,13,230,51,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELCON,67,230,51,13
+    LTEXT           "Condition Type",IDC_STATIC_CONTYPETEXT,124,165,53,8
+    COMBOBOX        IDC_EDIT_CONTYPE,177,163,94,194,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Condition ID",IDC_STATIC_CONIDTEXT,124,178,53,8
+    EDITTEXT        IDC_EDIT_CONID,177,176,94,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Count",IDC_STATIC_CONCOUNTTEXT,124,191,53,8
+    EDITTEXT        IDC_EDIT_CONCOUNT,177,189,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Summary Message",IDC_STATIC_SUMMARYMSG,277,162,147,8
+    EDITTEXT        IDC_EDIT_SUMMARYMSG,277,173,147,51,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "",IDC_STATIC,7,243,424,191
+    CONTROL         "List1",IDC_LIST_TERM,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,13,254,105,65
+    PUSHBUTTON      "Add",IDC_BUTTON_ADDTERM,13,322,51,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELTERM,67,322,51,13
+    LTEXT           "Objective",IDC_STATIC_OBJECTIVETEXT,124,257,53,8
+    EDITTEXT        IDC_EDIT_OBJECTIVE,177,255,247,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Incomplete Message",IDC_STATIC_INCOMPMSG,124,270,147,8
+    EDITTEXT        IDC_EDIT_INCOMPMSG,124,283,147,52,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Term Type",IDC_STATIC_TERMTYPE,277,283,53,8
+    COMBOBOX        IDC_EDIT_TERMTYPE,330,281,94,167,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Term ID",IDC_STATIC_TERMID,277,296,53,8
+    EDITTEXT        IDC_EDIT_TERMID,330,294,94,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Count",IDC_STATIC_TERMCOUNT,277,309,53,8
+    EDITTEXT        IDC_EDIT_COUNT,330,307,94,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,7,335,424,99
+    CONTROL         "List1",IDC_LIST_REWARD,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,13,346,105,65
+    PUSHBUTTON      "Add",IDC_BUTTON_ADDREWARD,13,414,51,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELREWARD,67,414,51,13
+    LTEXT           "Reward Type",IDC_STATIC_REWARDTYPE,124,349,53,8
+    COMBOBOX        IDC_EDIT_REWARDTYPE,177,347,94,96,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Reward ID",IDC_STATIC_REWARDID,124,362,53,8
+    EDITTEXT        IDC_EDIT_REWARDID,177,360,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Count",IDC_STATIC_REWARDCOUNT,124,375,53,8
+    EDITTEXT        IDC_EDIT_REWARDCOUNT,177,373,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reward Method",IDC_STATIC_TAKEMETHOD,124,388,53,8
+    COMBOBOX        IDC_EDIT_TAKEMETHOD,177,386,94,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Reward Data",IDC_STATIC_TAKEDATA,124,401,53,8
+    EDITTEXT        IDC_EDIT_TAKEDATA,177,399,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Level",IDC_STATIC_LEVEL,13,88,52,8
+    EDITTEXT        IDC_EDIT_LEVEL,65,86,53,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "LOCK",IDC_CHECK_EDIT_CONTROL_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,407,1,28,8
+    CONTROL         "Main Class",IDC_CHECK_MAIN_CATEGORY,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,43,142,64,8
+    COMBOBOX        IDC_COMBO_MAINCLASS,65,98,54,54,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MainQuest",IDC_STATIC_MAINQUEST,13,99,37,8
+    CONTROL         "One-Satisfied",IDC_CHECK_CONCHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,177,203,69,10
+    LTEXT           "QuestMob",IDC_STATIC_QUESTMOB,277,349,53,8
+    LTEXT           "QuestPathMob",IDC_STATIC_QUESTPATHMOB,277,375,53,8
+    LTEXT           "QuestTime",IDC_STATIC_QUESTTIME,277,362,53,8
+    LTEXT           "TicketID",IDC_STATIC_TICKETID,277,388,53,8
+    EDITTEXT        IDC_EDIT_QUESTMOB,330,347,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_QUESTTIME,330,360,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_QUESTPATHMOB,330,373,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_TICKETID,330,386,94,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Send Quest",IDC_CHECK_SENDQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,330,400,69,10
+END
+
+IDD_DIALOG_EDIT_CLASS DIALOGEX 0, 0, 463, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Edit Category"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_CLASS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,7,449,193
+    PUSHBUTTON      "&Add",IDC_BUTTON_ADD_CLASS,7,208,61,16,BS_FLAT
+    PUSHBUTTON      "&Edit",IDC_BUTTON_EDIT_CLASS,73,208,61,16,BS_FLAT
+    PUSHBUTTON      "&Del",IDC_BUTTON_DEL_CLASS,139,208,61,16,BS_FLAT
+    PUSHBUTTON      "&Close",IDOK,395,208,61,16,BS_FLAT
+END
+
+IDD_DIALOG_ADD_CLASS DIALOGEX 0, 0, 229, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Add Category"
+FONT 8, "MS Shell Dlg", 400, 0, 0x81
+BEGIN
+    LTEXT           "NAME",IDC_STATIC,7,13,27,8
+    EDITTEXT        IDC_EDIT_NAME,34,11,188,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "&OK",IDOK,95,32,61,16,BS_FLAT
+    PUSHBUTTON      "&CANCEL",IDCANCEL,161,32,61,16,BS_FLAT
+END
+
+IDD_DIALOG_FIND_QUEST DIALOGEX 0, 0, 145, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Fild Quest"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "SEARCH :",IDC_STATIC,7,8,32,12
+    EDITTEXT        IDC_EDIT_SEARCH_TEXT,39,7,99,12,ES_AUTOHSCROLL
+    GROUPBOX        "Search Form",IDC_STATIC,7,22,131,20,BS_FLAT
+    CONTROL         "Sentence",IDC_RADIO_SEARCHTYPE_SENTENCE,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,9,30,41,9
+    CONTROL         "Word",IDC_RADIO_SEARCHTYPE_WORD,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,60,30,32,9
+    CONTROL         "Quest ID",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,94,30,44,11
+    DEFPUSHBUTTON   "&OK",IDOK,7,43,65,14,BS_FLAT
+    PUSHBUTTON      "&CANCEL",IDCANCEL,73,43,65,14,BS_FLAT
+END
+
+IDD_DIALOG_LIST_FIND_QUEST DIALOGEX 0, 0, 323, 255
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Find Quest List"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_FIND_QUEST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,7,309,227
+    DEFPUSHBUTTON   "&Select",ID_SELECT_QUEST_ITEM,7,234,309,14,BS_FLAT
+END
+
+IDD_DIALOG_CLASS_TITLE DIALOGEX 0, 0, 292, 25
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | 
+    DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Class Title"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_TITLE_CLASS,7,7,278,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DIALOG_CHGPARENT DIALOGEX 0, 0, 116, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Change Parent"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,26,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,59,26,50,14,BS_FLAT
+    LTEXT           "Parent ID",IDC_STATIC,7,11,34,8
+    EDITTEXT        IDC_EDIT_PARENTID,41,9,68,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_QUEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        VERTGUIDE, 13
+        VERTGUIDE, 17
+        VERTGUIDE, 43
+        VERTGUIDE, 65
+        VERTGUIDE, 112
+        VERTGUIDE, 118
+        VERTGUIDE, 124
+        VERTGUIDE, 177
+        VERTGUIDE, 271
+        VERTGUIDE, 277
+        VERTGUIDE, 330
+        VERTGUIDE, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 434
+        HORZGUIDE, 27
+        HORZGUIDE, 40
+        HORZGUIDE, 53
+        HORZGUIDE, 66
+        HORZGUIDE, 72
+        HORZGUIDE, 79
+        HORZGUIDE, 85
+        HORZGUIDE, 92
+        HORZGUIDE, 114
+        HORZGUIDE, 126
+        HORZGUIDE, 138
+        HORZGUIDE, 162
+        HORZGUIDE, 169
+        HORZGUIDE, 182
+        HORZGUIDE, 195
+        HORZGUIDE, 236
+        HORZGUIDE, 243
+        HORZGUIDE, 254
+        HORZGUIDE, 261
+        HORZGUIDE, 274
+        HORZGUIDE, 287
+        HORZGUIDE, 335
+        HORZGUIDE, 346
+        HORZGUIDE, 353
+        HORZGUIDE, 366
+        HORZGUIDE, 379
+        HORZGUIDE, 392
+        HORZGUIDE, 405
+        HORZGUIDE, 420
+    END
+
+    IDD_DIALOG_EDIT_CLASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+        HORZGUIDE, 200
+    END
+
+    IDD_DIALOG_ADD_CLASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        VERTGUIDE, 34
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+        HORZGUIDE, 17
+    END
+
+    IDD_DIALOG_FIND_QUEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_DIALOG_LIST_FIND_QUEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_DIALOG_CLASS_TITLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 18
+    END
+
+    IDD_DIALOG_CHGPARENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 109
+        VERTGUIDE, 41
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+        HORZGUIDE, 15
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_QUEST DLGINIT
+BEGIN
+    IDC_EDIT_TYPE, 0x403, 7, 0
+0x2d30, 0xf8be, 0xbdc0, "\000" 
+    IDC_EDIT_TYPE, 0x403, 11, 0
+0x2d31, 0xe2b1, 0xbbba, 0xebb4, 0xadc8, "\000" 
+    IDC_EDIT_TYPE, 0x403, 12, 0
+0x2d32, 0xbabd, 0xb3c5, 0xc320, 0xb0df, 0x00a1, 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x2d33, 0xc6be, 0xccc0, 0xdbc5, 0xc320, 0xb0df, 0x00a1, 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x2d34, 0xc6be, 0xccc0, 0xdbc5, 0xb520, 0xb7e5, 0x00d3, 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x2d35, 0xf3b8, 0xbabd, 0xcdc5, 0xc320, 0xc7e2, 0x00f6, 
+    IDC_EDIT_TYPE, 0x403, 11, 0
+0x2d36, 0xdac5, 0xb9b7, 0xf7c6, 0xaec6, "\000" 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x2d37, 0xf9c4, 0xbabd, 0xaec6, 0xbf20, 0xb7cf, 0x00e1, 
+    IDC_EDIT_TYPE, 0x403, 7, 0
+0x2d38, 0xccb9, 0xc7bc, "\000" 
+    IDC_EDIT_TYPE, 0x403, 7, 0
+0x2d39, 0xe7b7, 0xc3c6, "\000" 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x3031, 0x4e2d, 0x4350, 0xcdbf, 0xb420, 0xc8eb, 0x00ad, 
+    IDC_EDIT_TYPE, 0x403, 15, 0
+0x3131, 0xc42d, 0xbdf9, 0xc6ba, 0x20ae, 0xf7c6, 0xe2b1, "\000" 
+    IDC_EDIT_TYPE, 0x403, 15, 0
+0x3231, 0xc32d, 0xc5a9, 0x20cd, 0xdeb8, 0xbcbc, 0xf6c1, "\000" 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x3331, 0xbd2d, 0xc0ba, 0xc4a7, 0xc0a1, 0xb5db, 0x00bf, 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x3431, 0xb82d, 0xbdf3, 0xc5ba, 0xc1cd, 0xc0d7, 0x00bd, 
+    IDC_EDIT_TYPE, 0x403, 14, 0
+0x3531, 0xbd2d, 0xc5ba, 0xb0b3, 0xbec9, 0xc1ee, 0x00dc, 
+    IDC_EDIT_TYPE, 0x403, 15, 0
+0x3631, 0xbe2d, 0xc0c6, 0xc5cc, 0x20db, 0xe8bb, 0xa6c1, "\000" 
+    IDC_EDIT_TYPE, 0x403, 12, 0
+0x3731, 0xc62d, 0xc1ed, 0xb9f6, 0xbcdf, 0x00db, 
+    IDC_EDIT_TYPE, 0x403, 8, 0
+0x3831, 0xc12d, 0xc0a6, 0x00db, 
+    IDC_EDIT_TYPE, 0x403, 17, 0
+0x3931, 0xb82d, 0xbdf3, 0xc5ba, 0x20cd, 0xaeb8, 0xbabd, 0xf9c6, "\000" 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 7, 0
+0x2d30, 0xf8be, 0xbdc0, "\000" 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 14, 0
+0x2d31, 0xf9c4, 0xbabd, 0xaec6, 0xbd20, 0xc0c3, 0x00db, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 15, 0
+0x2d32, 0xafc6, 0xa4c1, 0xa7c0, 0xa1c4, 0xb5b5, 0xf8c2, "\000" 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 13, 0
+0x2d33, 0x504e, 0xbf43, 0x20cd, 0xebb4, 0xadc8, "\000" 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 14, 0
+0x2d34, 0xc6be, 0xccc0, 0xdbc5, 0xbd20, 0xb5c0, 0x00e6, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 14, 0
+0x2d35, 0xf3b8, 0xbabd, 0xcdc5, 0xc120, 0xc0d7, 0x00d3, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 12, 0
+0x2d36, 0xfbc0, 0xbab1, 0xc120, 0xc0d7, 0x00d3, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 14, 0
+0x2d37, 0xbabd, 0xa7c0, 0xa1c4, 0xc020, 0xb5db, 0x00bf, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 14, 0
+0x2d38, 0xd4b0, 0xccc0, 0xaec6, 0xc020, 0xb5db, 0x00bf, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 14, 0
+0x2d39, 0xf9c4, 0xbabd, 0xaec6, 0xbf20, 0xb7cf, 0x00e1, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 15, 0
+0x3031, 0xbe2d, 0xc0c6, 0xc5cc, 0x20db, 0xe7bb, 0xebbf, "\000" 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 13, 0
+0x3131, 0xc02d, 0xb4ce, 0x20f8, 0xbec1, 0xe1b7, "\000" 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 10, 0
+0x3231, 0xb72d, 0xbab9, 0xbea7, 0x00f7, 
+    IDC_EDIT_TRIGGERTYPE, 0x403, 12, 0
+0x3331, 0xc02d, 0xc0fc, 0xbdef, 0xb8c2, 0x00ae, 
+    IDC_EDIT_CONTYPE, 0x403, 7, 0
+0x2d30, 0xf8be, 0xbdc0, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 15, 0
+0x2d31, 0xb9b7, 0xa7ba, 0xc728, 0xc7cf, 0xbcd1, 0x29b1, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 15, 0
+0x2d32, 0xb9b7, 0xa7ba, 0xbb28, 0xc7f3, 0xbcd1, 0x29b1, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 17, 0
+0x2d33, 0xf9c4, 0xbabd, 0xaec6, 0xbc20, 0xc7f6, 0x20e0, 0xdfc1, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 14, 0
+0x2d34, 0xc6be, 0xccc0, 0xdbc5, 0xbc20, 0xc1d2, 0x00f6, 
+    IDC_EDIT_CONTYPE, 0x403, 9, 0
+0x2d35, 0xacc5, 0xa1b7, 0xbabd, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 12, 0
+0x2d36, 0xf3b8, 0xbabd, 0xcdc5, 0x4920, 0x0044, 
+    IDC_EDIT_CONTYPE, 0x403, 8, 0
+0x2d37, 0xcab8, 0x4920, 0x0044, 
+    IDC_EDIT_CONTYPE, 0x403, 15, 0
+0x2d38, 0xa7c0, 0xa1c4, 0xaab0, 0x4c28, 0x6665, 0x2974, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 14, 0
+0x2d39, 0xa7c0, 0xa1c4, 0xaab0, 0x5428, 0x706f, 0x0029, 
+    IDC_EDIT_CONTYPE, 0x403, 17, 0
+0x3031, 0xc02d, 0xc4a7, 0xb0a1, 0x28aa, 0x6952, 0x6867, 0x2974, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 18, 0
+0x3131, 0xc02d, 0xc4a7, 0xb0a1, 0x28aa, 0x6f42, 0x7474, 0x6d6f, 0x0029, 
+
+    IDC_EDIT_CONTYPE, 0x403, 17, 0
+0x3231, 0xc02d, 0xc1cf, 0xc8a4, 0xb7ae, 0x20fc, 0xccc0, 0xf3bb, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 17, 0
+0x3331, 0xbe2d, 0xc0c6, 0xc5cc, 0x20db, 0xccb9, 0xd2bc, 0xf6c1, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 13, 0
+0x3431, 0xbc2d, 0xbcd2, 0x20d3, 0xb9b1, 0xa1b0, "\000" 
+    IDC_EDIT_CONTYPE, 0x403, 18, 0
+0x3531, 0xc42d, 0xbdf9, 0xc6ba, 0x20ae, 0xcfbf, 0xe1b7, 0xc820, 0x00c4, 
+
+    IDC_EDIT_CONTYPE, 0x403, 18, 0
+0x3631, 0xb52d, 0xb1bf, 0x20de, 0xd0ba, 0xe2b1, 0xbc20, 0xc1b3, 0x00a4, 
+
+    IDC_EDIT_CONTYPE, 0x403, 8, 0
+0x3731, 0xbc2d, 0xbaba, 0x00b0, 
+    IDC_EDIT_CONTYPE, 0x403, 24, 0
+0x3831, 0xc42d, 0xbdf9, 0xc6ba, 0x20ae, 0xcfbf, 0xe1b7, 0xc020, 0x28fc, 
+0x554e, 0x4c4c, 0x0029, 
+    IDC_EDIT_CONTYPE, 0x403, 14, 0
+0x3931, 0xbd2d, 0xc5ba, 0xb9b3, 0xb5df, 0xc1bf, 0x00df, 
+    IDC_EDIT_CONTYPE, 0x403, 15, 0
+0x3032, 0xbd2d, 0xc0ba, 0xc4a7, 0x20a1, 0xf3bb, 0xc2c5, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 7, 0
+0x2d30, 0xf8be, 0xbdc0, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 14, 0
+0x2d31, 0xf9c4, 0xbabd, 0xaec6, 0xbf20, 0xb7cf, 0x00e1, 
+    IDC_EDIT_TERMTYPE, 0x403, 14, 0
+0x2d32, 0xc6be, 0xccc0, 0xdbc5, 0xbd20, 0xb5c0, 0x00e6, 
+    IDC_EDIT_TERMTYPE, 0x403, 7, 0
+0x2d33, 0xe7bb, 0xc9b3, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 10, 0
+0x2d34, 0xbabd, 0xb3c5, 0x4920, 0x0044, 
+    IDC_EDIT_TERMTYPE, 0x403, 12, 0
+0x2d35, 0xc6be, 0xccc0, 0xdbc5, 0x4920, 0x0044, 
+    IDC_EDIT_TERMTYPE, 0x403, 9, 0
+0x2d36, 0xb8c5, 0xccc0, 0xd3b8, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 12, 0
+0x2d37, 0xf3b8, 0xbabd, 0xcdc5, 0x4920, 0x0044, 
+    IDC_EDIT_TERMTYPE, 0x403, 8, 0
+0x2d38, 0xcab8, 0x4920, 0x0044, 
+    IDC_EDIT_TERMTYPE, 0x403, 15, 0
+0x2d39, 0xa7c0, 0xa1c4, 0xaab0, 0x4c28, 0x6665, 0x2974, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 15, 0
+0x3031, 0xc02d, 0xc4a7, 0xb0a1, 0x28aa, 0x6f54, 0x2970, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 17, 0
+0x3131, 0xc02d, 0xc4a7, 0xb0a1, 0x28aa, 0x6952, 0x6867, 0x2974, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 18, 0
+0x3231, 0xc02d, 0xc4a7, 0xb0a1, 0x28aa, 0x6f42, 0x7474, 0x6d6f, 0x0029, 
+
+    IDC_EDIT_TERMTYPE, 0x403, 8, 0
+0x3331, 0xb42d, 0xc8eb, 0x00ad, 
+    IDC_EDIT_TERMTYPE, 0x403, 18, 0
+0x3431, 0xc02d, 0xc4a7, 0xb0a1, 0x28aa, 0x6548, 0x6769, 0x7468, 0x0029, 
+
+    IDC_EDIT_TERMTYPE, 0x403, 13, 0
+0x3531, 0xbd2d, 0xc0ba, 0xc4a7, 0x20a1, 0x4449, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 11, 0
+0x3631, 0xbd2d, 0xc6ba, 0x20f9, 0x4449, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 14, 0
+0x3731, 0xbe2d, 0xc0c6, 0xc5cc, 0xbbdb, 0xbfe7, 0x00eb, 
+    IDC_EDIT_TERMTYPE, 0x403, 21, 0
+0x3831, 0xc42d, 0xbdf9, 0xc6ba, 0x20ae, 0xcfbf, 0xe1b7, 0xb828, 0xc7f1, 
+0x29a5, "\000" 
+    IDC_EDIT_TERMTYPE, 0x403, 18, 0
+0x3931, 0xc02d, 0x20fb, 0xb3c4, 0xafb8, 0xcdc5, 0xbb20, 0xb3e7, 0x00c9, 
+
+    IDC_EDIT_REWARDTYPE, 0x403, 7, 0
+0x2d30, 0xf8be, 0xbdc0, "\000" 
+    IDC_EDIT_REWARDTYPE, 0x403, 5, 0
+0x2d31, 0xb7b5, "\000" 
+    IDC_EDIT_REWARDTYPE, 0x403, 9, 0
+0x2d32, 0xc6be, 0xccc0, 0xdbc5, "\000" 
+    IDC_EDIT_REWARDTYPE, 0x403, 7, 0
+0x2d33, 0xbabd, 0xb3c5, "\000" 
+    IDC_EDIT_REWARDTYPE, 0x403, 14, 0
+0x2d34, 0xbabd, 0xb3c5, 0xb720, 0xbab9, 0xbea7, 0x00f7, 
+    IDC_EDIT_REWARDTYPE, 0x403, 7, 0
+0x2d35, 0xfcc0, 0xf7c1, "\000" 
+    IDC_EDIT_REWARDTYPE, 0x403, 9, 0
+0x2d36, 0xe6b0, 0xe8c7, 0xa1c4, "\000" 
+    IDC_EDIT_REWARDTYPE, 0x403, 13, 0
+0x2d37, 0xc5b8, 0xf7c1, 0xc6be, 0xccc0, 0xdbc5, "\000" 
+    IDC_EDIT_TAKEMETHOD, 0x403, 7, 0
+0x2d30, 0xf8be, 0xbdc0, "\000" 
+    IDC_EDIT_TAKEMETHOD, 0x403, 7, 0
+0x2d31, 0xf0b8, 0xceb5, "\000" 
+    IDC_EDIT_TAKEMETHOD, 0x403, 7, 0
+0x2d32, 0xb1bc, 0xc3c5, "\000" 
+    IDC_EDIT_TAKEMETHOD, 0x403, 7, 0
+0x2d33, 0xaec8, 0xfcb7, "\000" 
+    IDC_EDIT_TAKEMETHOD, 0x403, 7, 0
+0x2d34, 0xa3b7, 0xfdb4, "\000" 
+    0
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\TQuestEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#include "l.kor\afxdb.rc"           // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

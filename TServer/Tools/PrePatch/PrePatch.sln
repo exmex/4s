@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrePatch", "PrePatch.vcproj", "{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {D0F69974-94F9-46A9-A31F-A979457E216D}
+		SccProjectUniqueName1 = PrePatch.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		GOA Release = GOA Release
+		LogRelease = LogRelease
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.Debug.ActiveCfg = Debug|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.Debug.Build.0 = Debug|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.GOA Release.ActiveCfg = GOA Release|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.GOA Release.Build.0 = GOA Release|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.LogRelease.ActiveCfg = LogRelease|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.LogRelease.Build.0 = LogRelease|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.Release.ActiveCfg = Release|Win32
+		{5ED5BC2A-CCA7-4CA4-8F66-92E60FDBFCB5}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

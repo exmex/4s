@@ -1,0 +1,2 @@
+installutil Tloginsvr.exe
+pause

@@ -1,0 +1,72 @@
+// PS_SHADER.psh
+// Vertex shader for PS_SHADER
+//
+// Registers:
+//
+//	Reg		Size	Comment
+//	------- ------- -------------------------------------------------
+//	c0		1		Texture factor
+//	c1		1		x : ARG1, y : ARG2, z : Intensity and 0.0
+//	c2		2		Common constant c2 : {0.5, 0.0, 256.0, 257.0}
+//									c3 : {0.0, 1.0, 2.0, 4.0}
+//
+// Temporary Register:
+//
+//	r0 - Texture color0
+//	r1 - x : alpha and y : specular color
+//	r2 - Texture factor
+
+
+ps_2_0
+
+dcl		v0		// Color input
+dcl_pp	t0.xy	// Texture coord0 input
+dcl_pp	t2.xy	// Texture coord2 input
+dcl_pp	t3.xyz	// Camera direction
+dcl_pp	t4.xyz	// Normal
+dcl_pp	t5.xyz	// Light direction
+dcl_2d	s0		// Sampler0 input
+dcl_2d	s1		// Sampler1 input
+
+//////////////////////////////////////////////////////////
+// Get texture color
+texld_pp r0, t0, s0
+texld_pp r1, t2, s1
+
+//////////////////////////////////////////////////////////
+// Get texture factor
+mov_pp r2, c0
+
+//////////////////////////////////////////////////////////
+// Set ARG1 color
+cmp_pp r0, c1.x, r0, r2
+
+//////////////////////////////////////////////////////////
+// Set alpha and specular color
+cmp_pp r3, c1.y, r1, r2
+rcp_pp r1.z, c2.w
+
+mad_pp r1.y, c2.z, r3.y, r3.z
+mul_pp r1.y, r1.y, r1.z
+mad_pp r1.x, c2.z, r3.w, r3.x
+mul_pp r0.w, r1.x, r1.z
+
+//////////////////////////////////////////////////////////
+// Compute specular color
+nrm_pp r5.xyz, t3
+add_pp r5.xyz, r5, -t5
+nrm_pp r3.xyz, r5
+nrm_pp r4.xyz, t4
+
+dp3_pp r3.x, r3, r4
+max_pp r3.x, r3.x, c3.x
+pow_pp r3.x, r3.x, c1.z
+
+//////////////////////////////////////////////////////////
+// Compute output color
+mad_pp r0, r1.yyyy, r3.xxxx, r0
+mul_pp r0, r0, v0
+
+//////////////////////////////////////////////////////////
+// Return output color
+mov_pp oC0, r0

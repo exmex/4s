@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TSimulation", "TSimulation.vcproj", "{55C1913D-70E4-4C86-BF88-FA53CC5B8831}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = TSimulation.vcproj
+		SccProjectName0 = \u0022$/TSimulation\u0022,\u0020HICAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{55C1913D-70E4-4C86-BF88-FA53CC5B8831}.Debug.ActiveCfg = Debug|Win32
+		{55C1913D-70E4-4C86-BF88-FA53CC5B8831}.Debug.Build.0 = Debug|Win32
+		{55C1913D-70E4-4C86-BF88-FA53CC5B8831}.Release.ActiveCfg = Release|Win32
+		{55C1913D-70E4-4C86-BF88-FA53CC5B8831}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

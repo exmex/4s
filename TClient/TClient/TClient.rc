@@ -1,0 +1,334 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "TClient.manifest"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_ERROR_DIALOG DIALOGEX 0, 0, 251, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "오류"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_ERROR,7,40,237,69,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "오류내용 보고",IDOK,7,176,182,14
+    PUSHBUTTON      "닫기",IDCANCEL,194,176,50,14
+    LTEXT           "실행 중 예상치 못한 오류를 발견하였습니다.\n불편을 끼쳐드려 대단히 죄송합니다.",
+                    IDC_STATIC_MESSAGE,7,7,237,20
+    LTEXT           "보고내용",IDC_STATIC_CONTENTS,7,30,32,8
+    LTEXT           "해당 오류를 보고 하여 문제 해결에 도움을 주실 수 있습니다.\n\n수집된 데이터는 오직 문제를 해결하는데 만 사용됩니다. 이 오류 보고는 오류 해결 외에 마케팅 등의 다른 목적으로 사용되지 않습니다. 홈페이지를 통해 오류내용을 상세히 기술해 주시면 빠른 문제해결에 큰 도움이 됩니다.",
+                    IDC_STATIC_MESSAGE2,7,115,237,57
+END
+
+ID_PACKET_DIALOG DIALOGEX 0, 0, 529, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "패킷 감시기"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_PACKET,7,43,257,54,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_LIST_CAPTURED,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,113,257,230
+    LTEXT           "감시된 패킷",IDC_STATIC,7,102,71,8
+    LTEXT           "패킷 내용",IDC_STATIC,268,7,71,8
+    LTEXT           "감시중인 패킷",IDC_STATIC,7,34,242,8
+    LTEXT           "패킷 타입종류",IDC_STATIC,7,7,40,8
+    LTEXT           "패킷",IDC_STATIC,63,7,40,8
+    COMBOBOX        IDC_COMBO1,7,17,54,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,62,18,155,195,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "등록",IDC_BUTTON_ADD,219,17,46,15
+    CONTROL         "",IDC_EDIT_OUTPUT,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,267,17,255,326
+END
+
+IDD_IP_DIALOG DIALOGEX 0, 0, 186, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "접속 아이피를 입력해주세요."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,47,14,127,
+                    12
+    EDITTEXT        IDC_EDIT1,47,32,78,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "확인",IDOK,115,59,50,14
+    LTEXT           "아이피 :",IDC_STATIC,14,16,30,8
+    LTEXT           "포트 :",IDC_STATIC,22,34,22,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    ID_ERROR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    ID_PACKET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 522
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_IP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT_CURSE          TEXT                    "res\\Curse.txt"
+IDR_TEXT_CURSE_GSP      TEXT                    "res\\Curse_GSP.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DRAGSIZE            CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "4Story"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "4Story\n\n4Story\n\n\nTClient.Document\nTClient Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE_GOA   "GatesofAndaron"
+    AFX_IDS_APP_TITLE_GLOBAL "4Story_GSP"
+    AFX_IDS_APP_TITLE_RUSSIA "4Story_RU"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR                  "res\\Hand.cur"
+IDC_SWORD               CURSOR                  "res\\Sword.cur"
+IDC_TALK                CURSOR                  "res\\Talk.cur"
+IDC_ROUTING             CURSOR                  "res\\ROUTING.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SHADER
+//
+
+IDR_PS_STAGE1           SHADER                  "res\\PS_STAGE1.psh"
+IDR_VS_WMESH            SHADER                  "res\\VS_WMESH.vsh"
+IDR_VS_MESH             SHADER                  "res\\VS_MESH.vsh"
+IDR_VS_LVERTEX          SHADER                  "res\\VS_LVERTEX.vsh"
+IDR_PS_MODULATE         SHADER                  "res\\PS_MODULATE.psh"
+IDR_PS_MODULATE2X       SHADER                  "res\\PS_MODULATE2X.psh"
+IDR_PS_MODULATE4X       SHADER                  "res\\PS_MODULATE4X.psh"
+IDR_PS_ADD              SHADER                  "res\\PS_ADD.psh"
+IDR_PS_ADDSIGNED        SHADER                  "res\\PS_ADDSIGNED.psh"
+IDR_PS_ADDSIGNED2X      SHADER                  "res\\PS_ADDSIGNED2X.psh"
+IDR_PS_SUBTRACT         SHADER                  "res\\PS_SUBTRACT.psh"
+IDR_PS_ADDSMOOTH        SHADER                  "res\\PS_ADDSMOOTH.psh"
+IDR_PS_BLENDDIFFUSEALPHA SHADER                  "res\\PS_BLENDDIFFUSEALPHA.psh"
+IDR_PS_BLENDTEXTUREALPHA SHADER                  "res\\PS_BLENDTEXTUREALPHA.psh"
+IDR_PS_BLENDFACTORALPHA SHADER                  "res\\PS_BLENDFACTORALPHA.psh"
+IDR_PS_BLENDTEXTUREALPHAPM SHADER                  "res\\PS_BLENDTEXTUREALPHAPM.psh"
+IDR_PS_BLENDCURRENTALPHA SHADER                  "res\\PS_BLENDCURRENTALPHA.psh"
+IDR_PS_MODULATEALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATECOLOR_ADDALPHA SHADER                  "res\\PS_MODULATECOLOR_ADDALPHA.psh"
+IDR_PS_MODULATEINVALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEINVALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATEINVCOLOR_ADDALPHA SHADER                  "res\\PS_MODULATEINVCOLOR_ADDALPHA.psh"
+IDR_PS_DOTPRODUCT3      SHADER                  "res\\PS_DOTPRODUCT3.psh"
+IDR_PS_MULTIPLYADD      SHADER                  "res\\PS_MULTIPLYADD.psh"
+IDR_PS_LERP             SHADER                  "res\\PS_LERP.psh"
+IDR_PS_SHADER           SHADER                  "res\\PS_SHADER.psh"
+IDR_PS_DETAILMAP        SHADER                  "res\\PS_DETAILMAP.psh"
+IDR_PS_MAP              SHADER                  "res\\PS_MAP.psh"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,1
+ PRODUCTVERSION 3,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive Inc."
+            VALUE "FileDescription", "4Story"
+            VALUE "FileVersion", "3, 8, 9, 1"
+            VALUE "InternalName", "TClient"
+            VALUE "LegalCopyright", "Copyright (c) Zemi Interactive Inc. All rights reserved."
+            VALUE "OriginalFilename", "TClient.EXE"
+            VALUE "ProductName", "4Story"
+            VALUE "ProductVersion", "3, 8, 9, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TClient.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\TClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

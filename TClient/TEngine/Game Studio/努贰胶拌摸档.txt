@@ -1,0 +1,188 @@
+// GSF파일에 직접 쓰는 게임 리소스.
+CItemBase : public CObject
+	CProjectItem : public CItemBase
+	CFolderItem : public CItemBase
+	CTextureItem : public CItemBase
+	CImageItem : public CItemBase
+	CMediaItem : public CItemBase
+	CAnimationItem : public CItemBase
+	CMeshItem : public CItemBase
+	COBJTypeItem : public CItemBase
+	COBJItem : public CItemBase
+	CSFXItem : public CItemBase
+	CMAPItem : public CItemBase
+		CEXTMAPItem : public CMAPItem
+		CBSPMAPItem : public CMAPItem
+	CGuideItem : public CItemBase
+		CCOMPItem : public CGuideItem
+		CFRAMEItem : public CGuideItem
+
+// GameStudio 구조
+CGameStudioApp : public CWinApp
+
+CMainFrame : public CMDIFrameWnd
+	- CTStatusControlBar m_wndStatusBar;				// 트리
+	- CTMenuControlBar m_wndMenuBar;
+	- CTToolControlBar m_wndToolBar;
+	- CTControlBar m_wndPreview;
+	- CTTabControlBar m_wndWorkSpace;
+		- CGameStudioDoc, CGameStudioView			// Object Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// SFX Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Mesh Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Map Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Media Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Image Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Texture Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Frame Tree's Document and View.
+		- CGameStudioDoc, CGameStudioView			// Control Tree's Document and View.
+
+CGameStudioDoc : public CDocument					// 각 요소별 트리창의 Document
+CGameStudioView : public CTreeView					// 각 요소별 트리창의 View
+
+
+CTachyonDoc : public CDocument
+	COBJTypeDoc : public CTachyonDoc				// ObjectType
+	CGridDoc : public CTachyonDoc
+		COBJDoc : public CGridDoc						// Object
+		CSFXDoc : public CGridDoc						// SFX
+		CMeshDoc : public CGridDoc					// Mesh
+		CAnimationDoc : public CGridDoc				// Animation
+		CMAPDoc : public CGridDoc						// Map
+			BSPMAPDoc : public CMAPDoc
+			CEXTMAPDoc : public CMAPDoc		
+	CMediaDoc : public CTachyonDoc					// Media
+	CImageDoc : public CTachyonDoc					// Image
+	CTextureDoc : public CTachyonDoc					// Texture
+	CGuideDoc : public CTachyonDoc
+		CFRAMEDoc : public CGuideDoc				// Frame
+		CCOMPDoc : public CGuideDoc					// Control
+
+
+CView
+	COBJTypeView : public CView						// ObjectType
+	CGridView : public CView
+		COBJView : public CGridView						// Object
+		CSFXView : public CGridView						// SFX
+		CMeshView : public CGridView					// Mesh
+		CAnimationView : public CGridView				// Animation
+		CMAPView : public CGridView					// Map
+			CBSPMAPView : public CMAPView
+			CEXTMAPView : public CMAPView
+	CMediaView : public CView							// Media
+	CScrollView : public CView
+		CImageView : public CScrollView				// Image
+		CTextureView : public CScrollView				// Texture
+		CGuideView : public CScrollView
+			CFRAMEView : public CGuideView			// Frame
+			CCOMPView : public CGuideView			// Control
+
+
+CMDIChildWnd
+	CChildFrame : public CMDIChildWnd
+	COBJTypeFrame : public CMDIChildWnd			// ObjectType
+	CGridFrame : public CMDIChildWnd
+		COBJFrame : public CGridFrame					// Object
+		CSFXFrame : public CGridFrame					// SFX
+		CMeshFrame : public CGridFrame				// Mesh
+		CAnimationFrame : public CGridFrame			// Animation
+		CMAPFrame : public CGridFrame
+			CBSPMAPFrame : public CMAPFrame	
+			CEXTMAPFrame : public CMAPFrame
+	CMediaFrame : public CMDIChildWnd				// Media
+	CImageFrame : public CMDIChildWnd				// Image
+	CTextureFrame : public CMDIChildWnd			// Texture
+	CGuideFrame : public CMDIChildWnd
+		CFRAMEFrame : public CGuideFrame			// Frame
+		CCOMPFrame : public CGuideFrame			// Control
+
+
+
+
+
+
+
+
+
+// 아래는 시종잡배들
+CDialog
+	CEditFontDlg : public CDialog
+	CEditMenuDlg : public CDialog
+	CAddBSPMapDlg : public CDialog
+	CAddHeightMapDlg : public CDialog
+	CAddMapDlg : public CDialog
+	CAdjustOBJPosDlg : public CDialog
+	CBuildEMDlg : public CDialog
+	CBuildHeightDlg : public CDialog
+	BuildShadeDlg : public CDialog
+	BuildShadowDlg : public CDialog
+	CEditUNITDlg : public CDialog
+	CCleanUNITOBJ : public CDialog
+	CDetailTextureDlg : public CDialog
+	CEditEnableUNITDlg : public CDialog
+	CEditFreezeModeDlg : public CDialog
+	CEditHideModeDlg : public CDialog
+	CRebuildBSPDlg : public CDialog
+	CObjectExchangeDlg : public CDialog
+	CSaveHeightDlg : public CDialog
+	CSaveMinimapDlg : public CDialog
+	CLoadRegionDataTexDlg : public CDialog
+	CSelectDirectionDlg : public CDialog
+	CSetImportOffsetDlg : public CDialog
+	CSelectObjByName : public CDialog
+	CAddMeshDlg : public CDialog
+	CEditObjectDlg : public CDialog
+	CEditFovDlg : public CDialog
+	CUpdateDlg : public CDialog
+	CSelectFormatDlg : public CDialog
+	CSetIDSeedDlg : public CDialog
+	CItemPreview : public CStatic
+	CItemScreenShot : public CDialog
+	CItemFinder : public CDialog
+	CAboutDlg : public CDialog
+	CAddTextureDlg : public CDialog
+	CAddMediaDlg : public CDialog
+	CMediaDlg : public CDialog
+	CTimeSettingDlg : public CDialog
+	CPreviewDlg : public CDialog
+	CFramesetDlg : public CDialog
+	CProgressDlg : public CDialog
+	CAddAnimationDlg : public CDialog
+	CTimeScaleDlg : public CDialog
+	CSetBackIMGDlg : public CDialog
+	CPlayCtrl : public CDialog
+	CBarContent : public CDialog
+		CFRAMEBar : public CBarContent
+		CEditFontColorDlg : public CBarContent
+		CCOMPBar : public CBarContent
+		CBSPMAPBar : public CBarContent
+		CEXTMAPBar : public CBarContent
+		CMAPLIGHTBar : public CBarContent
+		CMAPOBJBar : public CBarContent
+		CMAPSFXBar : public CBarContent
+		CMAPSNDBar : public CBarContent
+		CMeshBar : public CBarContent
+		COBJBar : public CBarContent
+		CSFXBar : public CBarContent
+		CParticleBar : public CBarContent
+		CTextureBar : public CBarContent
+		CImageBar : public CBarContent
+		CAnimationBar : public CBarContent
+		
+CControlBar
+	CGSDialogBar : public CControlBar
+		CMediaBar : public CGSDialogBar
+		CPlayCtrlBar : public CGSDialogBar
+
+CGizimoTranslate : public CGizimoState
+CGizimoRotate : public CGizimoState
+CGizimoScale : public CGizimoState
+CPreviewCtrl : public CStatic
+CMarkCtrl : public CStatic
+CColorBox : public CStatic
+CEditListCtrl : public CListCtrl
+CGSEditCtrl : public CEditView
+CGSListCtrl : public CListView
+CATTRPage : public CPropertyPage
+COBJPage : public CPropertyPage
+CGridSplitterWnd : public CSplitterWnd
+CGSToolTipWnd : public CWnd

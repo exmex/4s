@@ -1,0 +1,61 @@
+// PS_DETAILMAP.psh
+// Vertex shader for PS_DETAILMAP
+//
+// Registers:
+//
+//	Reg		Size	Comment
+//	------- ------- -------------------------------------------------
+//	c0		1		Texture factor
+//	c1		1		x : ARG1, y : ARG2, z : Intensity and 0.0
+//	c2		2		Common constant c2 : {0.5, 0.0, 256.0, 257.0}
+//									c3 : {0.0, 1.0, 2.0, 4.0}
+//
+// Temporary Register:
+//
+//	r0 - Texture color0
+//	r1 - Texture color1
+//	r2 - Specular
+
+
+ps_2_0
+
+dcl		v0		// Color input
+dcl_pp	t0.xy	// Texture coord0 input
+dcl_pp	t2.xy	// Texture coord2 input
+dcl_pp	t3.xyz	// Camera position
+dcl_pp	t4.xyz	// Normal
+dcl_pp	t5.xyz	// Light direction
+dcl_2d	s0		// Sampler0 input
+dcl_2d	s1		// Sampler1 input
+
+//////////////////////////////////////////////////////////
+// Get texture color
+texld_pp r0, t0, s0
+texld_pp r1, t2, s1
+
+//////////////////////////////////////////////////////////
+// Get specular
+dp3_pp r5.x, r0, r0
+mul_pp r5.y, r5.x, r5.x
+lrp_pp r2.x, r5.y, c3.y, t4.x
+
+nrm_pp r5.xyz, t3
+add_pp r5.xyz, r5, -t5
+nrm_pp r3.xyz, r5
+nrm_pp r4.xyz, -t5
+
+dp3_pp r3.x, r3, r4
+max_pp r3.x, r3.x, c3.x
+pow_pp r3.x, r3.x, c1.z
+min_pp r3.x, r3.x, t4.y
+mul_pp r2.x, r2.x, r3.x
+
+//////////////////////////////////////////////////////////
+// Compute output color
+mad_pp r0.xyz, r0, r1, r2.xxx
+mov_pp r0.w, c3.y
+mul_pp r0, r0, v0
+
+//////////////////////////////////////////////////////////
+// Return output color
+mov_pp oC0, r0

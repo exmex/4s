@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4SLogServer", "4SLogServer.vcproj", "{53D141C1-E93E-4BD5-A1C3-42DD8F2B2DAE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {A2AF8D59-A637-423A-9E8C-77E18725B59C}
+		SccProjectUniqueName1 = 4SLogServer.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{53D141C1-E93E-4BD5-A1C3-42DD8F2B2DAE}.Debug.ActiveCfg = Debug|Win32
+		{53D141C1-E93E-4BD5-A1C3-42DD8F2B2DAE}.Debug.Build.0 = Debug|Win32
+		{53D141C1-E93E-4BD5-A1C3-42DD8F2B2DAE}.Release.ActiveCfg = Release|Win32
+		{53D141C1-E93E-4BD5-A1C3-42DD8F2B2DAE}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

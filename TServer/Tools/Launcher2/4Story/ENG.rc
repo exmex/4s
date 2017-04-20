@@ -1,0 +1,340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ENG\\TClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STORY_DIALOG DIALOGEX 0, 0, 271, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "확인",IDOK,154,63,50,16
+    PUSHBUTTON      "취소",IDCANCEL,214,63,50,16
+    PUSHBUTTON      "홈페이지",IDC_BUTTON_HOMEPAGE,35,63,49,16
+    PUSHBUTTON      "환경설정",IDC_BUTTON_SETTING,94,63,49,16
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",0x1,35,22,
+                    229,7,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",0x1,35,51,229,
+                    7,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_CHK_PREPATCH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | 
+                    WS_TABSTOP,213,81,8,8
+END
+
+IDD_SETTING DIALOGEX 0, 0, 288, 311
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHECK_SHADER,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,0,2,11,9,WS_EX_RIGHT
+    CONTROL         "",IDC_CHECK_WINMODE,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,83,29,11,9
+    CONTROL         "",IDC_RADIO_CHAR1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,172,79,12,11
+    CONTROL         "",IDC_RADIO_CHAR2,"Button",BS_AUTORADIOBUTTON,131,79,12,
+                    11
+    CONTROL         "",IDC_RADIO_CHAR3,"Button",BS_AUTORADIOBUTTON,103,79,12,
+                    11
+    CONTROL         "",IDC_RADIO_GEO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    172,97,12,11
+    CONTROL         "",IDC_RADIO_GEO2,"Button",BS_AUTORADIOBUTTON,131,97,12,
+                    11
+    CONTROL         "",IDC_RADIO_GEO3,"Button",BS_AUTORADIOBUTTON,103,97,12,
+                    11
+    CONTROL         "",IDC_CHK_BGSHADOW,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,191,29,11,9
+    CONTROL         "",IDC_CHK_DLIGHTMAP,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,83,44,11,9
+    CONTROL         "",IDC_CHK_BGSFX,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,191,44,11,9
+    CONTROL         "",IDC_CHK_FLIGHTMAP,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,83,59,11,9
+    CONTROL         "",IDC_CHK_FARIMG,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,191,59,11,9
+    CONTROL         165,IDC_SLIDERVIEW,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST | SS_REALSIZEIMAGE,95,141,91,12
+    CONTROL         165,IDC_SLIDERVOLUME,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST,95,168,91,12
+    CONTROL         165,IDC_SLIDERBGM,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST,95,186,91,12
+    CONTROL         165,IDC_SLIDERSFXVOLUME,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST,95,203,91,12
+    CONTROL         "",IDC_CHK_VOLUME,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,186,169,11,9
+    CONTROL         "",IDC_CHK_BGM,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,186,187,11,9
+    CONTROL         "",IDC_CHK_SFXVOLUME,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,186,205,11,9
+    PUSHBUTTON      "",IDC_BTN_CLOSE,193,3,12,11
+    PUSHBUTTON      "",IDC_BTN_GAME,3,267,95,14
+    CONTROL         "",IDC_RADIO_TEXDETAIL1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,172,115,12,11
+    CONTROL         "",IDC_RADIO_TEXDETAIL2,"Button",BS_AUTORADIOBUTTON,131,
+                    115,12,11
+    CONTROL         "",IDC_RADIO_TEXDETAIL3,"Button",BS_AUTORADIOBUTTON,103,
+                    115,12,11
+    COMBOBOX        IDC_CB_RESOLUTION,97,219,105,72,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PLAYSET DIALOGEX 0, 0, 264, 287
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHK_NPCNAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    189,42,11,9
+    CONTROL         "",IDC_CHK_CHARNAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,189,59,11,9
+    CONTROL         "",IDC_CHK_MONNAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    189,76,11,9
+    CONTROL         "",IDC_CHK_AUTOHELP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,189,103,11,9
+    CONTROL         "",IDC_CHK_TALKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    189,120,11,9
+    CONTROL         "",IDC_CHK_HUD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,189,
+                    137,11,9
+    CONTROL         "",IDC_CHK_DENYWHI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    189,164,11,9
+    CONTROL         "",IDC_CHK_DENYCOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    189,181,11,9
+    CONTROL         "",IDC_CHK_CONCHAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    189,199,11,9
+    PUSHBUTTON      "",IDC_CLOSE_PLAYSET,193,3,13,11
+    PUSHBUTTON      "",IDC_BTN_SET,100,267,93,14
+    CONTROL         "",IDC_CHK_CLICKMOVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,189,215,11,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040903b5"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive Inc."
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "4Story.exe"
+            VALUE "LegalCopyright", "Copyright (c) Zemi Interactive Inc. All rights reserved."
+            VALUE "OriginalFilename", "4Story.exe"
+            VALUE "ProductName", "4Story Launcher"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_STORY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        VERTGUIDE, 35
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 89
+        HORZGUIDE, 63
+        HORZGUIDE, 79
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 308
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_SP           BITMAP                  "res\\ENG\\start_game_button push.bmp"
+IDB_BITMAP_SN           BITMAP                  "res\\ENG\\start_game_button normal.bmp"
+IDB_BITMAP_SH           BITMAP                  "res\\ENG\\start_game_button hover.bmp"
+IDB_BITMAP_SD           BITMAP                  "res\\ENG\\start_game_button disable.bmp"
+IDB_BITMAP_EP           BITMAP                  "res\\ENG\\end_button push.bmp"
+IDB_BITMAP_EN           BITMAP                  "res\\ENG\\end_button normal.bmp"
+IDB_BITMAP_EH           BITMAP                  "res\\ENG\\end_button hover.bmp"
+IDB_BITMAP_HP           BITMAP                  "res\\ENG\\homepage_button push.bmp"
+IDB_BITMAP_HN           BITMAP                  "res\\ENG\\homepage_button normal.bmp"
+IDB_BITMAP_HH           BITMAP                  "res\\ENG\\homepage_button hover.bmp"
+IDB_BITMAP_OP           BITMAP                  "res\\ENG\\option_button push.bmp"
+IDB_BITMAP_ON           BITMAP                  "res\\ENG\\option_button normal.bmp"
+IDB_BITMAP_OH           BITMAP                  "res\\ENG\\option_button hover.bmp"
+IDB_BITMAP_BASE         BITMAP                  "res\\ENG\\updater_base.bmp"
+IDB_BIT_CHECK_NORMAL    BITMAP                  "res\\ENG\\Check_Normal.bmp"
+IDB_BIT_CHECK_DOWN      BITMAP                  "res\\ENG\\Check_Down.bmp"
+IDB_ICON_CHECK_NORMAL   BITMAP                  "res\\ENG\\bitmap2.bmp"
+IDB_RADIO_NORMAL        BITMAP                  "res\\ENG\\Radio_normal.bmp"
+IDB_RADIO_DOWN          BITMAP                  "res\\ENG\\Radio_down.bmp"
+IDB_SLIDERBG            BITMAP                  "res\\ENG\\sliderBG.bmp"
+IDB_SLIDERBAR           BITMAP                  "res\\ENG\\sliderBar.bmp"
+IDB_SLIDERBG2           BITMAP                  "res\\ENG\\sliderBG2.bmp"
+IDB_TABGAME1            BITMAP                  "res\\ENG\\Tab_Game.bmp"
+IDB_CLOSE_NORMAL        BITMAP                  "res\\ENG\\Btn_Close_normal.bmp"
+IDB_CLOSE_HOVER         BITMAP                  "res\\ENG\\Btn_Close_Hover.bmp"
+IDB_CLOSE_DOWN          BITMAP                  "res\\ENG\\Btn_Close_down.bmp"
+IDB_BTN_GAMETAB         BITMAP                  "res\\ENG\\Tabbtn_game.bmp"
+IDB_TABSYS              BITMAP                  "res\\ENG\\Tab_Sys.bmp"
+IDB_CHK_NORMAL2         BITMAP                  "res\\ENG\\Check_Normal2.bmp"
+IDB_CHK_DOWN2           BITMAP                  "res\\ENG\\Check_Down2.bmp"
+IDB_BTN_SYSTAB          BITMAP                  "res\\ENG\\Tabbtn_Sys.bmp"
+IDB_BITMAP_OD           BITMAP                  "res\\ENG\\option_button disable.bmp"
+IDB_RESOLUTION          BITMAP                  "res\\ENG\\resolution.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "4Story.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MPCFILE
+//
+
+IDR_MPCFILE1            MPCFILE                 "TClientMP.mpc"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CONNECT_FAIL        "Game server is currently under maintenance."
+    IDS_DOWNLOADING         "Downloading file"
+    IDS_DOWNLOAD_SUCCESS    "Patch completed successfully"
+    IDS_DOWNLOAD_FAIL       "There has been an error while patch"
+    IDS_DOWNLOAD_RETRY      "%s \n Would you like to try again?"
+    IDS_FTP_FAIL            "Failed to download the file"
+    IDS_THREAD_FAIL         "Failed to create the thread"
+    IDS_ERROR_LOAD_FILE     "Cannot find 4Story client files. Run this application in the 4Story folder please."
+    IDS_ERROR_HACK_DETECTED "Cheat program detected."
+    IDS_ERROR_TIMEOUT       "Response timeout."
+    IDS_ERROR_RUNING        "4Story Launcher Already Running."
+    IDS_ERROR_REG           "Can not read Registry."
+    IDS_PREPATCH            "Will you register 4Story PrePatch Downloader to Starting Program?"
+    IDS_ERROR_DXINIT        "Resolution Init Error"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

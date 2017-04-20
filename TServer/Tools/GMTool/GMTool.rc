@@ -1,0 +1,396 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\GMTool.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GMTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GMTOOL_DIALOG DIALOGEX 0, 0, 171, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GMTool"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,46,11,61,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_PW,46,31,60,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,120,10,46,14
+    PUSHBUTTON      "DisConnect",IDC_BTN_DISCONNECT,120,30,46,14
+    PUSHBUTTON      "Change",IDC_BTN_CHGIP,133,50,33,14
+    PUSHBUTTON      "Message",IDC_BTN_CHARMSG,28,142,53,19
+    PUSHBUTTON      "Move",IDC_BTN_MOVE,94,142,53,19
+    PUSHBUTTON      "Chatting Ban",IDC_BTN_BAN,28,175,53,19
+    PUSHBUTTON      "Kick User Out",IDC_BTN_KICKOUT,94,175,53,19
+    DEFPUSHBUTTON   "Close",IDOK,106,214,50,16
+    GROUPBOX        "Character",IDC_STATIC,14,121,142,85
+    LTEXT           "User ID",IDC_STATIC,6,15,24,8
+    LTEXT           "PassWord",IDC_STATIC,6,35,31,8
+    LTEXT           "Static",IDC_STATIC_INFO,6,54,121,8
+    GROUPBOX        "Manage",IDC_STATIC,14,73,142,41
+    PUSHBUTTON      "Announce",IDC_BTN_ANNOUNCE,28,88,53,19
+    PUSHBUTTON      "Monster",IDC_BTN_MONSTER,94,88,53,19
+END
+
+IDD_CHARMSG DIALOGEX 0, 0, 198, 141
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send the message"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_CHARNAME,65,16,86,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_CHARMSG,17,56,174,53,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "Send",IDOK,41,118,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,118,50,14
+    LTEXT           "Message",IDC_STATIC,21,39,30,12
+    LTEXT           "Character ",IDC_STATIC,21,18,35,8
+END
+
+IDD_USERMOVE DIALOGEX 0, 0, 303, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Move the character"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,43,17,87,16,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    CONTROL         "Location",IDC_RADIO_COORD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,165,19,45,12
+    CONTROL         "Summon",IDC_RADIO_CHAR,"Button",BS_AUTORADIOBUTTON,224,
+                    19,45,12
+    EDITTEXT        IDC_EDIT6,52,77,40,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,129,76,40,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,52,106,47,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,116,105,47,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT4,184,106,47,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "Load",IDC_LOADPOS,237,64,50,16
+    PUSHBUTTON      "Save",IDC_SAVE_POS,237,84,50,16
+    DEFPUSHBUTTON   "Move",IDOK,237,104,50,16
+    EDITTEXT        IDC_EDIT_TARGET,64,171,87,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    COMBOBOX        IDC_COMBO2,188,172,97,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Summon",IDOK2,237,191,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,237,222,50,16
+    GROUPBOX        "Move Type",IDC_STATIC,143,6,149,31
+    LTEXT           "Name",IDC_STATIC,10,21,19,8
+    GROUPBOX        "Certain Location",IDC_STATIC,11,55,283,78
+    GROUPBOX        "Summon to specific character's",IDC_STATIC,11,153,283,
+                    58
+    LTEXT           "Channel",IDC_STATIC,19,79,27,8
+    LTEXT           "Map",IDC_STATIC,107,79,14,8
+    LTEXT           "X",IDC_STATIC,42,109,8,9
+    LTEXT           "Y",IDC_STATIC,106,109,8,8
+    LTEXT           "Z",IDC_STATIC,172,109,8,8
+    LTEXT           "Character",IDC_STATIC,22,174,33,8
+    LTEXT           "Server",IDC_STATIC,164,173,22,8
+END
+
+IDD_POSLISTDLG DIALOGEX 0, 0, 394, 269
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Position List"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "SELECT",IDOK,29,220,59,17
+    PUSHBUTTON      "DELETE",IDC_DELETE,103,220,59,17
+    EDITTEXT        IDC_EDIT_POSFIND,263,222,115,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "FIND",IDC_POSFIND,198,220,59,17
+    PUSHBUTTON      "CLOSE",IDCANCEL,323,244,59,17
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,19,367,191
+END
+
+IDD_SAVEPOS DIALOGEX 0, 0, 185, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Save Position"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,46,50,54,17
+    PUSHBUTTON      "Cacel",IDCANCEL,115,50,54,17
+    LTEXT           "Position",IDC_STATIC,9,20,26,8
+    EDITTEXT        IDC_EDIT_SAVENAME,46,17,123,16,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_CHATBAN DIALOGEX 0, 0, 170, 149
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chatting Ban"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_CHATBAN_CHAR,68,16,83,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_CHATBAN_MIN,68,39,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EB_BANREASON,68,62,93,56,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,22,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,130,50,14
+    LTEXT           "Character's Name",IDC_STATIC,5,17,57,8
+    LTEXT           "Minute",IDC_STATIC,40,39,22,8
+    LTEXT           "Reason",IDC_STATIC,39,61,23,8
+END
+
+IDD_USERKICKOUT DIALOGEX 0, 0, 177, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kick user out"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,66,19,95,15,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,40,50,53,19
+    PUSHBUTTON      "Cancel",IDCANCEL,108,50,53,19
+    LTEXT           "User's Name",IDC_STATIC,16,23,40,8
+END
+
+IDD_IP DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IP Change"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,74,50,14
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,62,14,100,
+                    15
+    EDITTEXT        IDC_EDIT_PORT,62,35,46,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    LTEXT           "IP :",IDC_STATIC,21,19,12,8
+    LTEXT           "Port :",IDC_STATIC,21,38,19,8
+END
+
+IDD_ANNOUNCE DIALOGEX 0, 0, 265, 149
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Announce the Notice"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Send",IDOK,150,127,50,14
+    PUSHBUTTON      "Close",IDCANCEL,206,127,50,14
+    EDITTEXT        IDC_EDIT_NOTICE,15,13,238,86,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "Timer",IDC_CHK_TIMER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,108,29,10
+    EDITTEXT        IDC_EDIT_TIME,50,106,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Min",IDC_BTN_TIMESELECT,92,106,19,14,BS_FLAT
+    PUSHBUTTON      "Close Timer",IDC_BTN_TIMEREND,115,106,44,14
+    COMBOBOX        IDC_COMBO_NOTICEWORLD,15,127,121,34,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MONSPAWN DIALOGEX 0, 0, 291, 229
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Control the monster"
+FONT 9, "Tahoma", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,231,205,50,14
+    LTEXT           "Server",IDC_STATIC,14,12,21,8
+    LTEXT           "Map ID",IDC_STATIC,126,12,23,8
+    LTEXT           "Channel",IDC_STATIC,14,32,26,8
+    LTEXT           "Spawn ID",IDC_STATIC,126,32,31,8
+    COMBOBOX        IDC_COMBO_WORLD,42,11,76,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MAPID,161,9,47,14,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_EDIT_CHANNEL,42,30,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SPAWNID,161,30,47,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Search Monster",IDC_BTN_SEARCHMONSTER,215,30,67,14
+    CONTROL         "",IDC_LIST_MON,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    15,59,267,83
+    LTEXT           "Event",IDC_STATIC,18,149,19,8
+    LTEXT           "TriggerID",IDC_STATIC,105,149,30,8
+    LTEXT           "RHID",IDC_STATIC,190,149,16,8
+    LTEXT           "RHTYPE",IDC_STATIC,234,149,27,8
+    LTEXT           "HostID",IDC_STATIC,148,149,22,8
+    COMBOBOX        IDC_COMBO_EVENT,15,161,80,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TRIGGERID,104,161,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_HOSTID,147,161,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RHID,190,161,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RHTYPE,233,161,40,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Action",IDC_BTN_ACTION,231,187,50,14
+END
+
+IDD_RET DIALOGEX 0, 0, 221, 57
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "RESULT"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,34,50,14
+    LTEXT           "Static",IDC_LB_RET,15,13,92,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GMTool.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "GMTool.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_IP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓을 초기화하지 못했습니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\GMTool.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

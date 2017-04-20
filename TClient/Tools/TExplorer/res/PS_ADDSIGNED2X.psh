@@ -1,0 +1,54 @@
+// PS_ADDSIGNED2X.psh
+// Vertex shader for PS_ADDSIGNED2X
+//
+// Registers:
+//
+//	Reg		Size	Comment
+//	------- ------- -------------------------------------------------
+//	c0		1		Texture factor
+//	c1		1		x : ARG1, y : ARG2, z : Intensity and 0.0
+//	c2		2		Common constant c2 : {0.5, 0.0, 256.0, 257.0}
+//									c3 : {0.0, 1.0, 2.0, 4.0}
+//
+// Temporary Register:
+//
+//	r0 - Texture color0
+//	r1 - Texture color1
+//	r2 - Texture factor
+
+
+ps_2_0
+
+dcl		v0		// Color input
+dcl_pp	t0.xy	// Texture coord0 input
+dcl_pp	t2.xy	// Texture coord2 input
+dcl_2d	s0		// Sampler0 input
+dcl_2d	s1		// Sampler1 input
+
+//////////////////////////////////////////////////////////
+// Get texture color
+texld_pp r0, t0, s0
+texld_pp r1, t2, s1
+
+//////////////////////////////////////////////////////////
+// Get texture factor
+mov_pp r2, c0
+
+//////////////////////////////////////////////////////////
+// Set ARG1 color
+cmp_pp r0, c1.x, r0, r2
+
+//////////////////////////////////////////////////////////
+// Set ARG2 color
+cmp_pp r1, c1.y, r1, r2
+
+//////////////////////////////////////////////////////////
+// Compute output color
+add_pp r0, r0, r1
+add_pp r0, r0, -c2.x
+mul_pp r0, r0, c3.zzzz
+mul_pp r0, r0, v0
+
+//////////////////////////////////////////////////////////
+// Return output color
+mov_pp oC0, r0

@@ -1,0 +1,319 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\Mempiece.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// manifest 추가
+1 24 MOVEABLE  PURE "Mempiece.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "4Story 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "4Story Version 3.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_MEMPIECE_DIALOG DIALOGEX 0, 0, 421, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "게임접속",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,267,
+                    274,50,17
+    CONTROL         "게임종료",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    349,274,46,16
+    LTEXT           "File Downloading",IDC_DOWNLOAD_CURRENT,36,224,153,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_PROGRESS_TOTAL,"msctls_progress32",WS_GROUP | 0x1,
+                    36,254,371,6,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PROGRESS_CURRENT,"msctls_progress32",WS_GROUP | 
+                    0x1,36,235,371,6,WS_EX_TRANSPARENT
+    LTEXT           "Total 0/0",IDC_DOWNLOAD_TOTAL,36,244,152,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "현재",IDC_STATIC_CURRENT,14,229,15,8,NOT WS_VISIBLE
+    LTEXT           "전체",IDC_STATIC_TOTAL,14,248,15,8,NOT WS_VISIBLE
+    CONTROL         "환경설정",IDC_BUTTON_SETTING,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,186,274,50,17
+    CONTROL         "홈페이지",IDC_BUTTON_HOMEPAGE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,105,274,50,17
+END
+
+IDD_GAMESET DIALOGEX 0, 0, 153, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "그래픽설정"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "쉐이더 지원",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,13,55,10,WS_EX_RIGHT
+    CONTROL         "창모드",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,68,26,37,10,WS_EX_RIGHT
+    LTEXT           "케릭터 품질",IDC_STATIC,20,57,38,8
+    CONTROL         "Radio2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON | WS_GROUP,64,57,8,10
+    CONTROL         "Radio3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON,94,57,9,10
+    CONTROL         "Radio2",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON,125,57,8,10
+    LTEXT           "지형 품질",IDC_STATIC,20,76,31,8
+    CONTROL         "Radio2",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON | WS_GROUP,64,76,8,10
+    CONTROL         "Radio2",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON,94,76,8,10
+    CONTROL         "Radio2",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON,125,76,8,10
+    LTEXT           "배경시야",IDC_STATIC,20,95,28,8
+    CONTROL         "Radio2",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON | WS_GROUP,64,95,8,10
+    CONTROL         "Radio2",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON,94,95,8,10
+    CONTROL         "Radio2",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | 
+                    BS_ICON,125,95,8,10
+    DEFPUSHBUTTON   "적용",IDOK,20,117,49,16
+    PUSHBUTTON      "돌아가기",IDCANCEL,80,117,50,16
+    LTEXT           "상",IDC_STATIC,64,46,8,8
+    LTEXT           "중",IDC_STATIC,94,46,8,8
+    LTEXT           "하",IDC_STATIC,125,46,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,1
+ PRODUCTVERSION 3,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive"
+            VALUE "FileDescription", "4Story"
+            VALUE "FileVersion", "3.0.0.1"
+            VALUE "InternalName", "4Story.exe"
+            VALUE "LegalCopyright", "(c) Zemi Interactive.  All rights reserved."
+            VALUE "OriginalFilename", "4Story.exe"
+            VALUE "ProductName", "4Story"
+            VALUE "ProductVersion", "3.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MEMPIECE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 414
+        VERTGUIDE, 14
+        VERTGUIDE, 36
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+        HORZGUIDE, 40
+        HORZGUIDE, 50
+        HORZGUIDE, 213
+        HORZGUIDE, 220
+        HORZGUIDE, 241
+        HORZGUIDE, 260
+        HORZGUIDE, 271
+        HORZGUIDE, 274
+        HORZGUIDE, 291
+    END
+
+    IDD_GAMESET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        VERTGUIDE, 20
+        VERTGUIDE, 64
+        VERTGUIDE, 94
+        VERTGUIDE, 105
+        VERTGUIDE, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+        HORZGUIDE, 13
+        HORZGUIDE, 36
+        HORZGUIDE, 46
+        HORZGUIDE, 57
+        HORZGUIDE, 76
+        HORZGUIDE, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\start game_button push.bmp"
+IDB_BITMAP4             BITMAP                  "res\\start game_button hover.bmp"
+IDB_BITMAP5             BITMAP                  "res\\start game_button normal.bmp"
+IDB_BITMAP6             BITMAP                  "res\\end_button push.bmp"
+IDB_BITMAP7             BITMAP                  "res\\end_button hover.bmp"
+IDB_BITMAP8             BITMAP                  "res\\end_button normal.bmp"
+IDB_BITMAP9             BITMAP                  "res\\homepage_button push.bmp"
+IDB_BITMAP10            BITMAP                  "res\\homepage_button hover.bmp"
+IDB_BITMAP11            BITMAP                  "res\\homepage_button normal.bmp"
+IDB_BITMAP12            BITMAP                  "res\\option_button push.bmp"
+IDB_BITMAP13            BITMAP                  "res\\option_button hover.bmp"
+IDB_BITMAP14            BITMAP                  "res\\option_button normal.bmp"
+IDB_BITMAP16            BITMAP                  "res\\updater_base.bmp"
+IDB_BITMAP17            BITMAP                  "res\\start game_button disable.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "4Story 정보(&A)..."
+    IDS_DOWNLOADING         " 파일을 다운로드중입니다."
+    IDS_UNZIPPING           " 파일을 압축해제중입니다."
+    IDS_DOWNLOAD_SUCCESS    "패치가 성공적으로 완료되었습니다."
+    IDS_DOWNLOAD_FAIL       "패치중 에러가 발생했습니다."
+    IDS_CONNECT_FAIL        "서버 접속에 실패했습니다."
+    IDS_ERROR_CODE          "Error Code %d"
+    IDS_DOWNLOAD_RETRY      "%s \n다시 시도 하시겠습니까?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_THREAD_FAIL         "쓰레드를 생성하는데 실패했습니다."
+    IDS_FTP_FAIL            "파일을 다운로드하는데 실패했습니다."
+    IDS_CONNECT_FTP         "FTP 서버에 접속 시도중입니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\Mempiece.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

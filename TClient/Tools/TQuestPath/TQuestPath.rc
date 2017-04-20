@@ -1,0 +1,980 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\TQuestPath.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TQuestPath.ico"
+IDR_TQuestPathTYPE      ICON                    "res\\TQuestPathDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_TREEIMG      BITMAP                  "res\\bitmap_t.bmp"
+IDB_BITMAP_CHECKIMG     BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_EXPORT
+    BUTTON      ID_FILE_IMPORT
+    SEPARATOR
+    BUTTON      ID_FILE_BUILD
+    SEPARATOR
+    BUTTON      ID_DB_LOAD_QUEST
+    BUTTON      ID_DB_LOAD_GAME
+    BUTTON      ID_DB_LOAD_MAP
+    SEPARATOR
+    BUTTON      ID_DB_AUTOSET_ALL
+    BUTTON      ID_DB_LOCK_ALL
+    BUTTON      ID_DB_UNLOCK_ALL
+    SEPARATOR
+    BUTTON      ID_MAP_EDITMODE
+    SEPARATOR
+    BUTTON      ID_MAP_SCALE
+    BUTTON      ID_MAP_IMP_ERR_BOUND
+    BUTTON      ID_MAP_GOTO_TPOINT
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기\tCtrl+N(&N)",     ID_FILE_NEW
+        MENUITEM "열기...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "저장\tCtrl+S(&S)",            ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Export",                      ID_FILE_EXPORT
+        MENUITEM "Import",                      ID_FILE_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Build Client Data",           ID_FILE_BUILD
+        MENUITEM SEPARATOR
+        MENUITEM "최근에 사용한 파일",          ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                  ID_APP_EXIT
+    END
+    POPUP "데이터 베이스(&D)"
+    BEGIN
+        MENUITEM "퀘스트 DB 불러오기",          ID_DB_LOAD_QUEST
+        MENUITEM "게임 DB 불러오기",            ID_DB_LOAD_GAME
+        MENUITEM "맵 DB 불러오기",              ID_DB_LOAD_MAP
+        MENUITEM SEPARATOR
+        MENUITEM "Auto set All",                ID_DB_AUTOSET_ALL
+        MENUITEM "Lock All",                    ID_DB_LOCK_ALL
+        MENUITEM "Unlock All",                  ID_DB_UNLOCK_ALL
+    END
+    POPUP "맵(&M)"
+    BEGIN
+        MENUITEM "확대/축소",                   ID_MAP_SCALE
+        MENUITEM "Go To Position",              ID_MAP_GOTO_TPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "임포트 오차범위 설정",        ID_MAP_IMP_ERR_BOUND
+        MENUITEM SEPARATOR
+        MENUITEM "경로 편집",                   ID_MAP_EDITMODE, CHECKED
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소\tCtrl+Z(&U)",       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기\tCtrl+X(&T)",        ID_EDIT_CUT
+        MENUITEM "복사\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "붙여넣기\tCtrl+V(&P)",        ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+        MENUITEM "분할(&P)",                    ID_WINDOW_SPLIT
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "TQuestPath 정보(&A)...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "TQuestPath 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TQuestPath Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DIALOG_TPATHWND_MAIN DIALOGEX 0, 0, 139, 456
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Quest ID",IDC_STATIC,7,10,37,8
+    RTEXT           "",IDC_STATIC_QUEST_ID,44,8,88,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Step",IDC_STATIC,7,22,125,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_STEP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,34,
+                    125,94,WS_EX_STATICEDGE
+    CTEXT           "Message",IDC_STATIC,7,131,125,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MESSAGE,7,143,125,94,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | NOT 
+                    WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "NPC ID",IDC_STATIC,7,242,37,8
+    RTEXT           "",IDC_STATIC_NPC_ID,44,240,76,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_SHOW_NPC,120,240,12,12,BS_ICON | BS_FLAT
+    LTEXT           "NPC Name",IDC_STATIC,7,255,37,8
+    EDITTEXT        IDC_EDIT_NPC_NAME,44,253,88,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "Monster INFO",IDC_STATIC,7,269,125,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Kind",IDC_STATIC,7,284,37,8
+    RTEXT           "",IDC_STATIC_MON_KIND,44,282,76,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_SHOW_MON,120,282,12,12,BS_ICON | BS_FLAT
+    CONTROL         "",IDC_LIST_MON,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,7,296,125,40,
+                    WS_EX_STATICEDGE
+    LTEXT           "Map ID",IDC_STATIC,7,343,37,8
+    EDITTEXT        IDC_EDIT_NPC_MAP_ID,44,341,76,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTTON_PICK_POS,120,341,12,12,BS_ICON | BS_FLAT
+    LTEXT           "Pos X",IDC_STATIC,7,357,37,8
+    EDITTEXT        IDC_EDIT_NPC_POS_X,44,355,88,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Pos Y",IDC_STATIC,7,370,37,8
+    EDITTEXT        IDC_EDIT_NPC_POS_Y,44,368,88,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Pos Z",IDC_STATIC,7,383,37,8
+    EDITTEXT        IDC_EDIT_NPC_POS_Z,44,381,88,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Auto set",IDC_BUTTON_AUTO_SET,7,397,125,12,BS_FLAT
+    PUSHBUTTON      "Restore",IDC_BUTTON_RESTORE,7,411,125,12,BS_FLAT
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,7,424,125,12,BS_FLAT
+    CONTROL         "Lock",IDC_CHECK_LOCK,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,7,437,125,12
+END
+
+IDD_DIALOG_TPATHWND_NPC DIALOGEX 0, 0, 160, 404
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Filter",IDC_STATIC,7,7,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "Map ID",IDC_CHECK_MAP_ID,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,24,50,10
+    EDITTEXT        IDC_FILTER_MAP_ID,57,23,96,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "NPC ID",IDC_CHECK_NPC_ID,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,37,50,10
+    EDITTEXT        IDC_FILTER_NPC_ID,57,36,96,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "NPC Name",IDC_CHECK_NPC_NAME,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,51,50,10
+    EDITTEXT        IDC_FILTER_NPC_NAME,57,50,96,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "NPC",IDC_STATIC,7,67,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_NPC,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,7,80,146,211,
+                    WS_EX_STATICEDGE
+    LTEXT           "Npc ID",IDC_STATIC,7,298,43,9
+    EDITTEXT        IDC_EDIT_NPC_ID,50,296,103,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Map ID",IDC_STATIC,7,313,43,9
+    EDITTEXT        IDC_EDIT_NPC_MAP_ID,50,311,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos X",IDC_STATIC,7,327,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_X,50,325,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos Y",IDC_STATIC,7,341,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_Y,50,339,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos Z",IDC_STATIC,7,355,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_Z,50,353,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,7,370,146,13,BS_FLAT
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,7,384,146,13,BS_FLAT
+END
+
+IDD_DIALOG_TPATHWND_MON DIALOGEX 0, 0, 160, 415
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Filter",IDC_STATIC,7,7,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "Map ID",IDC_CHECK_MAP_ID,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,24,50,10
+    EDITTEXT        IDC_FILTER_MAP_ID,57,23,96,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "MON ID",IDC_CHECK_MON_ID,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,37,50,10
+    EDITTEXT        IDC_FILTER_MON_ID,57,36,96,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "MON Kind",IDC_CHECK_MON_KIND,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,51,50,10
+    EDITTEXT        IDC_FILTER_MON_KIND,57,50,96,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "MON Name",IDC_CHECK_MON_NAME,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,7,65,50,10
+    EDITTEXT        IDC_FILTER_MON_NAME,57,64,96,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CTEXT           "Monster",IDC_STATIC,7,80,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_MON,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,7,93,146,211,
+                    WS_EX_STATICEDGE
+    LTEXT           "MON Kind",IDC_STATIC,7,309,43,9
+    EDITTEXT        IDC_EDIT_MON_KIND,50,307,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Map ID",IDC_STATIC,7,324,43,9
+    EDITTEXT        IDC_EDIT_MON_MAP_ID,50,322,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos X",IDC_STATIC,7,338,43,9
+    EDITTEXT        IDC_EDIT_MON_POS_X,50,336,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos Y",IDC_STATIC,7,352,43,9
+    EDITTEXT        IDC_EDIT_MON_POS_Y,50,350,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos Z",IDC_STATIC,7,366,43,9
+    EDITTEXT        IDC_EDIT_MON_POS_Z,50,364,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,7,380,146,13,BS_FLAT
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,7,395,146,13,BS_FLAT
+END
+
+IDD_DIALOG_EXPORT DIALOGEX 0, 0, 234, 393
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Export"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Quest Data",IDC_STATIC,7,7,220,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_TREE_QUEST,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | 
+                    WS_TABSTOP | 0x800,7,20,220,186,WS_EX_STATICEDGE
+    PUSHBUTTON      "Select All",IDC_BUTTON_SEL_ALL,7,208,50,14,BS_FLAT
+    PUSHBUTTON      "Clear All",IDC_BUTTON_CLEAR_ALL,58,208,50,14,BS_FLAT
+    PUSHBUTTON      "Export",IDC_BUTTON_EXPORT,110,208,50,14,BS_FLAT
+    CTEXT           "Map Data",IDC_STATIC,7,227,220,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_TREE_MAP,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | 
+                    WS_TABSTOP | 0x800,7,240,220,129,WS_EX_STATICEDGE
+    PUSHBUTTON      "Select All",IDC_BUTTON_MSEL_ALL,7,371,50,14,BS_FLAT
+    PUSHBUTTON      "Clear All",IDC_BUTTON_MCLEAR_ALL,58,371,50,14,BS_FLAT
+    PUSHBUTTON      "Export",IDC_BUTTON_MEXPORT,110,371,50,14,BS_FLAT
+    PUSHBUTTON      "Close",IDCANCEL,177,371,50,14,BS_FLAT
+END
+
+IDD_DIALOG_TPATHWND_MAP DIALOGEX 0, 0, 160, 446
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Map ID",IDC_STATIC,7,7,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_MAP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,20,
+                    146,104,WS_EX_STATICEDGE
+    CTEXT           "Unit",IDC_STATIC,7,128,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_UNIT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,7,141,146,149,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos X",IDC_STATIC,7,295,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_X,50,293,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Pos Z",IDC_STATIC,7,309,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_Z,50,307,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "경로 테스트",IDC_RADIO_TEST_PATH,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT | WS_GROUP,7,
+                    324,146,13
+    CONTROL         "포인트 추가",IDC_RADIO_ADD_POINT,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,7,339,146,13
+    CONTROL         "포인트 이동",IDC_RADIO_MOVE_POINT,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,7,354,146,13
+    CONTROL         "포인트 삭제",IDC_RADIO_DEL_POINT,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,7,368,146,13
+    CONTROL         "충돌선 추가",IDC_RADIO_ADD_BLOCK,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,7,382,146,13
+    CONTROL         "경로선 추가",IDC_RADIO_ADD_PATH,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,7,396,146,13
+    CONTROL         "연결선 삭제",IDC_RADIO_DEL_LINE,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,7,411,146,13
+    PUSHBUTTON      "데이터 초기화",IDC_BUTTON_CLEAR,7,426,146,13,BS_FLAT
+END
+
+IDD_DIALOG_TPATHWND_POS DIALOGEX 0, 0, 160, 359
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Map ID",IDC_STATIC,7,7,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_MAP,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,7,20,
+                    146,104,WS_EX_STATICEDGE
+    CTEXT           "Unit",IDC_STATIC,7,128,146,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_UNIT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,7,141,146,149,
+                    WS_EX_STATICEDGE
+    LTEXT           "Pos X",IDC_STATIC,7,295,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_X,50,293,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Pos Z",IDC_STATIC,7,309,43,9
+    EDITTEXT        IDC_EDIT_NPC_POS_Z,50,307,103,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,7,324,146,13,BS_FLAT
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,7,339,146,13,BS_FLAT
+END
+
+IDD_DIALOG_IMPORT DIALOGEX 0, 0, 64, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Import"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,7,39,50,14,BS_FLAT
+    PUSHBUTTON      "Quest",IDC_BUTTON_QUEST,7,7,50,14,BS_FLAT
+    PUSHBUTTON      "Path",IDC_BUTTON_PATH,7,22,50,14,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TQuestPath.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "TQuestPath.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_TPATHWND_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        VERTGUIDE, 44
+        VERTGUIDE, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 449
+        HORZGUIDE, 14
+        HORZGUIDE, 34
+        HORZGUIDE, 143
+        HORZGUIDE, 246
+        HORZGUIDE, 259
+        HORZGUIDE, 275
+        HORZGUIDE, 288
+        HORZGUIDE, 296
+        HORZGUIDE, 347
+        HORZGUIDE, 361
+        HORZGUIDE, 374
+        HORZGUIDE, 387
+        HORZGUIDE, 403
+        HORZGUIDE, 417
+        HORZGUIDE, 430
+    END
+
+    IDD_DIALOG_TPATHWND_NPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        VERTGUIDE, 50
+        VERTGUIDE, 57
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 397
+        HORZGUIDE, 29
+        HORZGUIDE, 42
+        HORZGUIDE, 56
+        HORZGUIDE, 80
+        HORZGUIDE, 291
+        HORZGUIDE, 302
+        HORZGUIDE, 317
+        HORZGUIDE, 331
+        HORZGUIDE, 345
+        HORZGUIDE, 359
+        HORZGUIDE, 376
+    END
+
+    IDD_DIALOG_TPATHWND_MON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        VERTGUIDE, 50
+        VERTGUIDE, 57
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 408
+        HORZGUIDE, 29
+        HORZGUIDE, 42
+        HORZGUIDE, 56
+        HORZGUIDE, 70
+        HORZGUIDE, 93
+        HORZGUIDE, 304
+        HORZGUIDE, 313
+        HORZGUIDE, 328
+        HORZGUIDE, 342
+        HORZGUIDE, 356
+        HORZGUIDE, 370
+        HORZGUIDE, 386
+    END
+
+    IDD_DIALOG_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 83
+        VERTGUIDE, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+        HORZGUIDE, 20
+        HORZGUIDE, 206
+        HORZGUIDE, 215
+        HORZGUIDE, 240
+        HORZGUIDE, 369
+        HORZGUIDE, 378
+    END
+
+    IDD_DIALOG_TPATHWND_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        VERTGUIDE, 50
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 439
+        HORZGUIDE, 20
+        HORZGUIDE, 124
+        HORZGUIDE, 141
+        HORZGUIDE, 290
+        HORZGUIDE, 299
+        HORZGUIDE, 313
+        HORZGUIDE, 330
+        HORZGUIDE, 345
+        HORZGUIDE, 360
+        HORZGUIDE, 374
+        HORZGUIDE, 388
+        HORZGUIDE, 402
+        HORZGUIDE, 417
+    END
+
+    IDD_DIALOG_TPATHWND_POS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        VERTGUIDE, 50
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 352
+        HORZGUIDE, 20
+        HORZGUIDE, 124
+        HORZGUIDE, 141
+        HORZGUIDE, 290
+        HORZGUIDE, 299
+        HORZGUIDE, 313
+        HORZGUIDE, 330
+    END
+
+    IDD_DIALOG_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 57
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+        HORZGUIDE, 29
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "TQuestPath\n\nTQuestPath\nTQuestPath Files (*.TPD)\n.TPD\nTQuestPath.Document\nTQuestPath.Document"
+    IDS_FMT_DEF_QCLASS_NAME "Quest Class (%d)"
+    IDS_ERR_LOAD_GAME       "게임 정보를 불러오는 중 오류가 발생하였습니다."
+    IDS_TQUEST_START_POS    "시작지점"
+    IDS_TQUEST_COMP_POS     "완료지점"
+    IDS_FMT_OBJECTIVE_POS   "%d번 목표지점"
+    IDS_NPC_NAME_NONE       "지정되지 않음"
+    IDS_NPC_NAME_NOT_FOUND  "확인되지 않음"
+    IDS_FMT_NPC_NAME        "[%s]%s"
+    IDS_FMT_TTERM_FILTER    "TQUESTTERMCHART.dwQuestID = %d"
+    IDS_ERR_LOAD_QUEST      "퀘스트 정보를 불러오는 중 오류가 발생하였습니다."
+    IDS_FMT_POS_DATA        "%.2f"
+    IDS_ERR_SAVE_TPD        "파일 저장 중 오류가 발생하여 파일이 저장되지 않았습니다."
+    IDS_ERR_LOAD_TPD        "파일을 불러오는 중 오류가 발생하였습니다."
+    IDS_FMT_SCALE           "X %.2f"
+    IDS_FMT_POS_X           "X = %.2f"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TQuestPath"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "액티브 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "액티브 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "액티브 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 표시하거나 숨깁니다.\n도구 모음 설정/해제"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록 활성화"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DB_LOAD_QUEST        "퀘스트 DB로부터 퀘스트 정보를 불러옵니다.\n퀘스트 DB 불러오기"
+    ID_DB_LOAD_GAME         "게임 DB로부터 게임 정보를 불러옵니다.\n게임 DB 불러오기"
+    ID_DB_LOAD_MAP          "맵 DB로부터 맵 정보를 불러옵니다.\n맵 DB 불러오기"
+    ID_MAP_SCALE            "확대/축소\n확대/축소"
+    ID_DB_LOCK_ALL          "Lock All\nLock All"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DB_AUTOSET_ALL       "Auto set All\nAuto set All"
+    ID_DB_UNLOCK_ALL        "Unlock All\nUnlock All"
+    ID_MAP_GOTO_TPOINT      "Go To Position\nGo To Position"
+    ID_FILE_EXPORT          "Export\nExport"
+    ID_FILE_IMPORT          "Import\nImport"
+    ID_MAP_EDITMODE         "경로 편집\n경로 편집"
+    ID_FILE_BUILD           "Build Client Data\nBuild Client Data"
+    ID_MAP_IMP_ERR_BOUND    "임포트 오차범위 설정\n임포트 오차범위 설정"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_POS_Z           "Z = %.2f"
+    IDS_MSG_LOCK            "모든 퀘스트들에 대해서 잠금이 설정 되었습니다."
+    IDS_MSG_UNLOCK          "모든 퀘스트들에 대해서 잠금이 해제 되었습니다."
+    IDS_MSG_AUTOSET         "잠금이 해제 되어있는 모든 퀘스트들의 위치 정보가 자동설정 되었습니다."
+    IDS_MSG_EXPORT          "Export가 완료 되었습니다."
+    IDS_FMT_EXPORT          "%d\t%d\t%d\t%d\t%d\t%d\t%d\t%.2f\t%.2f\t%.2f\n"
+    IDS_MSG_IMPORT          "Import가 완료 되었습니다."
+    IDS_FMT_MAPNAME         "Map (ID : %d)"
+    IDS_FMT_UNITNAME        "Unit ( %d, %d)"
+    IDS_FMT_MEXPORT         "%d\t%d\t%d\t%d\t%d\t%d\t%d\n"
+    IDS_MSG_CLEAR_PATH      "기존 길찾기 데이터를 삭제하시겠습니까 ?"
+    IDS_MSG_CLEAR_MAP       "기존 맵 데이터를 삭제하시겠습니까 ?"
+    IDS_MSG_PATH_CLEAR      "길찾기 데이터를 삭제하시겠습니까 ?"
+    IDS_TITLE_BUILD         "Build"
+    IDS_MSG_BUILD_CANCEL    "빌드 작업을 취소 하시겠습니까 ?"
+    IDS_MSG_BUILD_TQUEST    "퀘스트 정보 출력."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_BUILD_TMAP      "길찾기 정보 출력. (ID : %d, X : %d, Z : %d)"
+    IDS_TITLE_FIND_PATH     "경로탐색"
+    IDS_MSG_FIND_CANCEL     "경로탐색을 취소 하시겠습니까 ?"
+    IDS_MSG_FIND_PATH       "경로탐색 중."
+    IDS_FMT_PATH_DATA       "%s\\TNODE%04X%02X%02X.pnd"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_FOLDER         ICON                    "res\\icon1.ico"
+IDI_ICON_FIND_NPC       ICON                    "res\\icon_fol.ico"
+IDI_ICON_PICK_POS       ICON                    "res\\icon_fin.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SCALE DIALOGEX 0, 0, 118, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Zoom"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,26,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,61,26,50,14,BS_FLAT
+    LTEXT           "Scale",IDC_STATIC,7,10,22,8
+    EDITTEXT        IDC_EDIT_SCALE,29,8,82,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_ERRBOUND DIALOGEX 0, 0, 118, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Import Error Bound"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,26,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,61,26,50,14,BS_FLAT
+    LTEXT           "Bound",IDC_STATIC,7,10,23,8
+    EDITTEXT        IDC_EDIT_BOUND,30,8,81,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_PROGRESS DIALOGEX 0, 0, 211, 60
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,79,39,50,14,BS_CENTER | BS_FLAT
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",0x0,7,23,168,10,
+                    WS_EX_STATICEDGE
+    RTEXT           "%",IDC_STATIC,194,24,8,8
+    RTEXT           "",IDC_STATIC_PERCENT,175,24,19,8
+    LTEXT           "Status : ",IDC_STATIC,7,8,28,8
+    LTEXT           "",IDC_STATIC_STATUS,35,8,169,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        VERTGUIDE, 29
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+        HORZGUIDE, 14
+    END
+
+    IDD_DIALOG_ERRBOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        VERTGUIDE, 30
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+        HORZGUIDE, 14
+    END
+
+    IDD_DIALOG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        VERTGUIDE, 35
+        VERTGUIDE, 104
+        VERTGUIDE, 175
+        VERTGUIDE, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+        HORZGUIDE, 12
+        HORZGUIDE, 28
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\TQuestPath.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

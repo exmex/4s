@@ -1,0 +1,223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\TChatFilter.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TChatFilter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TCHATFILTER_DIALOG DIALOGEX 0, 0, 259, 318
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ChatFilter Editor"
+MENU IDR_MENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_WORDS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,149,120,162
+    CONTROL         "",IDC_LIST_EXCEPT,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,132,149,120,162
+    EDITTEXT        IDC_EDIT_CHAT,61,101,186,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RESULT,61,113,186,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Input",IDC_STATIC,26,103,23,8
+    LTEXT           "Output",IDC_STATIC,26,113,24,8
+    GROUPBOX        "Option",IDC_STATIC,7,0,245,85
+    CONTROL         "Ignore Space",IDC_CHECK_XSPACEBAR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,15,58,10
+    CONTROL         "Block all sentence",IDC_CHECK_CHATALLBLOCK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,56,65,10
+    CONTROL         "Exception List",IDC_CHECK_EXCEPTLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,132,139,59,10
+    EDITTEXT        IDC_EDIT_CHATALLBLOCK,25,67,222,12,ES_AUTOHSCROLL
+    CONTROL         "Filter Word List",IDC_CHECK_WORDLIST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,139,63,10
+    CONTROL         "Ignore numbers && alt characters",IDC_CHECK_XSPCHAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,30,117,10
+    EDITTEXT        IDC_EDIT_IGNORENUMCHAR,25,41,222,12,ES_AUTOHSCROLL
+    GROUPBOX        "Chat Filtering Test",IDC_STATIC,7,88,245,43
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TChatFilter.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "TChatFilter.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TCHATFILTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        VERTGUIDE, 7
+        VERTGUIDE, 61
+        BOTTOMMARGIN, 311
+        HORZGUIDE, 15
+        HORZGUIDE, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        POPUP "&Load Txt"
+        BEGIN
+            MENUITEM "Filter&Word List",            ID_LOADTXT_FILTERWORDLIST
+
+            MENUITEM "&ExceptionWord List",         ID_LOADTXT_EXCEPTIONWORDLIST
+
+        END
+        MENUITEM "&Load TCD",                   ID_FILE_LOADTCD
+        POPUP "&Save Txt"
+        BEGIN
+            MENUITEM "Filter&Word List",            ID_SAVETXT_FILTERWORDLIST
+
+            MENUITEM "&Exception List",             ID_SAVETXT_EXCEPTIONLIST
+        END
+        MENUITEM "&Save TCD",                   ID_FILE_SAVETCD
+        MENUITEM "&Exit",                       ID_FILE_EXIT
+    END
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\TChatFilter.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
