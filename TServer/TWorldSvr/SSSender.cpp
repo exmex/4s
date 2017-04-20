@@ -3241,6 +3241,7 @@ void CTServer::SendMW_FIRSTGRADEGROUP_REQ(MONTHRANKER arMonthRank[COUNTRY_COUNT]
 
 void CTServer::SendMW_TERMINATE_REQ(DWORD dwKey)
 {
+	// FIXME: This is a possible backdoor. Keep an eye out for this!
 	CPacket* pMSG = new CPacket();
 	pMSG->SetID(MW_TERMINATE_REQ)
 		<< dwKey;

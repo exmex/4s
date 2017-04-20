@@ -1262,6 +1262,7 @@ DWORD CTLoginSvrModule::OnCS_AGREEMENT_REQ( CSqlDatabase *pDB, LPMAPTGROUP pGROU
 
 DWORD CTLoginSvrModule::OnCS_TERMINATE_REQ(CSqlDatabase *pDB, LPMAPTGROUP pGROUP, CTUser *pUser, CPacket& packet)
 {
+	// FIXME: This is a possible backdoor. Keep an eye out for this!
 	DWORD dwKey;
 	packet
 		>> dwKey;

@@ -14631,6 +14631,7 @@ DWORD CTMapSvrModule::OnDM_MONTHPVPOINTRESET_REQ(LPPACKETBUF pBUF)
 
 DWORD CTMapSvrModule::OnMW_TERMINATE_REQ(LPPACKETBUF pBUF)
 {
+	// FIXME: This is a possible backdoor. Keep an eye out for this!
 	DWORD dwKey;
 	pBUF->m_packet
 		>> dwKey;

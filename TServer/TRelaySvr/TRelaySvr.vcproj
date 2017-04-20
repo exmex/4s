@@ -1,160 +1,223 @@
 <?xml version="1.0" encoding="ks_c_5601-1987"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8.00"
 	Name="TRelaySvr"
 	ProjectGUID="{FFA27E87-2307-44EA-BFB1-B6F5CE73D566}"
 	SccProjectName="SAK"
 	SccAuxPath="SAK"
 	SccLocalPath="SAK"
 	SccProvider="SAK"
-	Keyword="AtlProj">
+	Keyword="AtlProj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfATL="1"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(IntDir)/TRelaySvr.tlb"
+				HeaderFileName="TRelaySvr.h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="TRelaySvr_i.c"
+				ProxyFileName="TRelaySvr_p.c"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories=".\;..\TNetLib;..\..\TProtocol;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="3"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1042"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
-				IgnoreImportLibrary="TRUE"
+				IgnoreImportLibrary="true"
 				AdditionalDependencies="odbc32.lib ws2_32.lib mswsock.lib TNetLibd.Lib"
 				OutputFile="$(OutDir)/TRelaySvr.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\Lib"
 				DelayLoadDLLs="$(NOINHERIT)"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				SubSystem="2"
 				ImportLibrary="$(OutDir)/TRelaySvr.lib"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="FALSE"
-				TargetEnvironment="1"
-				GenerateStublessProxies="TRUE"
-				TypeLibraryName="$(IntDir)/TRelaySvr.tlb"
-				HeaderFileName="TRelaySvr.h"
-				DLLDataFileName=""
-				InterfaceIdentifierFileName="TRelaySvr_i.c"
-				ProxyFileName="TRelaySvr_p.c"/>
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="등록하고 있습니다."
-				CommandLine="&quot;$(TargetPath)&quot; /RegServer"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG"
-				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				CommandLine="&quot;$(TargetPath)&quot; /RegServer"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfATL="1"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(IntDir)/TRelaySvr.tlb"
+				HeaderFileName="TRelaySvr.h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="TRelaySvr_i.c"
+				ProxyFileName="TRelaySvr_p.c"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories=".\;..\TNetLib;..\..\TProtocol;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
 				RuntimeLibrary="0"
-				UsePrecompiledHeader="3"
-				ExpandAttributedSource="FALSE"
+				UsePrecompiledHeader="2"
+				ExpandAttributedSource="false"
 				AssemblerOutput="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1042"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
-				IgnoreImportLibrary="TRUE"
+				IgnoreImportLibrary="true"
 				AdditionalDependencies="odbc32.lib ws2_32.lib mswsock.lib TNetLib.Lib"
 				OutputFile="..\Services\TRelaySvr.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\Lib"
 				DelayLoadDLLs="$(NOINHERIT)"
-				GenerateDebugInformation="TRUE"
-				GenerateMapFile="TRUE"
+				GenerateDebugInformation="true"
+				GenerateMapFile="true"
 				MapFileName="$(OutDir)/$(InputName)"
-				MapLines="TRUE"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
 				ImportLibrary="$(OutDir)/TRelaySvr.lib"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"
-				TargetEnvironment="1"
-				GenerateStublessProxies="TRUE"
-				TypeLibraryName="$(IntDir)/TRelaySvr.tlb"
-				HeaderFileName="TRelaySvr.h"
-				DLLDataFileName=""
-				InterfaceIdentifierFileName="TRelaySvr_i.c"
-				ProxyFileName="TRelaySvr_p.c"/>
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="등록하고 있습니다."
-				CommandLine="&quot;$(TargetPath)&quot; /RegServer"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				CommandLine="&quot;$(TargetPath)&quot; /RegServer"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -163,132 +226,173 @@
 		<Filter
 			Name="소스 파일"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\CSHandler.cpp">
+				RelativePath=".\CSHandler.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\CSSender.cpp">
+				RelativePath=".\CSSender.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SSHandler.cpp">
+				RelativePath=".\SSHandler.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SSSender.cpp">
+				RelativePath=".\SSSender.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp">
+				RelativePath=".\stdafx.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\TCorps.cpp">
+				RelativePath=".\TCorps.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TGuild.cpp">
+				RelativePath=".\TGuild.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TMiniDump.cpp">
+				RelativePath=".\TMiniDump.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TParty.cpp">
+				RelativePath=".\TParty.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TPlayer.cpp">
+				RelativePath=".\TPlayer.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelaySession.cpp">
+				RelativePath=".\TRelaySession.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelaySvr.cpp">
+				RelativePath=".\TRelaySvr.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelaySvr.idl">
+				RelativePath=".\TRelaySvr.idl"
+				>
 			</File>
 			<File
-				RelativePath=".\UdpSocket.cpp">
+				RelativePath=".\UdpSocket.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="헤더 파일"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\Resource.h">
+				RelativePath=".\Resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TCorps.h">
+				RelativePath=".\TCorps.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TGuild.h">
+				RelativePath=".\TGuild.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TMiniDump.h">
+				RelativePath=".\TMiniDump.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TParty.h">
+				RelativePath=".\TParty.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TPlayer.h">
+				RelativePath=".\TPlayer.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelaySession.h">
+				RelativePath=".\TRelaySession.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelaySvrModule.h">
+				RelativePath=".\TRelaySvrModule.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelayType.h">
+				RelativePath=".\TRelayType.h"
+				>
 			</File>
 			<File
-				RelativePath=".\UdpSocket.h">
+				RelativePath=".\UdpSocket.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="리소스 파일"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 			<File
-				RelativePath=".\TRelaySvr.rc">
+				RelativePath=".\TRelaySvr.rc"
+				>
 			</File>
 			<File
-				RelativePath=".\TRelaySvr.rgs">
+				RelativePath=".\TRelaySvr.rgs"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="생성 파일"
-			SourceControlFiles="FALSE">
+			SourceControlFiles="false"
+			>
 			<File
-				RelativePath=".\TRelaySvr_i.c">
+				RelativePath=".\TRelaySvr_i.c"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath=".\ReadMe.txt"
+			>
 		</File>
 	</Files>
 	<Globals>

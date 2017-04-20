@@ -1,154 +1,217 @@
 <?xml version="1.0" encoding="ks_c_5601-1987"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8.00"
 	Name="TPatchSvr"
 	ProjectGUID="{96AD22E7-DE88-4902-9A10-12C356FEDAC8}"
 	SccProjectName="&quot;$/TServer&quot;, FAAAAAAA"
-	SccAuxPath=""
 	SccLocalPath=".."
 	SccProvider="MSSCCI:Microsoft Visual SourceSafe"
-	Keyword="AtlProj">
+	Keyword="AtlProj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfATL="1"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(IntDir)/TPatchSvr.tlb"
+				HeaderFileName="TPatchSvr.h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="TPatchSvr_i.c"
+				ProxyFileName="TPatchSvr_p.c"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories=".\;..\..\TProtocol"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="3"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				IgnoreImportLibrary="TRUE"
-				AdditionalDependencies="odbc32.lib ws2_32.lib mswsock.lib"
-				OutputFile="$(OutDir)/TPatchSvr.exe"
-				LinkIncremental="2"
-				AdditionalLibraryDirectories="..\Lib"
-				GenerateDebugInformation="TRUE"
-				SubSystem="2"
-				ImportLibrary="$(OutDir)/TPatchSvr.lib"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="FALSE"
-				TargetEnvironment="1"
-				GenerateStublessProxies="TRUE"
-				TypeLibraryName="$(IntDir)/TPatchSvr.tlb"
-				HeaderFileName="TPatchSvr.h"
-				DLLDataFileName=""
-				InterfaceIdentifierFileName="TPatchSvr_i.c"
-				ProxyFileName="TPatchSvr_p.c"/>
-			<Tool
-				Name="VCPostBuildEventTool"
-				Description="등록하고 있습니다."
-				CommandLine="&quot;$(TargetPath)&quot; /RegServer"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
 				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalDependencies="odbc32.lib ws2_32.lib mswsock.lib"
+				OutputFile="$(OutDir)/TPatchSvr.exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="..\Lib"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				ImportLibrary="$(OutDir)/TPatchSvr.lib"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="등록하고 있습니다."
+				CommandLine="&quot;$(TargetPath)&quot; /RegServer"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfATL="1"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+				TargetEnvironment="1"
+				GenerateStublessProxies="true"
+				TypeLibraryName="$(IntDir)/TPatchSvr.tlb"
+				HeaderFileName="TPatchSvr.h"
+				DLLDataFileName=""
+				InterfaceIdentifierFileName="TPatchSvr_i.c"
+				ProxyFileName="TPatchSvr_p.c"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories=".\;..\TNetLib;..\..\TProtocol"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
 				RuntimeLibrary="0"
-				UsePrecompiledHeader="3"
+				UsePrecompiledHeader="2"
 				AssemblerOutput="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				IgnoreImportLibrary="TRUE"
-				AdditionalDependencies="odbc32.lib ws2_32.lib mswsock.lib"
-				OutputFile="..\Services\TPatchSvr.exe"
-				LinkIncremental="1"
-				AdditionalLibraryDirectories="..\Lib"
-				GenerateDebugInformation="TRUE"
-				SubSystem="2"
-				OptimizeReferences="2"
-				EnableCOMDATFolding="2"
-				ImportLibrary="$(OutDir)/TPatchSvr.lib"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"
-				TargetEnvironment="1"
-				GenerateStublessProxies="TRUE"
-				TypeLibraryName="$(IntDir)/TPatchSvr.tlb"
-				HeaderFileName="TPatchSvr.h"
-				DLLDataFileName=""
-				InterfaceIdentifierFileName="TPatchSvr_i.c"
-				ProxyFileName="TPatchSvr_p.c"/>
-			<Tool
-				Name="VCPostBuildEventTool"
-				Description="등록하고 있습니다."
-				CommandLine="&quot;$(TargetPath)&quot; /RegServer"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalDependencies="odbc32.lib ws2_32.lib mswsock.lib"
+				OutputFile="..\Services\TPatchSvr.exe"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="..\Lib"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				ImportLibrary="$(OutDir)/TPatchSvr.lib"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="등록하고 있습니다."
+				CommandLine="&quot;$(TargetPath)&quot; /RegServer"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -157,147 +220,193 @@
 		<Filter
 			Name="소스 파일"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\BindDesc.cpp">
+				RelativePath=".\BindDesc.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DBAccess.cpp">
+				RelativePath=".\DBAccess.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Handler.cpp">
+				RelativePath=".\Handler.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.cpp">
+				RelativePath=".\Packet.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Sender.cpp">
+				RelativePath=".\Sender.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Session.cpp">
+				RelativePath=".\Session.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlBase.cpp">
+				RelativePath=".\SqlBase.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlDatabase.cpp">
+				RelativePath=".\SqlDatabase.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlDirect.cpp">
+				RelativePath=".\SqlDirect.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlQuery.cpp">
+				RelativePath=".\SqlQuery.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp">
+				RelativePath=".\stdafx.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\TPatchSession.cpp">
+				RelativePath=".\TPatchSession.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TPatchSvr.cpp">
+				RelativePath=".\TPatchSvr.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TPatchSvr.idl">
+				RelativePath=".\TPatchSvr.idl"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="헤더 파일"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\BindDesc.h">
+				RelativePath=".\BindDesc.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DBAccess.h">
+				RelativePath=".\DBAccess.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ErrorCode.h">
+				RelativePath=".\ErrorCode.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.h">
+				RelativePath=".\Packet.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Resource.h">
+				RelativePath=".\Resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Session.h">
+				RelativePath=".\Session.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlBase.h">
+				RelativePath=".\SqlBase.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlDatabase.h">
+				RelativePath=".\SqlDatabase.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlDirect.h">
+				RelativePath=".\SqlDirect.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SqlQuery.h">
+				RelativePath=".\SqlQuery.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TNetDef.h">
+				RelativePath=".\TNetDef.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TNetLib.h">
+				RelativePath=".\TNetLib.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TPatchSession.h">
+				RelativePath=".\TPatchSession.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TPatchSvrModule.h">
+				RelativePath=".\TPatchSvrModule.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TPatchType.h">
+				RelativePath=".\TPatchType.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="리소스 파일"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 			<File
-				RelativePath=".\TPatchSvr.rc">
+				RelativePath=".\TPatchSvr.rc"
+				>
 			</File>
 			<File
-				RelativePath=".\TPatchSvr.rgs">
+				RelativePath=".\TPatchSvr.rgs"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="생성 파일"
-			SourceControlFiles="FALSE">
+			SourceControlFiles="false"
+			>
 			<File
-				RelativePath=".\TPatchSvr_i.c">
+				RelativePath=".\TPatchSvr_i.c"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath=".\ReadMe.txt"
+			>
 		</File>
 	</Files>
 	<Globals>

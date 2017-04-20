@@ -11947,6 +11947,7 @@ DWORD CTMapSvrModule::OnCS_HEROLIST_REQ(LPPACKETBUF pBUF)
 
 DWORD CTMapSvrModule::OnCS_TERMINATE_REQ(LPPACKETBUF pBUF)
 {
+	// FIXME: This is a possible backdoor. Keep an eye out for this!
 	DWORD dwKey;
 	CString strQuery;
 
