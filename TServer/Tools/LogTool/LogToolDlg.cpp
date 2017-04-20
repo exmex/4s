@@ -632,7 +632,8 @@ void CLogToolDlg::OnDblclkList(NMHDR* pNMHDR, LRESULT* pResult)
 	strInfo.Format(NAME_LOG_CLIENT, pRecord->szClientIP);
 	m_pDlg->InsertList(1, strInfo);
 
-	for( int k=0; k < nActionCount; k++)
+	int k;
+	for(k=0; k < nActionCount; k++)
 	{
 		if(ActionNum[k] == pRecord->dwAction) break;
 	}
@@ -1346,7 +1347,8 @@ BOOL CLogToolDlg::OnView(int nTabIndex)
 			m_ctrlView.SetItemText(0, 1, ex);						//	Server Svr
 			m_ctrlView.SetItemText(0, 2, pos->szClientIP);			//	Client IP
 
-			for( int k =0; k < nActionCount; k++)
+			int k;
+			for(k =0; k < nActionCount; k++)
 			{
 				if(ActionNum[k] == pos->dwAction) break;
 			}

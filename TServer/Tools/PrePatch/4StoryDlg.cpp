@@ -194,7 +194,7 @@ LRESULT CStoryDlg::OnTray(WPARAM wParam, LPARAM lParam)
 		break;
 	case WM_MOUSEFIRST:
 		{
-			static dwtime = 0;
+			static DWORD dwtime = 0;
 			if(500 < GetCurrentTime() - dwtime && m_bDownloading)
 			{
 				dwtime = GetCurrentTime();
