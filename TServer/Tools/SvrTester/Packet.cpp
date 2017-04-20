@@ -46,7 +46,8 @@ void CPacket::Encrypt(INT64 key)
 	DWORD left = dwDataSize % sizeof(INT64);
 
 	PINT64 lpBody = (PINT64)(m_pBuf + PACKET_HEADER_SIZE);
-	for(DWORD i = 0; i < body; i++)
+	DWORD i;
+	for(i = 0; i < body; i++)
 	{
 		llCheckSum ^= lpBody[i];
 		lpBody[i] ^= key;  
@@ -75,7 +76,8 @@ BOOL CPacket::Decrypt(INT64 key)
 	DWORD left = dwDataSize % sizeof(INT64);
 
 	PINT64 lpBody = (PINT64)(m_pBuf + PACKET_HEADER_SIZE);
-	for(DWORD i = 0; i < body; i++)
+	DWORD i;
+	for(i = 0; i < body; i++)
 	{
 		lpBody[i] ^= key;
 		llCheckSum1 ^= lpBody[i];

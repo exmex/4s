@@ -223,7 +223,7 @@ void CTMacroMachineDoc::Serialize(CArchive& ar)
 
 		ar >> cnt;
 
-		for(i=0; i<cnt; i++)
+		for(int i=0; i<cnt; i++)
 		{
 			DWORD dwTemp;
 			WORD wTemp;
@@ -264,7 +264,7 @@ void CTMacroMachineDoc::Serialize(CArchive& ar)
 			}
 
 			ar >> cntPt;
-			for(j=0; j<cntPt; j++)
+			for(int j=0; j<cntPt; j++)
 			{
 				DWORD dwParent;
 				TCHILD tChild;
@@ -316,7 +316,7 @@ void CTMacroMachineDoc::Serialize(CArchive& ar)
 				}
 			}
 
-			for(j=0; j<(INT)vTemp.size(); j++)
+			for(size_t j=0; j<vTemp.size(); j++)
 				tMacro.m_qProtocol.push(vTemp[j]);
 
 			m_qTMACRO.push(tMacro);

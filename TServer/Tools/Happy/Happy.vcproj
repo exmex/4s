@@ -1,189 +1,280 @@
 <?xml version="1.0" encoding="ks_c_5601-1987"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8.00"
 	Name="Happy"
 	ProjectGUID="{70A8255C-815D-4F14-B449-7B28DCF2D379}"
-	SccProjectName="&quot;$/TServer/Tools&quot;, SXCAAAAA"
-	SccAuxPath=""
-	SccLocalPath=".."
-	SccProvider="MSSCCI:Microsoft Visual SourceSafe"
-	Keyword="MFCProj">
+	RootNamespace="Happy"
+	Keyword="MFCProj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="Debug"
 			IntermediateDirectory="Debug"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\TProtocol;..\..\TServer\TNetLib;..\zlib114"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG; PACKET_CRYPT;"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="4"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1042"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="zlibstat.lib winmm.lib shlwapi.lib Ws2_32.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\TServer\lib;..\zlib114"
 				IgnoreDefaultLibraryNames="LIBC.lib"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				SubSystem="2"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="_DEBUG"
-				MkTypLibCompatible="FALSE"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG"
-				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="Release"
 			IntermediateDirectory="Release"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\..\..\TProtocol;..\..\TServer\TNetLib;..\zlib114"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;PACKET_CRYPT;"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1042"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="zlibstat.lib winmm.lib shlwapi.lib Ws2_32.lib"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\TServer\lib;..\zlib114"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release RPS|Win32"
 			OutputDirectory="$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="1"
-			CharacterSet="2">
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				AdditionalIncludeDirectories="..\..\..\TProtocol;..\..\TServer\TNetLib;..\zlib114"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;PACKET_CRYPT;RPSGAME_ON;"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
-				TreatWChar_tAsBuiltInType="TRUE"
-				UsePrecompiledHeader="3"
+				TreatWChar_tAsBuiltInType="true"
+				UsePrecompiledHeader="2"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1042"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="zlibstat.lib winmm.lib shlwapi.lib Ws2_32.lib"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\TServer\lib;..\zlib114"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="FALSE"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1042"
-				AdditionalIncludeDirectories="$(IntDir)"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCWebDeploymentTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -192,414 +283,572 @@
 		<Filter
 			Name="소스 파일"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\Announce.cpp">
+				RelativePath=".\Announce.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\AutoPatch.cpp">
+				RelativePath=".\AutoPatch.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\CastleSettingDlg.cpp">
+				RelativePath=".\CastleSettingDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\CharMsg.cpp">
+				RelativePath=".\CharMsg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ChatBanDlg.cpp">
+				RelativePath=".\ChatBanDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ChatBanList.cpp">
+				RelativePath=".\ChatBanList.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ChildFrm.cpp">
+				RelativePath=".\ChildFrm.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgConnect.cpp">
+				RelativePath=".\DlgConnect.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgPatchProgress.cpp">
+				RelativePath=".\DlgPatchProgress.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgServiceLog.cpp">
+				RelativePath=".\DlgServiceLog.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgUpload.cpp">
+				RelativePath=".\DlgUpload.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgUploadProgress.cpp">
+				RelativePath=".\DlgUploadProgress.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\EventDlg.cpp">
+				RelativePath=".\EventDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\EventInfo.cpp">
+				RelativePath=".\EventInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GMToolDlg.cpp">
+				RelativePath=".\GMToolDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\GuildChange.cpp">
+				RelativePath=".\GuildChange.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Handler.cpp">
+				RelativePath=".\Handler.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Happy.cpp">
+				RelativePath=".\Happy.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HappyDoc.cpp">
+				RelativePath=".\HappyDoc.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HappyGroup.cpp">
+				RelativePath=".\HappyGroup.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HappySplitter.cpp">
+				RelativePath=".\HappySplitter.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HappyView.cpp">
+				RelativePath=".\HappyView.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HelpMessage.cpp">
+				RelativePath=".\HelpMessage.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\HSession.cpp">
+				RelativePath=".\HSession.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ItemChgState.cpp">
+				RelativePath=".\ItemChgState.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\LocalInit.cpp">
+				RelativePath=".\LocalInit.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\LuckyEventDlg.cpp">
+				RelativePath=".\LuckyEventDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Machine.cpp">
+				RelativePath=".\Machine.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\MachineGraph.cpp">
+				RelativePath=".\MachineGraph.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\MainFrm.cpp">
+				RelativePath=".\MainFrm.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\MonsterSpawn.cpp">
+				RelativePath=".\MonsterSpawn.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.cpp">
+				RelativePath=".\Packet.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\PatchBar.cpp">
+				RelativePath=".\PatchBar.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\PatchList.cpp">
+				RelativePath=".\PatchList.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\PosListDlg.cpp">
+				RelativePath=".\PosListDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\PreVersion.cpp">
+				RelativePath=".\PreVersion.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\RetDlg.cpp">
+				RelativePath=".\RetDlg.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\RPSGame.cpp">
+				RelativePath=".\RPSGame.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SavePos.cpp">
+				RelativePath=".\SavePos.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Sender.cpp">
+				RelativePath=".\Sender.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ServiceGraph.cpp">
+				RelativePath=".\ServiceGraph.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ServiceList.cpp">
+				RelativePath=".\ServiceList.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\ServiceTree.cpp">
+				RelativePath=".\ServiceTree.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp">
+				RelativePath=".\stdafx.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release RPS|Win32">
+					Name="Release RPS|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="1"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\TabCtrlHappy.cpp">
+				RelativePath=".\TabCtrlHappy.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TGiftItem.cpp">
+				RelativePath=".\TGiftItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\TGiftSet.cpp">
+				RelativePath=".\TGiftSet.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Tournament.cpp">
+				RelativePath=".\Tournament.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\UserKickout.cpp">
+				RelativePath=".\UserKickout.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\UserMove.cpp">
+				RelativePath=".\UserMove.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\XListCtrl.cpp">
+				RelativePath=".\XListCtrl.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="헤더 파일"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\Announce.h">
+				RelativePath=".\Announce.h"
+				>
 			</File>
 			<File
-				RelativePath=".\AutoPatch.h">
+				RelativePath=".\AutoPatch.h"
+				>
 			</File>
 			<File
-				RelativePath=".\CastleSettingDlg.h">
+				RelativePath=".\CastleSettingDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\CharMsg.h">
+				RelativePath=".\CharMsg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ChatBanDlg.h">
+				RelativePath=".\ChatBanDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ChatBanList.h">
+				RelativePath=".\ChatBanList.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ChildFrm.h">
+				RelativePath=".\ChildFrm.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgConnect.h">
+				RelativePath=".\DlgConnect.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgPatchProgress.h">
+				RelativePath=".\DlgPatchProgress.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgServiceLog.h">
+				RelativePath=".\DlgServiceLog.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgUpload.h">
+				RelativePath=".\DlgUpload.h"
+				>
 			</File>
 			<File
-				RelativePath=".\DlgUploadProgress.h">
+				RelativePath=".\DlgUploadProgress.h"
+				>
 			</File>
 			<File
-				RelativePath=".\EventDlg.h">
+				RelativePath=".\EventDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\EventInfo.h">
+				RelativePath=".\EventInfo.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GMToolDlg.h">
+				RelativePath=".\GMToolDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\GuildChange.h">
+				RelativePath=".\GuildChange.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Happy.h">
+				RelativePath=".\Happy.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HappyDoc.h">
+				RelativePath=".\HappyDoc.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HappyGroup.h">
+				RelativePath=".\HappyGroup.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HappySplitter.h">
+				RelativePath=".\HappySplitter.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HappyView.h">
+				RelativePath=".\HappyView.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HelpMessage.h">
+				RelativePath=".\HelpMessage.h"
+				>
 			</File>
 			<File
-				RelativePath=".\HSession.h">
+				RelativePath=".\HSession.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ItemChgState.h">
+				RelativePath=".\ItemChgState.h"
+				>
 			</File>
 			<File
-				RelativePath=".\LocalInit.h">
+				RelativePath=".\LocalInit.h"
+				>
 			</File>
 			<File
-				RelativePath=".\LuckyEventDlg.h">
+				RelativePath=".\LuckyEventDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Machine.h">
+				RelativePath=".\Machine.h"
+				>
 			</File>
 			<File
-				RelativePath=".\MachineGraph.h">
+				RelativePath=".\MachineGraph.h"
+				>
 			</File>
 			<File
-				RelativePath=".\MainFrm.h">
+				RelativePath=".\MainFrm.h"
+				>
 			</File>
 			<File
-				RelativePath=".\MonsterSpawn.h">
+				RelativePath=".\MonsterSpawn.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Packet.h">
+				RelativePath=".\Packet.h"
+				>
 			</File>
 			<File
-				RelativePath=".\PatchBar.h">
+				RelativePath=".\PatchBar.h"
+				>
 			</File>
 			<File
-				RelativePath=".\PatchList.h">
+				RelativePath=".\PatchList.h"
+				>
 			</File>
 			<File
-				RelativePath=".\PosListDlg.h">
+				RelativePath=".\PosListDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\PreVersion.h">
+				RelativePath=".\PreVersion.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Resource.h">
+				RelativePath=".\Resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\RetDlg.h">
+				RelativePath=".\RetDlg.h"
+				>
 			</File>
 			<File
-				RelativePath=".\RPSGame.h">
+				RelativePath=".\RPSGame.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SavePos.h">
+				RelativePath=".\SavePos.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ServiceGraph.h">
+				RelativePath=".\ServiceGraph.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ServiceList.h">
+				RelativePath=".\ServiceList.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ServiceTree.h">
+				RelativePath=".\ServiceTree.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TabCtrlHappy.h">
+				RelativePath=".\TabCtrlHappy.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TGiftItem.h">
+				RelativePath=".\TGiftItem.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TGiftSet.h">
+				RelativePath=".\TGiftSet.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Tournament.h">
+				RelativePath=".\Tournament.h"
+				>
 			</File>
 			<File
-				RelativePath=".\UserKickout.h">
+				RelativePath=".\UserKickout.h"
+				>
 			</File>
 			<File
-				RelativePath=".\UserMove.h">
+				RelativePath=".\UserMove.h"
+				>
 			</File>
 			<File
-				RelativePath=".\XListCtrl.h">
+				RelativePath=".\XListCtrl.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="리소스 파일"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 			<File
-				RelativePath=".\res\bitmap1.bmp">
+				RelativePath=".\res\bitmap1.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\bitmap2.bmp">
+				RelativePath=".\res\bitmap2.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\bmp00001.bmp">
+				RelativePath=".\res\bmp00001.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Earth.ico">
+				RelativePath=".\res\Earth.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Happy.ico">
+				RelativePath=".\res\Happy.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\Happy.rc">
+				RelativePath=".\Happy.rc"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Happy.rc2">
+				RelativePath=".\res\Happy.rc2"
+				>
 			</File>
 			<File
-				RelativePath=".\res\HappyDoc.ico">
+				RelativePath=".\res\HappyDoc.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\ico00001.ico">
+				RelativePath=".\res\ico00001.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\ico00002.ico">
+				RelativePath=".\res\ico00002.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\ico00003.ico">
+				RelativePath=".\res\ico00003.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\ico00004.ico">
+				RelativePath=".\res\ico00004.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\icon1.ico">
+				RelativePath=".\res\icon1.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\nethood.ico">
+				RelativePath=".\res\nethood.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\nethoodH.ico">
+				RelativePath=".\res\nethoodH.ico"
+				>
 			</File>
 			<File
-				RelativePath=".\res\Toolbar.bmp">
+				RelativePath=".\res\Toolbar.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\toolbar1.bmp">
+				RelativePath=".\res\toolbar1.bmp"
+				>
 			</File>
 			<File
-				RelativePath=".\res\wave1.bin">
+				RelativePath=".\res\wave1.bin"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\res\beep.wav">
+			RelativePath=".\res\beep.wav"
+			>
 		</File>
 		<File
 			RelativePath=".\DlgConnect.htm"
-			DeploymentContent="TRUE">
+			DeploymentContent="true"
+			>
 		</File>
 		<File
-			RelativePath=".\res\Happy.manifest">
+			RelativePath=".\res\Happy.manifest"
+			>
+			<FileConfiguration
+				Name="Debug|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Release RPS|Win32"
+				ExcludedFromBuild="true"
+				>
+				<Tool
+					Name="VCCustomBuildTool"
+				/>
+			</FileConfiguration>
 		</File>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath=".\ReadMe.txt"
+			>
 		</File>
 		<File
 			RelativePath=".\TGiftSet.htm"
-			DeploymentContent="TRUE">
+			DeploymentContent="true"
+			>
 		</File>
 	</Files>
 	<Globals>
 		<Global
 			Name="RESOURCE_FILE"
-			Value="Happy.rc"/>
+			Value="Happy.rc"
+		/>
 	</Globals>
 </VisualStudioProject>

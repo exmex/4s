@@ -422,7 +422,8 @@ void CEventInfo::OnBnClickedUpdate()
 	if(stEVENTINFO.m_bID == EVENT_CASHSALE)
 	{
 		int nCount = m_cbServer.GetCount();
-		for(int i = 0; i < nCount; i++)
+		int i;
+		for(i = 0; i < nCount; i++)
 		{
 			//	모든서버 선택
 			m_cbServer.GetLBText(i,str);
@@ -836,7 +837,8 @@ void CEventInfo::SetWorldCtrl(BYTE bEventID, BYTE bEnable)
 {
 	CString str;
 	int nCount = m_cbServer.GetCount();
-	for(int i = 0; i < nCount; i++)
+	int i;
+	for(i = 0; i < nCount; i++)
 	{			
 		m_cbServer.GetLBText(i,str);
 		if( str == STR_WORLD_ALL )

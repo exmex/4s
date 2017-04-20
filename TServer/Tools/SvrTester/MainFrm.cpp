@@ -528,7 +528,7 @@ void CMainFrame::Serialize(CArchive& ar)
 			// Macro Protocol Info
 			VECTORPINFO vPInfo = pMacro->GetMacroPInfo();
 			ar << (int)vPInfo.size();
-			for(i = 0; i < (int)vPInfo.size(); i++)
+			for(size_t i = 0; i < vPInfo.size(); i++)
 			{
 				ar << vPInfo[i].strName << vPInfo[i].strParent << vPInfo[i].sleep << vPInfo[i].bSelf;
 

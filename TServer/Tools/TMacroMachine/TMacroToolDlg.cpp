@@ -1359,7 +1359,7 @@ void CTMacroToolDlg::Serialize(CArchive& ar)
 
 		ar >> cnt;
 
-		for(i=0; i<cnt; i++)
+		for(int i=0; i<cnt; i++)
 		{
 			LPTMACROTEMP pMacro = new TMACROTEMP;
 			ar >> pMacro->m_dwID >> pMacro->m_strName >> pMacro->m_bLoop;
@@ -1390,7 +1390,7 @@ void CTMacroToolDlg::Serialize(CArchive& ar)
 			}
 
 			ar >> cntPt;
-			for(j=0; j<cntPt; j++)
+			for(int j=0; j<cntPt; j++)
 			{
 				LPTPROTOCOL pProtocol = new TPROTOCOL;
 				ar >> pProtocol->m_dwIndex >> pProtocol->m_dwID >> pProtocol->m_dwParent >> pProtocol->m_bSelf >> pProtocol->m_bLoop >> pProtocol->m_wSleep;

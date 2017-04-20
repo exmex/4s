@@ -495,7 +495,8 @@ void CServiceGraph::AddServiceGraph(DWORD dwID)
 	}
 
 	BYTE bColor;
-	for(BYTE i=0; i<MAX_ADD_SERVICE; i++)
+	BYTE i;
+	for(i=0; i<MAX_ADD_SERVICE; i++)
 	{
 		if( colorCheck[i] != 1 )
 		{
@@ -584,7 +585,8 @@ void CServiceGraph::OnLButtonUp(UINT nFlags, CPoint point)
 			point.y < m_rectList.bottom && point.y > m_rectList.top )
 			return;
 
-		for(BYTE i=0; i<m_vSERVICEGRAPH.size(); i++)
+		BYTE i;
+		for(i=0; i<m_vSERVICEGRAPH.size(); i++)
 		{
 			MAPSERVICEGRAPH::iterator find = pDoc->m_mapSERVICEGRAPH.find(m_vSERVICEGRAPH[i]);
 			if(find!=pDoc->m_mapSERVICEGRAPH.end())

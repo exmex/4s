@@ -461,16 +461,17 @@ void CTMacro::SetSelfInfo(STRUCTPINFO pInfo)
 	sInfo.strName = pInfo.strName;
 
 	VECTORPARAM vParam = pInfo.vParam;
-	for(int i = 0; i < (int)vParam.size(); i++)
+	size_t i;
+	for(i = 0; i < vParam.size(); i++)
 	{
 		if( vParam[i].strName == _T("<Self>") )
 			break;		
 	}
 
-	if( i == (int)vParam.size() )
+	if( i == vParam.size() )
 		return;
 
-	sInfo.pos = i;
+	sInfo.pos = (int)i;
 
 	m_vSelf.push_back(sInfo);
 }

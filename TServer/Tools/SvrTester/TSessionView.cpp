@@ -276,17 +276,18 @@ void CTSessionView::InitList()
 }
 void CTSessionView::InsertList(CTachyonSession* pSession)
 {	
-	for(int i = 0; i < (int)pSession->m_dqList.size(); i++)
+	size_t i;
+	for(i = 0; i < pSession->m_dqList.size(); i++)
 	{
-		STRUCTSTRING temp = pSession->PopList(i);
-		m_listResult.SetItemText(i, 0, temp.strProtocol);
-		m_listResult.SetItemText(i, 1, temp.strValue);		
+		STRUCTSTRING temp = pSession->PopList((int)i);
+		m_listResult.SetItemText((int)i, 0, temp.strProtocol);
+		m_listResult.SetItemText((int)i, 1, temp.strValue);		
 	}
 
-	while( i < LIST_MAX )
+	while(i < LIST_MAX )
 	{
-		m_listResult.SetItemText(i, 0, _T(""));
-		m_listResult.SetItemText(i, 1, _T(""));
+		m_listResult.SetItemText((int)i, 0, _T(""));
+		m_listResult.SetItemText((int)i, 1, _T(""));
 		i++;
 	}
 }

@@ -746,7 +746,8 @@ void CTachyonSession::ClearSelfVector()
 }
 BOOL CTachyonSession::IsSelfCheck(DWORD pID, CString sData)
 {
-	for(int i = 0; i < (int)m_vSelf.size(); i++)
+	size_t i;
+	for(i = 0; i < m_vSelf.size(); i++)
 	{
 		if( m_vSelf[i].dwPID == pID )
 			break;
@@ -871,7 +872,7 @@ BOOL CTachyonSession::SetParamData(DWORD pID, CString sData)
 	VECTORSTRING vData;
 	vData = RecvParamData(vParam, sData);	
 
-	for(i = 0; i < (int)vParam.size(); i++)
+	for(size_t i = 0; i < vParam.size(); i++)
 	{	
 		CString strName = vParam[i].strName;
 		CString strType = vParam[i].strType;

@@ -266,13 +266,13 @@ void CMachineGraph::DrawRect()
 		MemDC.LineTo(m_rectCPU.right, m_rectCPU.top+height*i);
 	}
 
-	for(i=1; i<10; i++)
+	for(int i=1; i<10; i++)
 	{
 		MemDC.MoveTo(50, m_rectMEM.top+height*i); 
 		MemDC.LineTo(m_rectMEM.right, m_rectMEM.top+height*i);
 	}
 
-	for(i=1; i<10; i++)
+	for(int i=1; i<10; i++)
 	{
 		MemDC.MoveTo(50, m_rectNET.top+height*i); 
 		MemDC.LineTo(m_rectNET.right, m_rectNET.top+height*i);
